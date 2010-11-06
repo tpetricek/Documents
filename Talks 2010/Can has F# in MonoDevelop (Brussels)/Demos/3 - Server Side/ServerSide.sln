@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chat", "Chat", "{56CB8FF3-4094-4BBE-A58E-07D516BCB567}"
+	ProjectSection(SolutionItems) = preProject
+		Chat\chat.html = Chat\chat.html
+		Chat\Server.fsx = Chat\Server.fsx
+		Chat\style.css = Chat\style.css
+	EndProjectSection
+EndProject
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "FSharp.AgentExtensions", "FSharp.AgentExtensions\FSharp.AgentExtensions.fsproj", "{897c9901-574f-4cee-8c1f-3b3a726b59d9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{897c9901-574f-4cee-8c1f-3b3a726b59d9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897c9901-574f-4cee-8c1f-3b3a726b59d9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897c9901-574f-4cee-8c1f-3b3a726b59d9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{897c9901-574f-4cee-8c1f-3b3a726b59d9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{897c9901-574f-4cee-8c1f-3b3a726b59d9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{897c9901-574f-4cee-8c1f-3b3a726b59d9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897c9901-574f-4cee-8c1f-3b3a726b59d9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897c9901-574f-4cee-8c1f-3b3a726b59d9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{897c9901-574f-4cee-8c1f-3b3a726b59d9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{897c9901-574f-4cee-8c1f-3b3a726b59d9}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = FSharp.AgentExtensions\FSharp.AgentExtensions.fsproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
