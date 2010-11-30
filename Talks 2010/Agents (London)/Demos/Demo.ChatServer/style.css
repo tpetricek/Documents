@@ -1,0 +1,10 @@
+﻿* { padding:0px; margin:0px; }
+body { background:#8096b3; font-family:cambria; padding:10px; }
+hr { margin:20px; border-top-style:none; border-bottom:2px solid white; }
+input { padding:3px; width:370px; }
+button { padding:3px 10px 3px 10px; }
+h1 { text-align:center; font:20pt 'Book Antiqua';	font-style:italic;	margin:0px 0px 20px 0px;}
+#page {	padding:10px;	width:500px;	margin:0px auto 0px auto; 	background:#c0d6e3; }
+li { list-style-type:none; background:white; padding:10px; margin:10px; }
+#input { background:#8096b3; margin:20px 10px 10px 10px; padding:20px; }
+#output {	min-height:300px; }
