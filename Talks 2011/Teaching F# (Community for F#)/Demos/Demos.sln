@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teaching Demos", "Teaching Demos", "{62F617D7-9C47-484B-847D-A9D68FD412A0}"
+	ProjectSection(SolutionItems) = preProject
+		Tutorial1.fsx = Tutorial1.fsx
+		Tutorial2.fsx = Tutorial2.fsx
+		Tutorial3.fsx = Tutorial3.fsx
+		Tutorial4.fsx = Tutorial4.fsx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
