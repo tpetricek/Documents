@@ -1,0 +1,25 @@
+﻿body
+{
+	font-family:Cambria;
+	font-size:90%;
+	background:#e0e0e0;
+	margin:0px;
+	padding:0px;
+}
+
+.page
+{
+	padding:20px;
+	padding-bottom:100px;
+	max-width:800px;
+	margin:0px auto 0px auto;
+	background:white;
+}
+
+h1
+{
+	font-style:italic;
+	border-bottom:1px solid black;
+	text-align:center;
+	font-family:Book Antiqua;
+}
