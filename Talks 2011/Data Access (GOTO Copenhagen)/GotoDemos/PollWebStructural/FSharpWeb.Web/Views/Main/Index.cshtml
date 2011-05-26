@@ -1,0 +1,19 @@
+﻿@{ View.Title = "Home Page"; }
+@model IEnumerable<FSharpWeb.Core.PollOption>
+
+<h2>What is your favorite programming language?</h2>
+
+<div class="poll">
+@foreach (var option in Model)
+{
+  <li>
+    <h3><a href="/Vote/@option.ID">@option.Title</a></h3>
+    <div class="box">
+    <div class="vote" style="width:@(3 * option.Percentage)px;">
+      &#160;
+    </div>
+    @option.Percentage % (@option.Votes)
+    </div>
+  </li>
+}
+</div>

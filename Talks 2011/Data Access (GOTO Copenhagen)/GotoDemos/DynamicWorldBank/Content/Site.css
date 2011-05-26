@@ -1,0 +1,58 @@
+#main {
+  padding:20px 20px 100px 20px;
+  margin-left:auto;
+  margin-right:auto;
+  width:600px;
+  height:100%;
+  background:white;
+  font:normal 100% cambria;
+}
+
+hr {
+  border:1px solid black;
+}
+
+input {
+  margin:5px;
+}
+
+h1 { font-size:140% }
+h2 { font-size:130% }
+h3 { 
+  font-size:100%; 
+  margin:10px 0px 5px 0px;
+}
+
+ul { 
+  margin:0px;
+}
+
+li {
+  margin:0px;
+  list-style-type:none;
+}
+
+div.box { 
+}
+
+div.vote
+{
+  float:left;
+  background:#5384B5;
+  border:1px solid #103961;
+  margin-right:10px;
+}
+
+a:visited, a:link {
+  color:#103961;
+  text-decoration:none;
+  font-family:Calibri;
+}
+
+div.poll
+{
+  margin:40px 0px 0px 100px;
+  background:#e0e0e0;
+  padding:10px 20px 20px 20px;
+  width:300px;
+}

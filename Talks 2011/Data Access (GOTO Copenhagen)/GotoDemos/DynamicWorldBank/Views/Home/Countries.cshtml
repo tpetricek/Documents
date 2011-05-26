@@ -1,0 +1,10 @@
+﻿@{ View.Title = "Countries"; }
+@model IEnumerable<DynamicWorldBank.Controllers.Country>
+
+<h2>Countries</h2>
+<ul>
+@foreach (var country in Model)
+{
+  <li><strong>@country.Name</strong> (@country.CapitalCity)</li>
+}
+</ul>

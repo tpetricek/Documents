@@ -1,0 +1,26 @@
+﻿@{ View.Title = "Home Page"; }
+@model FSharpWeb.Core.Listing
+
+<div style="text-align:center; margin:10px">
+<a href="/Index">Guardian</a> | <a href="/Index/tomasp">TomasP</a>
+</div>
+<hr />
+
+<h2><a href="@Model.Link">@Model.Name</a></h2>
+
+<ul>
+@foreach (var itm in Model.Items)
+{
+  <li>
+    @if (!String.IsNullOrEmpty(itm.Item2))
+    {
+      <h3><a href="@itm.Item2">@itm.Item1</a></h3>
+    }
+    else
+    {
+      <h3>@itm.Item1</h3>
+    }
+    @itm.Item3
+  </li>
+}
+</ul>

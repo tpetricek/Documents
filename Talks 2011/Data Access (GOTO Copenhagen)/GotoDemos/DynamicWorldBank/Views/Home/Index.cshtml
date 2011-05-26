@@ -1,0 +1,10 @@
+﻿@{ View.Title = "Regions"; }
+@model IEnumerable<DynamicWorldBank.Controllers.Region>
+
+<h2>Select Region</h2>
+<ul>
+@foreach (var reg in Model)
+{
+  <li><a href="/Home/Countries/@reg.Code">@reg.Name</a></li>
+}
+</ul>
