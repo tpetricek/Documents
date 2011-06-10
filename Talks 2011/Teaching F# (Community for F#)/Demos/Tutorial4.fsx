@@ -2,9 +2,10 @@
 // Introducing general recursion using 3D objects
 // ----------------------------------------------------------------------------
 
-#r "references\\OpenTK.dll"
-#r "references\\OpenTK.GLControl.dll"
+#r "OpenTK.dll"
+#r "OpenTK.GLControl.dll"
 #load "functional3d.fs"
+
 open Functional3D
 open System.Drawing
 
@@ -13,7 +14,6 @@ open System.Drawing
 // Introducing 3D library
 
 Fun.cube
-
 
 Fun.color Color.DarkRed Fun.cone $
 ( Fun.color Color.Goldenrod 
@@ -112,7 +112,7 @@ let rec tree trunkLength trunkWidth w n =
       branch 0.0 w $ branch 0.0 -w
 
 
-let depth = 1
+let depth = 4
 
 let plant = 
   tree 4.0 0.8 40.0 depth
@@ -121,4 +121,3 @@ let plant =
 
 
 Fun.resetRotation()
-

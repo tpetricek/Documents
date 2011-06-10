@@ -120,11 +120,37 @@ type AppControl() =
 
       // Process data (CPU-bound operation)
       setPhase "Processing"
+
+      #if NOT_SELECTED
+
+      // This is wrong, because it runs CPU-bound operation 
+      // on a GUI thread and so the user interface freezes.
+      let! prices = extractStockPrices data 500
+      
+      #endif
+      #if NOT_SELECTED
+
+      // This starts the operation in background as a child
+      // task and then waits (asynchronously) until it 
+      // completes without blocking a thread. The problem is that
+      // we need to explicitly return all declared values.
+      let! token = Async.StartChild(extractStockPrices data 500)
+      let! prices = token
+
+      #endif
+      #if SELECTED
+
+      // This switches the workflow to a background thread, does
+      // CPU-intensive computation and then swithces back (while
+      // not blocking GUI thread). If the 'SwitchToContext' call
+      // is omitted, it will access GUI controls from the background
+      // thread which gives a runtime error
       let ctx = SynchronizationContext.Current
       do! Async.SwitchToThreadPool()
       let! prices = extractStockPrices data 500
       do! Async.SwitchToContext(ctx)
 
+      #endif
       // Create & display the chart (GUI operation)
       do! displayChart color prices }
 

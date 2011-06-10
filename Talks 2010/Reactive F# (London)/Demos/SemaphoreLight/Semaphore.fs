@@ -28,7 +28,7 @@ type Semaphore() as this =
     orange.Visibility <- Visibility.Collapsed
     current.Visibility <- Visibility.Visible 
 
-  let semaphoreStates2() = async {
+  let semaphoreStates() = async {
     while true do
       let! md = Async.AwaitObservable(this.MouseLeftButtonDown)
       display(green) 
@@ -38,6 +38,5 @@ type Semaphore() as this =
       display(red)  
     }
   
-  do
-    semaphoreStates2() |> Async.StartImmediate
+  do semaphoreStates() |> Async.StartImmediate
 
