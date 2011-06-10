@@ -1,0 +1,17 @@
+#main {
+  padding:20px 20px 100px 20px;
+  margin-left:auto;
+  margin-right:auto;
+  width:800px;
+  height:100%;
+  background:white;
+  font:normal 100% cambria;
+}
+
+hr {
+  border:1px solid black;
+}
+
+input {
+  margin:5px;
+}
