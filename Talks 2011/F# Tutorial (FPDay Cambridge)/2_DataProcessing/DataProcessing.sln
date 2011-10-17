@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Processing Data", "Processing Data", "{26D94E55-89B8-40A2-BD01-C1FE7E5B10C5}"
+	ProjectSection(SolutionItems) = preProject
+		1_Data.fsx = 1_Data.fsx
+		2_Processing.fsx = 2_Processing.fsx
+		3_Charting.fsx = 3_Charting.fsx
+		4_Advanced.fsx = 4_Advanced.fsx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuples", "Tuples\Tuples.csproj", "{69CD4E30-8C6E-4B46-9023-70115BC07BAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscriminatedUnions", "DiscriminatedUnions\DiscriminatedUnions.csproj", "{513C073C-B447-45E3-8529-26E38F6222AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FSharp Samples", "FSharp Samples", "{D5C4A78C-4B4A-4AB0-93E5-1E8F8AF29735}"
+	ProjectSection(SolutionItems) = preProject
+		DiscriminatedUnions.fsx = DiscriminatedUnions.fsx
+		List.fsx = List.fsx
+		Tuples.fsx = Tuples.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp Samples", "CSharp Samples", "{62879E3A-E3E1-4DA4-AA42-FA494DEE715C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lists", "Lists\Lists.csproj", "{2A254325-F134-43E4-B232-3E1F31D590BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69CD4E30-8C6E-4B46-9023-70115BC07BAC}.Debug|x86.ActiveCfg = Debug|x86
+		{69CD4E30-8C6E-4B46-9023-70115BC07BAC}.Debug|x86.Build.0 = Debug|x86
+		{69CD4E30-8C6E-4B46-9023-70115BC07BAC}.Release|x86.ActiveCfg = Release|x86
+		{69CD4E30-8C6E-4B46-9023-70115BC07BAC}.Release|x86.Build.0 = Release|x86
+		{513C073C-B447-45E3-8529-26E38F6222AD}.Debug|x86.ActiveCfg = Debug|x86
+		{513C073C-B447-45E3-8529-26E38F6222AD}.Debug|x86.Build.0 = Debug|x86
+		{513C073C-B447-45E3-8529-26E38F6222AD}.Release|x86.ActiveCfg = Release|x86
+		{513C073C-B447-45E3-8529-26E38F6222AD}.Release|x86.Build.0 = Release|x86
+		{2A254325-F134-43E4-B232-3E1F31D590BE}.Debug|x86.ActiveCfg = Debug|x86
+		{2A254325-F134-43E4-B232-3E1F31D590BE}.Debug|x86.Build.0 = Debug|x86
+		{2A254325-F134-43E4-B232-3E1F31D590BE}.Release|x86.ActiveCfg = Release|x86
+		{2A254325-F134-43E4-B232-3E1F31D590BE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{69CD4E30-8C6E-4B46-9023-70115BC07BAC} = {62879E3A-E3E1-4DA4-AA42-FA494DEE715C}
+		{513C073C-B447-45E3-8529-26E38F6222AD} = {62879E3A-E3E1-4DA4-AA42-FA494DEE715C}
+		{2A254325-F134-43E4-B232-3E1F31D590BE} = {62879E3A-E3E1-4DA4-AA42-FA494DEE715C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmileyGame", "SmileyGame\SmileyGame.csproj", "{51A36701-D2EA-4C52-A17E-2045C87E9956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCrawler", "WebCrawler\WebCrawler.csproj", "{D41581E4-261D-43F4-876B-647C2E3F683D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebCrawler.Core", "WebCrawler.Core\WebCrawler.Core.fsproj", "{C6D8AD4D-18F5-4A11-8614-5838FA5922C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Crawling", "01 Crawling", "{810DAB01-7893-410C-85C7-A4432A873040}"
+	ProjectSection(SolutionItems) = preProject
+		Crawler.fsx = Crawler.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 User Interface", "02 User Interface", "{FE4B1D08-1D00-47AA-A242-59676A2A63AF}"
+	ProjectSection(SolutionItems) = preProject
+		SmileyGame.fsx = SmileyGame.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Agent Interop", "03 Agent Interop", "{7D7EED7D-AF74-497B-AA4D-7C2B8A7593A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCrawler.Agent", "WebCrawler.Agent\WebCrawler.Agent.csproj", "{12E1CC85-E94C-4BBD-A07B-2BF0F415363B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51A36701-D2EA-4C52-A17E-2045C87E9956}.Debug|x86.ActiveCfg = Debug|x86
+		{51A36701-D2EA-4C52-A17E-2045C87E9956}.Debug|x86.Build.0 = Debug|x86
+		{51A36701-D2EA-4C52-A17E-2045C87E9956}.Release|x86.ActiveCfg = Release|x86
+		{51A36701-D2EA-4C52-A17E-2045C87E9956}.Release|x86.Build.0 = Release|x86
+		{D41581E4-261D-43F4-876B-647C2E3F683D}.Debug|x86.ActiveCfg = Debug|x86
+		{D41581E4-261D-43F4-876B-647C2E3F683D}.Debug|x86.Build.0 = Debug|x86
+		{D41581E4-261D-43F4-876B-647C2E3F683D}.Release|x86.ActiveCfg = Release|x86
+		{D41581E4-261D-43F4-876B-647C2E3F683D}.Release|x86.Build.0 = Release|x86
+		{C6D8AD4D-18F5-4A11-8614-5838FA5922C9}.Debug|x86.ActiveCfg = Debug|x86
+		{C6D8AD4D-18F5-4A11-8614-5838FA5922C9}.Debug|x86.Build.0 = Debug|x86
+		{C6D8AD4D-18F5-4A11-8614-5838FA5922C9}.Release|x86.ActiveCfg = Release|x86
+		{C6D8AD4D-18F5-4A11-8614-5838FA5922C9}.Release|x86.Build.0 = Release|x86
+		{12E1CC85-E94C-4BBD-A07B-2BF0F415363B}.Debug|x86.ActiveCfg = Debug|x86
+		{12E1CC85-E94C-4BBD-A07B-2BF0F415363B}.Debug|x86.Build.0 = Debug|x86
+		{12E1CC85-E94C-4BBD-A07B-2BF0F415363B}.Release|x86.ActiveCfg = Release|x86
+		{12E1CC85-E94C-4BBD-A07B-2BF0F415363B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D41581E4-261D-43F4-876B-647C2E3F683D} = {810DAB01-7893-410C-85C7-A4432A873040}
+		{51A36701-D2EA-4C52-A17E-2045C87E9956} = {FE4B1D08-1D00-47AA-A242-59676A2A63AF}
+		{C6D8AD4D-18F5-4A11-8614-5838FA5922C9} = {7D7EED7D-AF74-497B-AA4D-7C2B8A7593A9}
+		{12E1CC85-E94C-4BBD-A07B-2BF0F415363B} = {7D7EED7D-AF74-497B-AA4D-7C2B8A7593A9}
+	EndGlobalSection
+EndGlobal
