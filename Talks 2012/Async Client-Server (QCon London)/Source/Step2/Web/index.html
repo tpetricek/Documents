@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>SocialDrawing</title>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.min.js"></script>
+  <script type="text/javascript">
+
+    function refresh() {
+      $.ajax({ type: "POST", url: "/get", dataType: "text",
+        success: function (data) {
+          $("#output").text(data);
+        }
+      });
+    };
+
+    function send() {
+      var rect = { X1: 10, Y1: 10, X2: 100, Y2: 100, Color: "red" };
+      var json = JSON.stringify(rect);
+      $.ajax({ type: "POST", url: "/add", dataType: "text", data: json });
+    }
+
+  </script>
+</head>
+<body style="font-family:Calibri; text-align:center;padding:40px;">
+  <h1>Social drawing</h1>
+
+  <button onclick="send()">Add shape</button>
+  <button onclick="refresh()">Get shapes</button>
+  <div id="output">
+  </div>
+
+</body>
+</html>
