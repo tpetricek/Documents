@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="TescoCheckout.Service.TescoService" CodeBehind="TescoService.svc.cs" %>

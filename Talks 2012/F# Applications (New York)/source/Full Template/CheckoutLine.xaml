@@ -1,0 +1,38 @@
+﻿<UserControl 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:checkout="clr-namespace:Checkout"
+    Width="800" Height="600" Background="Green">
+
+    <Canvas>
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF527AA1"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+
+        <TextBox x:Name="ProductCode" Text="" Canvas.Left="574" Canvas.Top="21" Height="35" Width="215" FontSize="20" />
+        <TextBox x:Name="Quantity" Text="1" Canvas.Left="574" Canvas.Top="65" Height="35" Width="215" FontSize="20" TextAlignment="Right" />
+        <Button x:Name="AddButton" Canvas.Top="110" Content="Add" Canvas.Left="574" FontFamily="Segoe WP Semibold" FontSize="20" Width="103"/>
+        <Button x:Name="CancelButton"  Canvas.Top="110" Content="Cancel" Canvas.Left="686" FontFamily="Segoe WP Semibold" FontSize="20" Width="103" RenderTransformOrigin="1.427,-0.421"/>
+        <Button x:Name="FinishButton"  Canvas.Top="535" Content="Finish" Canvas.Left="574" FontFamily="Segoe WP Semibold" FontSize="20" Width="215"/>
+        <ListBox x:Name="ListItems" ItemsSource="{Binding Mode=OneWay}" Canvas.Left="31" Height="552" Width="533" Canvas.Top="21" BorderThickness="3" FontSize="16">
+            <ListBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF384552" Offset="0"/>
+                    <GradientStop Color="#FF9FA4A9" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.BorderBrush>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical" Margin="10, 10, 0, 10">
+                        <TextBlock FontSize="16" FontWeight="Bold" Text="{Binding Text}" />
+                        <Image Source="{Binding ImageSource}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Canvas>
+    
+</UserControl>
