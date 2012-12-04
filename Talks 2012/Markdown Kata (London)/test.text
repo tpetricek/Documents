@@ -1,0 +1,24 @@
+﻿Sample document
+===============
+
+This document shows some F# samples
+
+Hello world
+-----------
+
+Hello world in F# using `printfn`:
+
+    printfn "Hello world"
+
+Calculations
+------------
+
+Add numbers
+
+    let add a b = a + b
+    add 1 2
+
+References
+----------
+
+For more information see [F# web site](http://www.fsharp.net).

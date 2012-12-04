@@ -14,6 +14,27 @@ open Samples.FSharp.Charting.ChartStyles
 // Create data context connected to WorldBank
 let data = Samples.WorldBank.GetDataContext()
 
+let countries = 
+  [ data.Countries.France
+    data.Countries.Greece
+    data.Countries.``Czech Republic``
+    data.Countries.``United Kingdom``
+    data.Countries.``European Union`` ]
+
+Chart.Combine
+  [ for country in countries ->
+      let data = country.Indicators.``Central government debt, total (% of GDP)``
+      Chart.Line(data, Name=country.Name) ]
+
+
+
+
+
+
+
+
+
+
 let cze = data.Countries.``Czech Republic``
 let cz = data.Countries.``Czech Republic``.Indicators.``School enrollment, tertiary (% gross)``
 let dk = data.Countries.Denmark.Indicators.``School enrollment, tertiary (% gross)``

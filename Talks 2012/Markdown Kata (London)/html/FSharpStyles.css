@@ -1,0 +1,125 @@
+/*---------------------------------------------------------
+ * Copyright (C) Microsoft Corporation. All rights reserved.
+ *--------------------------------------------------------*/
+
+* {margin:0;padding:0;}
+html, body {height:100%;max-height:100%;}
+html, body {}
+body {
+   font:normal 14px/24px "Segoe UI";
+	color:#404040;
+    margin:2px 0 22px 0;
+}
+/*.class{font:bold 23px "Segoe WP"; color:797979 }*/
+
+#mybody { max-width:550px; margin-left:auto;margin-right:auto;margin-top:30px;margin-bottom:30px; }
+
+/* COMMON REUSABLE STYLES
+----------------------------------------------------------*/
+.fl {float:left;}  
+.fr {float:right;}  
+.pr {position:relative;}
+.bold {font-weight:bold;}
+.disable {color:#BEBEBE;}
+.nowrap {white-space: nowrap}
+.error {color:#ED2123;}
+.height100 {height:100%;}
+.width100 {width:100%;}
+.clear {clear:both; height:0;}
+.center {text-align:center;}
+.mr {margin-right:14px;}
+.ml {margin-left:14px;}
+.mt {margin-top:14px;}
+.mts {margin-top:7px;}
+.mbs {margin-bottom:7px;}
+.width75 {width:75%;}
+.boxtop {height:3px;background-color:#939597;width:100%;}
+.box {background-color:#70879A;}
+
+/* COMMON ELEMENTS
+----------------------------------------------------------*/
+p {padding:6px 0 6px 0;}
+img {border:none;}
+blockquote {padding-left:30px;}
+hr {color:#DDE4EC; background-color:#DDE4EC; height:1px; border:none; margin:20px 0 20px 0;width:100%;}
+
+/* TOPIC CONTENT (CENTER WINDOW)
+----------------------------------------------------------*/
+#etopicContent {height:auto;min-height:100%;margin-top:0;}
+#etopicContent {*overflow:hidden;}/*fix for IE7*/
+#topicContent h1 {display:none;font-size:120%; font-weight: 200;color:#F8F8F9;padding:4px 5px 0 20px; height:27px; background-color:#70879A;}
+body > #topic {display:block;width:auto;right:0;left:0;top:0px;bottom:0;position:absolute;margin:0px 0 4px 0;padding:10px 20px 2px 20px;overflow:scroll;overflow-x: hidden;}
+#topic h1 { font:bold 22pt "Segoe UI";	color:#204256;	margin-top:20px;}
+#topic h2 {font:normal 20pt "Segoe UI";	color:#204256;	margin-top:20px;}
+#topic h3 {font:normal 18pt "Segoe UI Light";	color:#204256;	margin-top:20px;}
+#topic ul {margin-left:40px;}
+#boxbttm {width:95%;min-width:95%;margin-right:-3px;float:left;height:4px;display:block;bottom:0;position:absolute;}
+pre { padding:15px 20px; background:#f3f6f6; margin:5px 0 5px 0; font:normal 14px Consolas; color:#204256; white-space:pre-wrap;} 
+pre input { background:#204256; font:lighter 14px/normal "Segoe UI Semibold"; padding:0 10px; color:#fff; display:block; cursor:pointer; margin-top:15px;}
+#topic code {font:normal 14px Consolas; color:#204256; margin-bottom:18px;}
+
+#topic
+{
+    scrollbar-base-color: #adadad;
+    scrollbar-3dlight-color: #ffffff;
+    scrollbar-shadow-color: #ffffff;
+    scrollbar-highlight-color: #adadad;
+    scrollbar-darkshadow-color: #ffffff;
+    scrollbar-arrow-color: #d6d6d6;
+    scrollbar-track-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+
+
+::-webkit-scrollbar-track-piece  {
+background-color: #fff;
+border:solid 1px #999;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+height: 30px;
+background-color: #adadad;
+border-radius:10px;
+}
+
+/* TOOLS/RESOURCES PAGE
+----------------------------------------------------------*/                 
+#resMenu {width:200px;float:left;margin-left:23px;}
+#resMenuNarrow {width:180px;float:left;margin-left:23px;}
+#resMenu h1 {font-size:135%; font-weight: 200;color:#818385;border-bottom:2px solid #E5E5E5;width:180px;margin:0;padding:0;}
+#resMenuNarrow h1 {font-size:135%; font-weight: 200;color:#818385;border-bottom:2px solid #E5E5E5;width:160px;margin:0;padding:0;}
+#resMenu h2, #resMenuNarrow h2 {font-size:125%; font-weight: 200;color:#818385;width:220px;margin:0;padding:0;}
+#resMenu ul, #resMenuNarrow ul { margin:5px 0px 20px 20px; padding:0px; }
+#resMenu li, #resMenuNarrow li { margin:3px 0px 0px 0px; padding:0px; list-style-image:url('../Images/menu_node.gif'); }
+#resMenu li a, #resMenuNarrow li a { position:relative; left:-4px; }
+#resMenu li strong, #resMenuNarrow li strong { position:relative; left:-4px; }
+#resMenu a:visited, #resMenuNarrow a:visited {color:#818385;}
+#fullContent { width:920px;position:absolute;top:93px;left:0;bottom:0;margin-bottom:50px; }
+#resMenu p, #resMenuNarrow p { font-size:95%; margin-bottom:0px; margin-right:20px; }
+#resContent { margin-left:240px; min-height:600px; }
+#resContentWide { margin-left:220px; min-height:400px; }
+#resContent pre { margin-left:20px; font-family:consolas, monospace; }
+#resContent code { font-family:consolas, monospace; color:#003060; }
+#resContent .twtr-ft img { display:none; }
+#footerFull { font-size:60%; margin:10px 0px 0px 40px; padding-bottom:20px; }
+
+/* FOOTER
+----------------------------------------------------------*/                 
+#footer {width:97%;min-width:870px;height:30px;margin:-40px 0 0 -27px;font-size:60%;position:absolute;top:100%;}
+#fbtwitter {float:right;text-align:right;}
+#footer #links {margin-left:50px;}
+#footer #content span {margin-right:100px;}
+#footer #content img {margin-right:10px;}
+
+a {color:#4E688E;text-decoration:none;outline:0;}
+a:hover, a:active, a:focus {color:#4E688E;text-decoration:underline;}
+a:visited {color:#4E688E;}
+
+ol li {
+  margin-left:40px;
+}
