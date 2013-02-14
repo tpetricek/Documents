@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  dir="ltr">
+   <head>
+   <meta charset="utf-8">
+   <title>FunScript Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Zach Bray">
+
+    <script src="http://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highcharts/2.3.1/highcharts.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="simpleasync.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+     <style type="text/css">
+		  .circle {
+			  position:absolute;
+        border-radius: 50%;
+			  display: inline-block;
+			  width: 80px;
+			  height: 80px;
+        left: 150px;
+		  }
+		  #red {
+			  background: #940505;
+        top:110px;        
+		  }
+      #orange {
+        top:200px;
+        background: #ba6e10;
+      }
+      #green {
+        top:290px;
+        background: #14750d;
+      }
+		  #gray1 {
+			  background: #a0a0a0;
+        top:110px;        
+		  }
+      #gray2 {
+        top:200px;
+			  background: #a0a0a0;
+      }
+      #gray3 {
+        top:290px;
+			  background: #a0a0a0;
+      }
+      button {
+        padding:3px 15px 3px 15px;
+      }
+    </style>
+  </head>
+
+  <body style="margin-top:50px;">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Traffic Lights</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <button id="auto">Automatic</button>
+      <button id="manual">Manual</button>
+      <button id="next">Next</button>
+      
+      <div id="gray1" class="circle">&#160;</div>
+      <div id="gray2" class="circle">&#160;</div>
+      <div id="gray3" class="circle">&#160;</div>
+
+      <div id="red" class="circle">&#160;</div>
+      <div id="orange" class="circle" style="display:none;">&#160;</div>
+      <div id="green" class="circle" style="display:none;">&#160;</div>
+
+    </div>
+  </body>
+</html>
