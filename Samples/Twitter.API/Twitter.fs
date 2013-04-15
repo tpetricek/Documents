@@ -8,6 +8,7 @@ open System.IO
 open System.Net
 open System.Security.Cryptography
 open System.Text
+open FSharp.Data
 
 // ----------------------------------------------------------------------------------------------
 
@@ -118,7 +119,7 @@ module Utils =
        parts.[1].Split('=').[1])
 
   /// Compute the 'Authorization' header for the given request data
-  let authHeaderAfterAuthenticated consumerKey consumerSecret url httpMethod token tokenSecret queryParams = 
+  let authHeaderAfterAuthenticated consumerKey consumerSecret originalUrl httpMethod token tokenSecret queryParams = 
       let signingKey = compositeSigningKey consumerSecret tokenSecret
 
       let queryParameters = 
@@ -132,17 +133,16 @@ module Utils =
       let signingQueryParameters = 
           List.append queryParameters queryParams
 
-      let signingString = baseString httpMethod url signingQueryParameters
+      let signingString = baseString httpMethod originalUrl signingQueryParameters
       let oauth_signature = hmacsha1 signingKey signingString
       let realQueryParameters = ("oauth_signature", oauth_signature)::queryParameters
       let headerValue = createAuthorizeHeader realQueryParameters
       headerValue
 
   /// Add an Authorization header to an existing WebRequest 
-  let addAuthHeaderForUser (webRequest : WebRequest) consumerKey consumerSecret token tokenSecret queryParams = 
-      let url = webRequest.RequestUri.ToString()
+  let addAuthHeaderForUser (webRequest : WebRequest) originalUrl consumerKey consumerSecret token tokenSecret queryParams = 
       let httpMethod = webRequest.Method
-      let header = authHeaderAfterAuthenticated consumerKey consumerSecret url httpMethod token tokenSecret queryParams
+      let header = authHeaderAfterAuthenticated consumerKey consumerSecret originalUrl httpMethod token tokenSecret queryParams
       webRequest.Headers.Add(HttpRequestHeader.Authorization, header)
 
 // ----------------------------------------------------------------------------------------------
@@ -160,12 +160,14 @@ type TwitterConnector =
 module WebRequestExtensions =
   type System.Net.WebRequest with
     /// Add an Authorization header to the WebRequest for the provided user authorization tokens and query parameters
-    member this.AddOAuthHeader(consumerKey, consumerSecret, userToken, userTokenSecret, queryParams) =
-      Utils.addAuthHeaderForUser this consumerKey consumerSecret userToken userTokenSecret queryParams
+    member this.AddOAuthHeader(consumerKey, consumerSecret, userToken, userTokenSecret, queryParams, ?originalUrl) =
+      let originalUrl = defaultArg originalUrl (this.RequestUri.ToString())
+      Utils.addAuthHeaderForUser this originalUrl consumerKey consumerSecret userToken userTokenSecret queryParams
 
     /// Add an Authorization header to the WebRequest for the provided user authorization tokens and query parameters
-    member this.AddOAuthHeader(ctx:TwitterContext, queryParams) =
-      Utils.addAuthHeaderForUser this ctx.ConsumerKey ctx.ConsumerSecret ctx.AccessToken ctx.AccessSecret queryParams
+    member this.AddOAuthHeader(ctx:TwitterContext, queryParams, ?originalUrl) =
+      let originalUrl = defaultArg originalUrl (this.RequestUri.ToString())
+      Utils.addAuthHeaderForUser this originalUrl ctx.ConsumerKey ctx.ConsumerSecret ctx.AccessToken ctx.AccessSecret queryParams
 
 
 // ----------------------------------------------------------------------------------------------
@@ -175,12 +177,30 @@ type TwitterStream<'T> =
   abstract Stop : unit -> unit
   abstract Start : unit -> unit
 
-module Twitter =
-  
-  type TwitterHome = FSharp.Data.JsonProvider<"references\\home.json">
-  type TwitterTweet = FSharp.Data.JsonProvider<"references\\stream.json", SampleList=true>
+module TwitterTypes = 
+  type Tweet = JsonProvider<"references\\stream.json", SampleList=true>
+  type TimeLine = JsonProvider<"references\\timeline.json">
+  type SearchTweets = JsonProvider<"references\\search_tweets.json">
+  type IdsList = JsonProvider<"references\\idslist.json">
+  type UsersLookup = JsonProvider<"references\\users_lookup.json">
 
-  let authenticate (consumer_key, consumer_secret) navigate =
+type Twitter = 
+  static member RequestRawData (ctx:TwitterContext, url:string, ?query) =
+    let query = defaultArg query []
+    let query = [ for k, v in query -> k, Utils.urlEncode v ]
+    let queryString = [for k, v in query -> k + "=" + v] |> String.concat "&"
+    let req = WebRequest.Create(url + (if query <> [] then "?" + queryString else ""), Method="GET")
+    req.AddOAuthHeader(ctx, query, url)
+
+    use resp = req.GetResponse()
+    use strm = resp.GetResponseStream()
+    use sr = new StreamReader(strm)
+    sr.ReadToEnd()
+
+[<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
+module Twitter =
+
+  let Authenticate (consumer_key, consumer_secret, navigate) =
     let request_token, request_secret, _ = Utils.requestToken consumer_key consumer_secret
     let url = Utils.authorizeURI + "?oauth_token=" + request_token
     navigate(url)
@@ -189,26 +209,6 @@ module Twitter =
           let access_token, access_secret = 
             Utils.accessToken consumer_key consumer_secret request_token request_secret number
           TwitterContext(consumer_key, consumer_secret, access_token, access_secret) }
-
-
-  let requestRawData (ctx:TwitterContext) (url:string) query =
-    let queryString = [for k, v in query -> k + "=" + v] |> String.concat "&"
-    let req = WebRequest.Create(url + (if query <> [] then "?" + queryString else ""), Method="GET")
-    req.AddOAuthHeader(ctx, query)
-
-    use resp = req.GetResponse()
-    use strm = resp.GetResponseStream()
-    use sr = new StreamReader(strm)
-    sr.ReadToEnd()
-              
-  let homeTimeline (ctx:TwitterContext) =
-    let url = "https://api.twitter.com/1.1/statuses/home_timeline.json"
-    let req = WebRequest.Create(url) 
-    req.AddOAuthHeader(ctx, [])
-    use resp = req.GetResponse()
-    use strm = resp.GetResponseStream()
-    use sr = new StreamReader(strm)
-    TwitterHome.Parse(sr.ReadToEnd())
 
   let private downloadTweets (req:WebRequest) =
     let cts = new CancellationTokenSource()
@@ -232,30 +232,76 @@ module Twitter =
           let buffer = Array.zeroCreate size
           let _numRead = reader.ReadBlock(buffer,0,size) 
           let text = new System.String(buffer)
-          event.Trigger(TwitterTweet.Parse(text)) }
+          event.Trigger(TwitterTypes.Tweet.Parse(text)) }
     
     { new TwitterStream<_> with
         member x.Start() = Async.Start(downloadLoop , cts.Token)
         member x.Stop() = cts.Cancel() 
         member x.TweetReceived = event.Publish }
 
-  let sampleTweets (ctx:TwitterContext) = 
-    let req = WebRequest.Create("https://stream.twitter.com/1.1/statuses/sample.json", Method="POST", ContentType = "application/x-www-form-urlencoded")
-    req.AddOAuthHeader(ctx, ["delimited", "length"])
-    req.Timeout <- 10000
-    do use reqStream = req.GetRequestStream() 
-       use streamWriter = new StreamWriter(reqStream)
-       streamWriter.Write(sprintf "delimited=length")
+  // Helpers for building query strings
 
-    downloadTweets req
+  let private makeParams list = List.concat list
+  let inline private optional key = function Some value -> [key, string value] | _ -> []
+  let inline private required key value = [key, string value]
 
-  let searchTweets (ctx:TwitterContext) keywords =
-    let query = String.concat "," keywords
-    let req = WebRequest.Create("https://stream.twitter.com/1.1/statuses/filter.json", Method="POST", ContentType = "application/x-www-form-urlencoded")
-    req.AddOAuthHeader(ctx, ["delimited", "length"; "track", query])
-    req.Timeout <- 10000
-    do use reqStream = req.GetRequestStream() 
-       use streamWriter = new StreamWriter(reqStream)
-       streamWriter.Write(sprintf "delimited=length&track=%s" query)
+  // --------------------------------------------------------------------------------------------
 
-    downloadTweets req
+  type Streaming =
+    static member SampleTweets (ctx:TwitterContext) = 
+      let req = WebRequest.Create("https://stream.twitter.com/1.1/statuses/sample.json", Method="POST", ContentType = "application/x-www-form-urlencoded")
+      req.AddOAuthHeader(ctx, ["delimited", "length"])
+      req.Timeout <- 10000
+      do use reqStream = req.GetRequestStream() 
+         use streamWriter = new StreamWriter(reqStream)
+         streamWriter.Write(sprintf "delimited=length")
+      downloadTweets req
+
+    static member FilterTweets (ctx:TwitterContext, keywords) =
+      let query = String.concat "," keywords
+      let req = WebRequest.Create("https://stream.twitter.com/1.1/statuses/filter.json", Method="POST", ContentType = "application/x-www-form-urlencoded")
+      req.AddOAuthHeader(ctx, ["delimited", "length"; "track", query])
+      req.Timeout <- 10000
+      do use reqStream = req.GetRequestStream() 
+         use streamWriter = new StreamWriter(reqStream)
+         streamWriter.Write(sprintf "delimited=length&track=%s" query)
+      downloadTweets req
+
+  type Timelines =                
+    static member HomeTimeline (ctx) =
+      let res = Twitter.RequestRawData(ctx, "https://api.twitter.com/1.1/statuses/home_timeline.json")
+      TwitterTypes.TimeLine.Parse(res)
+
+  type Search =
+    static member Tweets (ctx, query, ?lang:string, ?geocode:string, ?locale:string, ?count:int) = 
+      let args = 
+        [ required "q" query; optional "lang" lang; optional "geocode" geocode; 
+          optional "locale" locale; optional "count" count ] |> makeParams
+      let res = Twitter.RequestRawData(ctx, "https://api.twitter.com/1.1/search/tweets.json", args)
+      TwitterTypes.SearchTweets.Parse(res)
+
+  type Followers =
+    static member FriendsIds (ctx, ?userId, ?screenName, ?cursor, ?count) =
+      let args = 
+        [ optional "user_id" userId; optional "screen_name" screenName
+          optional "cursor" cursor; optional "count" count ] |> makeParams
+      let res = Twitter.RequestRawData(ctx, "https://api.twitter.com/1.1/friends/ids.json", args)
+      TwitterTypes.IdsList.Parse(res)
+
+    static member FollowerIds (ctx, ?userId, ?screenName, ?cursor, ?count) =
+      let args = 
+        [ optional "user_id" userId; optional "screen_name" screenName
+          optional "cursor" cursor; optional "count" count ] |> makeParams
+      let res = Twitter.RequestRawData(ctx, "https://api.twitter.com/1.1/followers/ids.json", args)
+      TwitterTypes.IdsList.Parse(res)
+
+  type Users = 
+    static member Lookup(ctx, userIds) = 
+      let args = [ "user_id", [ for (i:int) in userIds -> string i ] |> String.concat "," ]
+      let res = Twitter.RequestRawData(ctx, "https://api.twitter.com/1.1/users/lookup.json", args)
+      TwitterTypes.UsersLookup.Parse(res)
+
+    static member Lookup(ctx, screenNames) = 
+      let args = [ "screen_name", screenNames |> String.concat "," ]
+      let res = Twitter.RequestRawData(ctx, "https://api.twitter.com/1.1/users/lookup.json", args)
+      TwitterTypes.UsersLookup.Parse(res)
