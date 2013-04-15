@@ -183,6 +183,7 @@ module TwitterTypes =
   type SearchTweets = JsonProvider<"references\\search_tweets.json">
   type IdsList = JsonProvider<"references\\idslist.json">
   type UsersLookup = JsonProvider<"references\\users_lookup.json">
+  type FriendshipShow = JsonProvider<"references\\friendship_show.json">
 
 type Twitter = 
   static member RequestRawData (ctx:TwitterContext, url:string, ?query) =
@@ -273,22 +274,24 @@ module Twitter =
       TwitterTypes.TimeLine.Parse(res)
 
   type Search =
-    static member Tweets (ctx, query, ?lang:string, ?geocode:string, ?locale:string, ?count:int) = 
+    static member Tweets (ctx, query:string, ?lang:string, ?geocode:string, ?locale:string, 
+                          ?count:int, ?sinceId:int64, ?maxId:int64, ?until:string) = 
       let args = 
         [ required "q" query; optional "lang" lang; optional "geocode" geocode; 
-          optional "locale" locale; optional "count" count ] |> makeParams
+          optional "locale" locale; optional "count" count; 
+          optional "since_id" sinceId; optional "max_id" maxId; optional "until" until ] |> makeParams
       let res = Twitter.RequestRawData(ctx, "https://api.twitter.com/1.1/search/tweets.json", args)
       TwitterTypes.SearchTweets.Parse(res)
 
   type Followers =
-    static member FriendsIds (ctx, ?userId, ?screenName, ?cursor, ?count) =
+    static member FriendsIds (ctx, ?userId:int64, ?screenName:string, ?cursor:int64, ?count:int) =
       let args = 
         [ optional "user_id" userId; optional "screen_name" screenName
           optional "cursor" cursor; optional "count" count ] |> makeParams
       let res = Twitter.RequestRawData(ctx, "https://api.twitter.com/1.1/friends/ids.json", args)
       TwitterTypes.IdsList.Parse(res)
 
-    static member FollowerIds (ctx, ?userId, ?screenName, ?cursor, ?count) =
+    static member FollowerIds (ctx, ?userId:int64, ?screenName:string, ?cursor:int64, ?count:int) =
       let args = 
         [ optional "user_id" userId; optional "screen_name" screenName
           optional "cursor" cursor; optional "count" count ] |> makeParams
@@ -305,3 +308,11 @@ module Twitter =
       let args = [ "screen_name", screenNames |> String.concat "," ]
       let res = Twitter.RequestRawData(ctx, "https://api.twitter.com/1.1/users/lookup.json", args)
       TwitterTypes.UsersLookup.Parse(res)
+
+  type Friendships = 
+    static member Show(ctx, ?sourceId:int64, ?targetId:int64) = 
+      let args = 
+        [ optional "source_id" sourceId; optional "target_id" targetId ] |> makeParams
+      let res = Twitter.RequestRawData(ctx, "https://api.twitter.com/1.1/friendships/show.json", args)
+      TwitterTypes.FriendshipShow.Parse(res)
+      

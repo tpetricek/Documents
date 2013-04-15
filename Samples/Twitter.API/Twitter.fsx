@@ -28,7 +28,7 @@ let connector = Twitter.Authenticate(key, secret, web.Navigate)
 // NOTE: Run all code up to this point. A window should appear. You can then
 // login to twitter and you'll get a pin code that you need to copy and
 // paste as an argument to the 'Connect' method below:
-let twitter = connector.Connect("3253143")
+let twitter = connector.Connect("3174133")
 
 // Login: 'fsharpd'
 // Password: 'fsharp123'
@@ -61,7 +61,7 @@ sample.Stop()
 // Display live search data 
 web.Output.StartList()
 
-let search = Twitter.Streaming.FilterTweets(twitter, ["#childhoodfears"])
+let search = Twitter.Streaming.FilterTweets(twitter, ["boston"])
 search.TweetReceived |> Observable.guiSubscribe (fun status ->
     match status.Text, status.User with
     | Some text, Some user ->
@@ -70,22 +70,34 @@ search.TweetReceived |> Observable.guiSubscribe (fun status ->
 search.Start()
 search.Stop()
 
-// Get list of friend IDs
+// Get a list of friends (followed people) and followers
 let friends = Twitter.Followers.FriendsIds(twitter)
-friends.Ids 
+let followers = Twitter.Followers.FollowerIds(twitter)
+friends.Ids |> Seq.length
+followers.Ids |> Seq.length
 
 // Get details about firends (up to 100)
 let friendInfos = Twitter.Users.Lookup(twitter, friends.Ids |> Seq.take 100)
 for friend in friendInfos do
-  printfn "%s (@%s)" friend.Name friend.ScreenName
+  printfn "%s (@%s)\t\t%d" friend.Name friend.ScreenName friend.Id
 
+// Get friends list for a specified user (@dsyme)
+let friends2 = Twitter.Followers.FriendsIds(twitter, userId=25663453L)
+friends2.Ids |> Seq.length
 
+// Get information about connections between @dsyme and @tomaspetricek
+let fs = Twitter.Friendships.Show(twitter, 25663453L, 18388966L)
+fs.Relationship.Source.ScreenName
+fs.Relationship.Target.ScreenName
 
+// Search recent tweets with the #fsharp tag
+let fsharp = Twitter.Search.Tweets(twitter, "fsharp", count=100)
+for status in fsharp.Statuses do
+  printfn "@%s: %s" status.User.ScreenName status.Text
 
 
 (*
 For testing purposes, call other things...
-
 
 Twitter.RequestRawData(twitter, "https://api.twitter.com/1.1/search/tweets.json", ["q", "fsharp"])
 Twitter.RequestRawData(twitter, "https://api.twitter.com/1.1/followers/ids.json")
