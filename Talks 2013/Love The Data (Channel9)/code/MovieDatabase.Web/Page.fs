@@ -30,7 +30,8 @@ let main() =
   
   let showDetails (id:int) = async {
     let! movie = db.Movie.AsyncGetMovie(id.ToString())
-    jQuery?dialogOverview.text(movie.Overview) |> ignore 
+    let dlg = jQuery?dialogOverview
+    dlg.text(movie.Overview) |> ignore 
     jQuery?dialogTitle.text(movie.Title) |> ignore
     jQuery?dialogImage.attr("src", root + movie.PosterPath) |> ignore
   
