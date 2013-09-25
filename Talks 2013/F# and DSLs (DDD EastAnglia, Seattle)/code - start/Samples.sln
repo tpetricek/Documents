@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Functional3D", "Functional3D\Functional3D.fsproj", "{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Classifiers", "3 Classifiers", "{9020E4E5-A368-477D-9DD8-98D97AF8C71C}"
+	ProjectSection(SolutionItems) = preProject
+		Classifiers\Classifiers.fsx = Classifiers\Classifiers.fsx
+		Classifiers\Demo.fsx = Classifiers\Demo.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Functional 3D", "1 Functional 3D", "{97B3B763-2B9B-4A47-9BD7-0729E13D3CE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Stocks", "2 Stocks", "{D82A2C1B-B747-4B47-A69F-519E1CA3F2F4}"
+	ProjectSection(SolutionItems) = preProject
+		Stocks\1 Options.fsx = Stocks\1 Options.fsx
+		Stocks\2 Options DSL.fsx = Stocks\2 Options DSL.fsx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}.Debug|x86.ActiveCfg = Debug|x86
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}.Debug|x86.Build.0 = Debug|x86
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}.Release|Any CPU.ActiveCfg = Release|x86
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}.Release|x86.ActiveCfg = Release|x86
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2D31FB7-43B1-4CE9-AFB3-A785FB067CDC} = {97B3B763-2B9B-4A47-9BD7-0729E13D3CE4}
+	EndGlobalSection
+EndGlobal
