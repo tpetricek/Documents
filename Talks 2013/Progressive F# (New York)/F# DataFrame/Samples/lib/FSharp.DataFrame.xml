@@ -1,0 +1,2934 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharp.DataFrame</name></assembly>
+<members>
+<member name="T:AssemblyInfo">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Boundary">
+<summary>
+ Represents boundary behaviour for operations such as floating window. The type
+ specifies whether incomplete windows (of smaller than required length) should be
+ produced at the beginning (`AtBeginning`) or at the end (`AtEnding`) or
+ skipped (`Skip`). For chunking, combinations are allowed too - to skip incomplete
+ chunk at the beginning, use `Boundary.Skip ||| Boundary.AtBeginning`.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.DataSegmentKind">
+<summary>
+ Represents a kind of `DataSegment&lt;T&gt;`. See that type for more information.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.DataFrame.DataSegment`1.Kind">
+<summary>
+ Return the kind of this segment
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.DataSegment`1.Data">
+<summary>
+ Returns the data associated with the segment
+ (for boundary segment, this may be smaller than the required window size)
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.DataSegment`1">
+<summary>
+ Represents a segment of a series or sequence. The value is returned from 
+ various functions that aggregate data into chunks or floating windows. The 
+ `Complete` case represents complete segment (e.g. of the specified size) and
+ `Boundary` represents segment at the boundary (e.g. smaller than the required
+ size). For example (using internal `windowed` function):
+
+
+     Seq.windowedWithBounds 3 Boundary.AtBeginning [ 1; 2; 3; 4 ] |&gt; Array.ofSeq = 
+       [| DataSegment(Incomplete, [| 1 |])
+          DataSegment(Incomplete, [| 1; 2 |])
+          DataSegment(Complete [| 1; 2; 3 |])
+          DataSegment(Complete [| 2; 3; 4 |]) |]
+
+ If you do not need to distinguish the two cases, you can use the `Data` property
+ to get the array representing the segment data.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Direction">
+<summary>
+ Specifies in which direction should we look when performing operations such as
+ `Series.Pairwise`. For example consider:
+
+     let abc = Series.ofObservations [ 1 =&gt; &quot;a&quot;; 2 =&gt; &quot;b&quot;; 3 =&gt; &quot;c&quot; ]
+
+     // When looking forward, observations have key of the first element
+     abc.Pairwise(direction=Direction.Forward) = 
+       Series.ofObservations [ 1 =&gt; (&quot;a&quot;, &quot;b&quot;); 2 =&gt; (&quot;b&quot;, &quot;c&quot;) ]
+
+     // When looking backward, observations have key of the second element
+     abc.Pairwise(direction=Direction.Backward) = 
+       Series.ofObservations [ 2 =&gt; (&quot;a&quot;, &quot;b&quot;); 3 =&gt; (&quot;b&quot;, &quot;c&quot;) ]
+
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Frame.ReadCsv(System.String,System.Boolean,System.Int32,System.String,System.String,System.String)">
+<summary>
+ Load data frame from a CSV file. The operation automatically reads column names from the 
+ CSV file (if they are present) and infers the type of values for each column. Columns
+ of primitive types (`int`, `float`, etc.) are converted to the right type. Columns of other
+ types (such as dates) are not converted automatically.
+
+ Parameters:
+  * `location` - Specifies a file name or an web location of the resource.
+  * `skipTypeInference` - Specifies whether the method should skip inferring types
+    of columns automatically (when set to `true` you need to provide explicit `schema`)
+  * `inferRows` - If `inferTypes=true`, this parameter specifies the number of
+    rows to use for type inference. The default value is 0, meaninig all rows.
+  * `schema` - A string that specifies CSV schema. See the documentation for 
+    information about the schema format.
+  * `separators` - A string that specifies one or more (single character) separators
+    that are used to separate columns in the CSV file. Use for example `&quot;;&quot;` to 
+    parse semicolon separated files.
+  * `culture` - Specifies the name of the culture that is used when parsing 
+    values in the CSV file (such as `&quot;en-US&quot;`). The default is invariant culture. 
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Frame.FromRows``3(System.Collections.Generic.IEnumerable{``2})">
+<summary>
+ Creates a data frame with ordinal Integer index from a sequence of rows.
+ The column indices of individual rows are unioned, so if a row has fewer
+ columns, it will be successfully added, but there will be missing values.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.FrameExtensions.Where``2(FSharp.DataFrame.Frame{``0,``1},System.Func{System.Collections.Generic.KeyValuePair{``0,FSharp.DataFrame.ObjectSeries{``1}},System.Boolean})">
+<summary>
+ Filters frame rows using the specified condtion. Returns a new data frame
+ that contains rows for which the provided function returned false. The function
+ is called with `KeyValuePair` containing the row key as the `Key` and `Value`
+ gives access to the row series.
+
+ Parameters:
+  * `frame` - A data frame to invoke the filtering function on.
+  * `condition` - A delegate that specifies the filtering condition.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.FrameOperations.Register">
+<summary>
+ Called by the static constructor of a Series - do not rename or move
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.FrameOperations">
+<summary>
+ A type that enables recursive reference between series and frame
+ (series needs frame&apos;s outer join when applying binary operations)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="F:FSharp.DataFrame.FSharp.DataFrame.Frame`2.vectorBuilder">
+<summary>
+ Vector builder
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Frame`2">
+<summary>
+ A frame contains one Index, with multiple Vecs
+ (because this is dynamic, we need to store them as IVec)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.DataFrame.IVector.SuppressPrinting">
+<summary>
+ When `true`, the formatter in F# Interactive will not attempt to evaluate the
+ vector to print it. This is useful when the vector contains lazily loaded data.
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.IVector.ElementType">
+<summary>
+ Returns the type of elements stored in the current vector as `System.Type`.
+ This member is mainly used for internal purposes (to invoke a generic function
+ represented by `VectorCallSite1&lt;R&gt;` with the typed version of the current 
+ vector as an argument.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.IVector.GetObject(FSharp.DataFrame.Addressing.Address)">
+<summary>
+ Return value stored in the vector at a specified address. This is simply an
+ untyped version of `GetValue` method on a typed vector.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.IVector">
+<summary>
+ Represents an (untyped) vector that stores some values and provides access
+ to the values via a generic address. This type should be only used directly when
+ extending the DataFrame library and adding a new way of storing or loading data.
+ To allow invocation via Reflection, the vector exposes type of elements as `System.Type`.
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.IVector`1.Data">
+<summary>
+ Returns all data of the vector in one of the supported formats. Depending
+ on the vector, data may be returned as a continuous block of memory using
+ `IReadOnlyList&lt;T&gt;` or as a lazy sequence `seq&lt;T&gt;`.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.IVector`1.SelectMissing``1(Microsoft.FSharp.Core.FSharpFunc{FSharp.DataFrame.OptionalValue{`0},FSharp.DataFrame.OptionalValue{``0}})">
+<summary>
+ Apply the specified function to all values stored in the vector and return
+ a new vector (not necessarily of the same representation) with the results.
+ The function handles missing values - it is called with optional values and
+ may return a missing value as a result of the transformation.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.IVector`1.Select``1(Microsoft.FSharp.Core.FSharpFunc{`0,``0})">
+<summary>
+ Apply the specified function to all values stored in the vector and return
+ a new vector (not necessarily of the same representation) with the results.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.IVector`1.GetValue(FSharp.DataFrame.Addressing.Address)">
+<summary>
+ Returns value stored in the vector at a specified address. 
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.IVector`1">
+<summary>
+ A generic, typed vector. Represents mapping from addresses to values of type `T`. 
+ The vector provides a minimal interface that is required by series and can be
+ implemented in a number of ways to provide vector backed by database or an
+ alternative representation of data.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.DataFrame.OptionalValue`1.ValueOrDefault">
+<summary>
+ Returns the value stored in the current `OptionalValue&lt;T&gt;` or 
+ the default value of the type `T` when a value is not present.
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.OptionalValue`1.Value">
+<summary>
+ Returns the value stored in the current `OptionalValue&lt;T&gt;`. 
+ Exceptions:
+   `InvalidOperationException` - Thrown when `HasValue` is `false`.
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.OptionalValue`1.Missing">
+<summary>
+ Returns a new instance of `OptionalValue&lt;T&gt;` that does not contain a value.
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.OptionalValue`1.HasValue">
+<summary>
+ Gets a value indicating whether the current `OptionalValue&lt;T&gt;` has a value
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.OptionalValue`1.ToString">
+<summary>
+ Prints the value or &quot;&lt;null&gt;&quot; when the value is present, but is `null`
+ or &quot;&lt;missing&gt;&quot; when the value is not present (`HasValue = false`).
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.OptionalValue`1.#ctor(`0)">
+<summary>
+ Creates a new instance of `OptionalValue&lt;T&gt;` that contains  
+ the specified `T` value .
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.OptionalValue`1">
+<summary>
+ Value type that represents a potentially missing value. This is similar to 
+ `System.Nullable&lt;T&gt;`, but does not restrict the contained value to be a value
+ type, so it can be used for storing values of any types. When obtained from
+ `DataFrame&lt;R, C&gt;` or `Series&lt;K, T&gt;`, the `Value` will never be `Double.NaN` or `null`
+ (but this is not, in general, checked when constructing the value).
+
+ The type is only used in C#-friendly API. F# operations generally use expose
+ standard F# `option&lt;T&gt;` type instead. However, there the `OptionalValue` module
+ contains helper functions for using this type from F# as well as `Missing` and
+ `Present` active patterns.
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.Series.vectorBuilder">
+<summary>
+ Vector &amp; index builders
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.SeriesExtensions.GetObservations``2(FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Return observations with available values. The operation skips over 
+ all keys with missing values (such as values created from `null`,
+ `Double.NaN`, or those that are missing due to outer join etc.).
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.SeriesExtensions.GetAllObservations``2(FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Returns all keys from the sequence, together with the associated (optional)
+ values. The values are returned using the `OptionalValue&lt;T&gt;` struct which
+ provides `HasValue` for testing if the value is available.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.SeriesExtensions.FillMissing``4(FSharp.DataFrame.Series{``0,``1},System.Func{``2,``3})">
+<summary>
+ Fill missing values in the series using the specified function.
+
+ Parameters:
+  * `filler` - A `Func` delegate that calculates the filling value
+    based on the key in the series.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.SeriesExtensions.FillMissing``4(FSharp.DataFrame.Series{``0,``1},FSharp.DataFrame.Direction)">
+<summary>
+ Fill missing values in the series with the nearest available value
+ (using the specified direction). The default direction is `Direction.Backward`.
+ Note that the series may still contain missing values after call to this 
+ function. This operation can only be used on ordered series. 
+
+ Example:
+
+     let sample = Series.ofValues [ Double.NaN; 1.0; Double.NaN; 3.0 ]
+
+     // Returns a series consisting of [1; 1; 3; 3]
+     sample.FillMissing(Direction.Backward)
+
+     // Returns a series consisting of [&lt;missing&gt;; 1; 1; 3]
+     sample.FillMissing(Direction.Forward)
+
+ Parameters:
+  * `direction` - Specifies the direction used when searching for 
+    the nearest available value. `Backward` means that we want to
+    look for the first value with a smaller key while `Forward` searches
+    for the nearest greater key.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.SeriesExtensions.CountValues``2(FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Returns the total number of values in the specified series. This excludes
+ missing values or not available values (such as values created from `null`,
+ `Double.NaN`, or those that are missing due to outer join etc.).
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.SeriesExtensions.CountKeys``2(FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Returns the total number of keys in the specified series. This returns
+ the total length of the series, including keys for which there is no 
+ value available.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.DataFrame.Series`2.Vector">
+<summary>
+ Returns the vector associated with this series. This member should not generally
+ be accessed directly, because all functionality is exposed through series operations.
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.Series`2.Values">
+<summary>
+ Returns a collection of values that are available in the series data.
+ Note that the length of this sequence does not match the `Keys` sequence
+ if there are missing values. To get matching sequence, use the `Observations`
+ property or `Series.observation`.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.DataFrame.Series`2.Observations">
+<summary>
+ Returns a collection of observations that form this series. Note that this property
+ skips over all missing (or NaN) values. Observations are returned as `KeyValuePair&lt;K, V&gt;` 
+ objects. For an F# alternative that uses tuples, see `Series.observations`.
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.Series`2.Keys">
+<summary>
+ Returns a collection of keys that are defined by the index of this series.
+ Note that the length of this sequence does not match the `Values` sequence
+ if there are missing values. To get matching sequence, use the `Observations`
+ property or `Series.observation`.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.DataFrame.Series`2.Index">
+<summary>
+ Returns the index associated with this series. This member should not generally
+ be accessed directly, because all functionality is exposed through series operations.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Series`2.TryGetObservation(`0)">
+<summary>
+ Attempts to get a value at the specified `key`
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Series`2.GetItems(System.Collections.Generic.IEnumerable{`0},FSharp.DataFrame.Lookup)">
+<summary>
+ Returns a new series with an index containing the specified keys.
+ When the key is not found in the current series, the newly returned
+ series will contain a missing value. When the second parameter is not
+ specified, the keys have to exactly match the keys in the current series
+ (`Lookup.Exact`).
+
+ Parameters:
+  * `keys` - A collection of keys in the current series.
+  * `lookup` - Specifies the lookup behavior when searching for keys in 
+    the current series. `Lookup.NearestGreater` and `Lookup.NearestSmaller`
+    can be used when the current series is ordered.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Series`2.GetItems(System.Collections.Generic.IEnumerable{`0})">
+<summary>
+ Returns a new series with an index containing the specified keys.
+ When the key is not found in the current series, the newly returned
+ series will contain a missing value. When the second parameter is not
+ specified, the keys have to exactly match the keys in the current series
+ (`Lookup.Exact`).
+
+ Parameters:
+  * `keys` - A collection of keys in the current series.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Series`2">
+<summary>
+ A series contains one Index and one Vec
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Vector.CreateMissing``1(System.Collections.Generic.IEnumerable{System.Nullable{``0}})">
+<summary>
+ Creates a vector that stores the specified data in an array.
+ Values such as `null` and `Double.NaN` are turned into missing values.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Vector.CreateMissing``1(System.Collections.Generic.IEnumerable{FSharp.DataFrame.OptionalValue{``0}})">
+<summary>
+ Creates a vector that stores the specified data in an array.
+ Values such as `null` and `Double.NaN` are turned into missing values.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Vector.Create``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Creates a vector that stores the specified data in an array.
+ Values such as `null` and `Double.NaN` are turned into missing values.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Vector.Create``1(``0[])">
+<summary>
+ Creates a vector that stores the specified data in an array.
+ Values such as `null` and `Double.NaN` are turned into missing values.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vector">
+<summary>
+ Type that provides access to creating vectors (represented as arrays)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Addressing.|IntAddress|(FSharp.DataFrame.Addressing.Address)">
+<summary>
+ ArrayVectors assume that the address is an integer
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Addressing.AddressModule">
+
+</member>
+<member name="T:FSharp.DataFrame.Addressing">
+<summary>
+ An `Address` value is used as an interface between vectors and indices. The index maps
+ keys of various types to address, which is then used to get a value from the vector.
+ 
+ In the most common case, the address will be `int` (and can represent index in an array),
+ but it is possible to imagine other addresses - `int64` could be used with arrays of 
+ arrays (to handle very large data). A lazily loaded vector might use something completely
+ different (perhaps a date?). In principle this should be generic, but that is hard to do - 
+ we want something like:
+
+     Series.Create : \forall &apos;TKey, &apos;TValue. \exists &apos;TAddress. 
+       Index&lt;&apos;TKey, &apos;TAddress&gt; * Vector&lt;&apos;TAddress, &apos;TValue&gt; -&gt; Series&lt;&apos;TKey, &apos;TValue&gt;
+
+ The .NET encoding of this is a bit ugly. So instead, we just have `Address` which currently
+ supports `Int` and `Int64`, but we keep all operations in the `Address` module, so that
+ this can be easily extended.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.DataSegment.GetKind``1(FSharp.DataFrame.DataSegment{``0})">
+<summary>
+ Returns the kind property of the specified `DataSegment&lt;T&gt;`
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.DataSegment.GetData``1(FSharp.DataFrame.DataSegment{``0})">
+<summary>
+ Returns the data property of the specified `DataSegment&lt;T&gt;`
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.DataSegment.|Complete|Incomplete|``1(FSharp.DataFrame.DataSegment{``0})">
+<summary>
+ Complete active pattern that makes it possible to write functions that behave 
+ differently for complete and incomplete segments. For example, the following 
+ returns zero for incomplete segments:
+
+     let sumSegmentOrZero = function
+       | DataSegment.Complete(value) -&gt; Series.sum value
+       | DataSegment.Incomplete _ -&gt; 0.0
+
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.DataSegment.|Any|``1(FSharp.DataFrame.DataSegment{``0})">
+<summary>
+ A complete active pattern that extracts the kind and data from a `DataSegment`
+ value. This makes it easier to write functions that only need data:
+
+    let sumAny = function DataSegment.Any(_, data) -&gt; Series.sum data
+
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.DataSegment">
+<summary>
+ Provides helper functions and active patterns for working with `DataSegment` values
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Delayed.DelayedIndexBuilder">
+<summary>
+ Delayed index builder - this is where interesting things happen. Most operations
+ are still delegated to LinearIndexBuilder, but the `GetRange` method looks at the
+ index and if it is DelayedIndex, then it uses the `Source` to build a new `Source`
+ with a restricted range.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Delayed.DelayedIndexFunction`2">
+<summary>
+ A polymorphic function that is passed to IDelayedIndex.Invoke
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Delayed.IDelayedIndex`1">
+<summary>
+ In the DelayedIndexBuilder, we do not know the type of values, so this 
+ is a less generic interface that gives us a way for accessing it...
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Delayed.DelayedIndex`2">
+<summary>
+ Delayed index that is lnked to a DelayedSource specified during construction
+ (This simply delegates all operations to the &apos;source.Keys&apos; index)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Delayed.DelayedVector`2">
+<summary>
+ A delayed vector that is linked to a DelayedSource specified during construction
+ (This simply delegates all operations to the &apos;source.Values&apos; vector)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Delayed.DelayedSource`2">
+<summary>
+ This type represents data source for constructing delayed series. To construct
+ a delayed series, use `DelayedSeries.Create` (this creates index and vector 
+ linked to this `DelayedSource`).
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Delayed.Ranges.flattenRanges``1(``0,``0,System.Collections.Generic.IComparer{``0},FSharp.DataFrame.Delayed.Ranges.Ranges{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,``0}})">
+<summary>
+ Returns an ordered sequence of exclusive ranges
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Delayed.Ranges.contains``1(System.Collections.Generic.IComparer{``0},``0,FSharp.DataFrame.Delayed.Ranges.Ranges{``0})">
+<summary>
+ Test if a range contains the specified value
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Delayed.Ranges">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.FSharpFrameExtensions.Frame.ofRowsOrdinal.Static``3(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Creates a data frame with ordinal Integer index from a sequence of rows.
+ The column indices of individual rows are unioned, so if a row has fewer
+ columns, it will be successfully added, but there will be missing values.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FSharpFrameExtensions.Frame.readCsv.Static(System.String,Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Load data frame from a CSV file. The operation automatically reads column names from the 
+ CSV file (if they are present) and infers the type of values for each column. Columns
+ of primitive types (`int`, `float`, etc.) are converted to the right type. Columns of other
+ types (such as dates) are not converted automatically.
+
+ Parameters:
+  * `location` - Specifies a file name or an web location of the resource.
+  * `inferTypes` - Specifies whether the method should attempt to infer types
+    of columns automatically (set this to `false` if you want to specify schema)
+  * `inferRows` - If `inferTypes=true`, this parameter specifies the number of
+    rows to use for type inference. The default value is 0, meaninig all rows.
+  * `schema` - A string that specifies CSV schema. See the documentation for 
+    information about the schema format.
+  * `separators` - A string that specifies one or more (single character) separators
+    that are used to separate columns in the CSV file. Use for example `&quot;;&quot;` to 
+    parse semicolon separated files.
+  * `culture` - Specifies the name of the culture that is used when parsing 
+    values in the CSV file (such as `&quot;en-US&quot;`). The default is invariant culture. 
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FSharpFrameExtensions.op_Dollar``3(Microsoft.FSharp.Core.FSharpFunc{``0,``1},FSharp.DataFrame.Series{``2,``0})">
+<summary>
+ Custom operator that can be used for applying fuction to all elements of 
+ a series. This provides a nicer syntactic sugar for the `Series.mapValues` 
+ function. For example:
+
+     // Given a float series and a function on floats
+     let s1 = Series.ofValues [ 1.0 .. 10.0 ]
+     let adjust v = max 10.0 v
+
+     // Apply &quot;adjust (v + v)&quot; to all elements
+     adjust $ (s1 + s1)
+
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.FSharpFrameExtensions.op_EqualsGreater``2(``0,``1)">
+<summary>
+ Custom operator that can be used when constructing series from observations
+ or frames from key-row or key-column pairs. The operator simply returns a 
+ tuple, but it provides a more convenient syntax. For example:
+
+     Series.ofObservations [ &quot;k1&quot; =&gt; 1; &quot;k2&quot; =&gt; 15 ]
+
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.FSharpFrameExtensions">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.FSharpSeriesExtensions">
+
+</member>
+<member name="M:FSharp.DataFrame.FSharpVectorExtensions.Vector.ofValues``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Creates a vector that stores the specified data in an array.
+ Values such as `null` and `Double.NaN` are turned into missing values.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FSharpVectorExtensions.Vector.ofValues``1(``0[])">
+<summary>
+ Creates a vector that stores the specified data in an array.
+ Values such as `null` and `Double.NaN` are turned into missing values.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FSharpVectorExtensions.Vector.ofOptionalValues``1(System.Collections.Generic.IEnumerable{FSharp.DataFrame.OptionalValue{``0}})">
+<summary>
+ Missing values can be specified explicitly as `OptionalValue.Missing`, but 
+ other values such as `null` and `Double.NaN` are turned into missing values too.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FSharpVectorExtensions.Vector.ofOptionalValues``1(System.Collections.Generic.IEnumerable{Microsoft.FSharp.Core.FSharpOption{``0}})">
+<summary>
+ Creates a vector that stores the specified data in an array.
+ Missing values can be specified explicitly as `None`, but other values 
+ such as `null` and `Double.NaN` are turned into missing values too.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.FSharpVectorExtensions.Vector">
+<summary>
+ Type that provides a simple access to creating vectors represented
+ using the built-in `ArrayVector` type that stores the data in a 
+ continuous block of memory.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.FSharpVectorExtensions">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.WithMissing``3(``0,FSharp.DataFrame.Frame{``1,``2})">
+<summary>
+ Fills all missing values in all columns &amp; rows of the data frame with the
+ specified value (this can only be used when the data is homogeneous)
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.JoinAlign``2(FSharp.DataFrame.JoinKind,FSharp.DataFrame.Lookup,FSharp.DataFrame.Frame{``0,``1},FSharp.DataFrame.Frame{``0,``1})">
+<summary>
+ Join two frames using the specified kind of join and 
+ the specified lookup semantics.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.Join``2(FSharp.DataFrame.JoinKind,FSharp.DataFrame.Frame{``0,``1},FSharp.DataFrame.Frame{``0,``1})">
+<summary>
+ Join two frames using the specified kind of join. This function uses
+ exact matching on keys. If you want to align nearest smaller or greater
+ keys in left or outer join, use `joinAlign`. 
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.WithColumnKeys``3(System.Collections.Generic.IEnumerable{``0},FSharp.DataFrame.Frame{``1,``2})">
+<summary>
+ Creates a new data frame that uses the specified list of keys as a new column index.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.WithRowIndex``3(FSharp.DataFrame.Column{``0},FSharp.DataFrame.Frame{``1,``2})">
+<summary>
+ Creates a new data frame that uses the specified column as an row index.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.OrderRows``2(FSharp.DataFrame.Frame{``0,``1})">
+<summary>
+ Returns a data frame that contains the same data as the argument, 
+ but whose rows are ordered series. This allows using inexact lookup
+ for rows (e.g. using `lookupRow`) or inexact left/right joins.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.LookupRow``3(``0,FSharp.DataFrame.Lookup,FSharp.DataFrame.Frame{``0,``1})">
+<summary>
+ Returns a specified row from a data frame. If the data frame has 
+ ordered row index, the lookup semantics can be used to get row with 
+ nearest greater/smaller key. For exact semantics, you can use `getSeries`.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.LookupSeries``3(``0,FSharp.DataFrame.Lookup,FSharp.DataFrame.Frame{``1,``0})">
+<summary>
+ Returns a specified series (column) from a data frame. If the data frame has 
+ ordered column index, the lookup semantics can be used to get series
+ with nearest greater/smaller key. For exact semantics, you can use `getSeries`.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.GetRow``3(``0,FSharp.DataFrame.Frame{``0,``1})">
+<summary>
+ Returns a specified row from a data frame. This 
+ function uses exact matching semantics. Use `lookupRow` if you
+ want to use inexact matching (e.g. on dates)
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.GetSeries``3(``0,FSharp.DataFrame.Frame{``1,``0})">
+<summary>
+ Returns a specified series (column) from a data frame. This 
+ function uses exact matching semantics. Use `lookupSeries` if you
+ want to use inexact matching (e.g. on dates)
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.ReplaceSeries``3(``0,FSharp.DataFrame.Series{``1,``2},FSharp.DataFrame.Frame{``1,``0})">
+<summary>
+ Creates a new data frame where the specified column is repalced
+ with a new series. (If the series does not exist, only the new
+ series is added.)
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.DropSeries``2(``0,FSharp.DataFrame.Frame{``1,``0})">
+<summary>
+ Creates a new data frame that contains all data from the original
+ data frame without the specified series (column).
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.RowsDense``2(FSharp.DataFrame.Frame{``0,``1})">
+<summary>
+ Returns the rows of the data frame as a series (indexed by 
+ the row keys of the source frame) containing _series_ representing
+ individual row of the frame. This is similar to `Rows`, but it
+ skips rows that contain missing value in _any_ column.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.ColumnsDense``2(FSharp.DataFrame.Frame{``0,``1})">
+<summary>
+ Returns the columns of the data frame as a series (indexed by 
+ the column keys of the source frame) containing _series_ representing
+ individual columns of the frame. This is similar to `Columns`, but it
+ skips columns that contain missing value in _any_ row.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.Rows``2(FSharp.DataFrame.Frame{``0,``1})">
+<summary>
+ Returns the rows of the data frame as a series (indexed by 
+ the row keys of the source frame) containing _series_ representing
+ individual row of the frame.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.Columns``2(FSharp.DataFrame.Frame{``0,``1})">
+<summary>
+ Returns the columns of the data frame as a series (indexed by 
+ the column keys of the source frame) containing _series_ representing
+ individual columns of the frame.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.Append``2(FSharp.DataFrame.Frame{``0,``1},FSharp.DataFrame.Frame{``0,``1})">
+<summary>
+ Append two data frames. The columns of the resulting data frame
+ will be the union of columns of the two data frames. The row keys
+ may overlap, but the values must not - if there is a value for a
+ certain column, at the same row index in both data frames, an exception
+ is thrown. 
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameModule.AddSeries``3(``0,FSharp.DataFrame.Series{``1,``2},FSharp.DataFrame.Frame{``1,``0})">
+<summary>
+ Creates a new data frame that contains all data from 
+ the original data frame, together with additional series.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.FrameModule">
+
+</member>
+<member name="M:FSharp.DataFrame.FrameUtils.readCsv(System.String,Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.String},System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Load data from a CSV file using F# Data API
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameUtils.fromColumns``3(FSharp.DataFrame.Series{``1,``2})">
+<summary>
+ Create data frame from a series of columns
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameUtils.fromRows``3(FSharp.DataFrame.Series{``0,``2})">
+<summary>
+ Create data frame from a series of rows
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameUtils.createRow``3(``0,FSharp.DataFrame.Series{``1,``2})">
+<summary>
+ Create data frame containing a single row
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.FrameUtils.createColumn``2(``0,FSharp.DataFrame.ISeries{``1})">
+<summary>
+ Create data frame containing a single column
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.FrameUtils">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Indices.BoundaryBehavior">
+<summary>
+ Specifies the boundary behavior of the `IIndexBuilder.GetRange` operation
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Indices.IIndexBuilder">
+<summary>
+ A builder represents various ways of constructing index
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Indices.IIndex`1">
+<summary>
+ An interface that represents index mapping keys of type &apos;T to locations
+ of address Address.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="F:FSharp.DataFrame.Indices.Linear.FSharp.DataFrame.Indices.Linear.LinearIndexBuilder.indexBuilder">
+<summary>
+ Instance of the index builder (specialized to Int32 addresses)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.DataFrame.Indices.Linear.LinearIndexBuilder.Instance">
+<summary>
+ Provides a global access to an instance of LinearIndexBuilder
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Indices.Linear.LinearIndexBuilder.FSharp-DataFrame-Indices-IIndexBuilder-Intersect``1(FSharp.DataFrame.Indices.IIndex{``0},FSharp.DataFrame.Indices.IIndex{``0},FSharp.DataFrame.Vectors.VectorConstruction,FSharp.DataFrame.Vectors.VectorConstruction)">
+<summary>
+ Intersect the index with another. For sorted indices, this is the same as
+ UnionWith, but we filter &amp; only return keys present in both sequences.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Indices.Linear.LinearIndexBuilder.FSharp-DataFrame-Indices-IIndexBuilder-GetRange``1(FSharp.DataFrame.Indices.IIndex{``0},Microsoft.FSharp.Core.FSharpOption{System.Tuple{``0,FSharp.DataFrame.Indices.BoundaryBehavior}},Microsoft.FSharp.Core.FSharpOption{System.Tuple{``0,FSharp.DataFrame.Indices.BoundaryBehavior}},FSharp.DataFrame.Vectors.VectorConstruction)">
+<summary>
+ Get a new index representing a sub-index of the current one
+ (together with a transformation that should be applied to a vector)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.DataFrame.Indices.Linear.LinearIndex`1.Range">
+<summary>
+ Returns the range used by the index
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.Indices.Linear.LinearIndex`1.Ordered">
+<summary>
+ Are the keys of the index ordered?
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.Indices.Linear.LinearIndex`1.Mappings">
+<summary>
+ Returns all mappings of the index (key -&gt; address) 
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Indices.Linear.LinearIndex`1.FSharp-DataFrame-Indices-IIndex`1-Lookup(`0,FSharp.DataFrame.Lookup,Microsoft.FSharp.Core.FSharpFunc{FSharp.DataFrame.Addressing.Address,System.Boolean})">
+<summary>
+ Get the address for the specified key.
+ The &apos;semantics&apos; specifies fancy lookup methods.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Indices.Linear.LinearIndex`1">
+<summary>
+ An index that maps &apos;K to offsets Address. The keys cannot be duplicated.
+ If a comparer is provided, then the index preserves the ordering of elements
+ (and it assumes that &apos;keys&apos; are already sorted).
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Internal.IFsiFormattable">
+<summary>
+ An interface implemented by types that support nice formatting for F# Interactive
+ (The `FSharp.DataFrame.fsx` file registers an FSI printer using this interface.)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.DataFrame.Internal.Formatting.EndItemCount">
+<summary>
+ Maximal number of items to be printed at the end of a series/frame
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.Internal.Formatting.StartItemCount">
+<summary>
+ Maximal number of items to be printed at the beginning of a series/frame
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Internal.Formatting">
+
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.alignWithoutOrdering``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}},System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})">
+<summary>
+ Align two unordered sequences of `Key * Address` pairs and produce a collection
+ that contains three-element tuples consisting of keys, optional address in the
+ first sequence &amp; optional address in the second sequence. (See also `alignWithOrdering`)
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.alignWithOrdering``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}},System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}},System.Collections.Generic.IComparer{``0})">
+<summary>
+ Align two ordered sequences of `Key * Address` pairs and produce a 
+ collection that contains three-element tuples consisting of: 
+
+   * ordered keys (from one or the ohter sequence)
+   * optional address of the key in the first sequence
+   * optional address of the key in the second sequence
+
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.isSorted``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IComparer{``0})">
+<summary>
+ Returns true if the specified sequence is sorted.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.chunkedWithBounds``1(System.Int32,FSharp.DataFrame.Boundary,System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Similar to `Seq.windowedWithBounds`, but generates non-overlapping chunks
+ rather than floating windows. See that function for detailed documentation.
+ The function may iterate over the sequence repeatedly.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.windowedWithBounds``1(System.Int32,FSharp.DataFrame.Boundary,System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ A version of `Seq.windowed` that allows specifying more complex boundary
+ behaviour. The `boundary` argument can specify one of the following options:
+ 
+  * `Boundary.Skip` - only full windows are returned (like `Seq.windowed`)
+  * `Boundary.AtBeginning` - incomplete windows (smaller than the required
+    size) are returned at the beginning.
+  * `Boundary.AtEnding` - incomplete windows are returned at the end.
+
+ The result is a sequence of `DataSegnebt&lt;T&gt;` values, which makes it 
+ easy to distinguish between complete and incomplete windows.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.chunkedWhile``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean}},System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Generate non-verlapping chunks from the input sequence. A chunk is started 
+ at the beginning and then immediately after the end of the previous chunk.
+ To find the end of the chunk, the function calls the provided argument `f` 
+ with the first and the last elements of the chunk as arguments. A chunk 
+ ends when `f` returns `false`.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.windowedWhile``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean}},System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Generate floating windows from the input sequence. New floating window is 
+ started for each element. To find the end of the window, the function calls
+ the provided argument `f` with the first and the last elements of the window
+ as arguments. A window ends when `f` returns `false`.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.startAndEnd``1(System.Int32,System.Int32,System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Given a sequence, returns `startCount` number of elements at the beginning 
+ of the sequence (wrapped in `Choice1Of3`) followed by one `Choice2Of2()` value
+ and then followed by `endCount` number of elements at the end of the sequence
+ wrapped in `Choice3Of3`. If the input is shorter than `startCount + endCount`,
+ then all values are returned and wrapped in `Choice1Of3`.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.getEnumerator``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Calls the `GetEnumerator` method. Simple function to guide type inference.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.lastFew``1(System.Int32,System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Returns the specified number of elements from the end of the sequence
+ Note that this needs to store the specified number of elements in memory
+ and it needs to iterate over the entire sequence.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.headOrNone``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ If the input is non empty, returns `Some(head)` where `head` is 
+ the first value. Otherwise, returns `None`.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.structuralHash``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Calculate hash code of a sequence, based on the values
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Seq.structuralEquals``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Comapre two sequences using the `Equals` method. Returns true
+ when all their elements are equal and they have the same size.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Internal.Seq">
+<summary>
+ This module contains additional functions for working with sequences. 
+ `FSharp.DataFrame.Internals` is opened, it extends the standard `Seq` module.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Array.binarySearchNearestSmaller``1(``0,System.Collections.Generic.IComparer{``0},``0[])">
+<summary>
+ Returns the index of &apos;key&apos; or the index of immediately preceeding value.
+ If the specified key is smaller than all keys in the array, None is returned.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.Array.binarySearchNearestGreater``1(``0,System.Collections.Generic.IComparer{``0},``0[])">
+<summary>
+ Returns the index of &apos;key&apos; or the index of immediately following value.
+ If the specified key is greater than all keys in the array, None is returned.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Internal.Array.dropRange``1(System.Int32,System.Int32,``0[])">
+<summary>
+ Drop a specified range from a given array. The operation is inclusive on
+ both sides. Given [ 1; 2; 3; 4 ] and indices (1, 2), the result is [ 1; 4 ]
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Internal.Array">
+<summary>
+ This module contains additional functions for working with arrays. 
+ `FSharp.DataFrame.Internals` is opened, it extends the standard `Array` module.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.IReadOnlyList.averageOptional``2(System.Collections.Generic.IReadOnlyList{FSharp.DataFrame.OptionalValue{``0}})">
+<summary>
+ Sum elements of the IReadOnlyList
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.IReadOnlyList.sumOptional``2(System.Collections.Generic.IReadOnlyList{FSharp.DataFrame.OptionalValue{``0}})">
+<summary>
+ Sum elements of the IReadOnlyList
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.IReadOnlyList.average``2(System.Collections.Generic.IReadOnlyList{``0})">
+<summary>
+ Sum elements of the IReadOnlyList
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.IReadOnlyList.sum``2(System.Collections.Generic.IReadOnlyList{``0})">
+<summary>
+ Sum elements of the IReadOnlyList
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.IReadOnlyList.ofSeq``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Converts a lazy sequence to fully evaluated IReadOnlyList
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Internal.IReadOnlyList.ofArray``1(``0[])">
+<summary>
+ Converts an array to IReadOnlyList. In F# 3.0, the language does not
+ know that array implements IReadOnlyList, so this is just boxing/unboxing.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Internal.IReadOnlyList">
+<summary>
+ Provides helper functions for working with `IReadOnlyList&lt;T&gt;` similar to those 
+ in the `Array` module. Most importantly, F# 3.0 does not know that array implements
+ `IReadOnlyList&lt;T&gt;`, so the `ofArray` function performs boxing &amp; unboxing to convert.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Internal.MissingValues">
+<summary>
+ Utility functions for identifying missing values. The `isNA` function 
+ can be used to test whether a value represents a missing value - this includes
+ the `null` value, `Nullable&lt;T&gt;` value with `HasValue = false` and 
+ `Single.NaN` as well as `Double.NaN`.
+
+ The functions in this module are not intended to be called directly.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.OptionalValueModule.|Missing|Present|``1(FSharp.DataFrame.OptionalValue{``0})">
+<summary>
+ Complete active pattern that can be used to pattern match on `OptionalValue&lt;T&gt;`.
+ For example:
+
+     let optVal = OptionalValue(42)
+     match optVal with
+     | OptionalValue.Missing -&gt; printfn &quot;Empty&quot;
+     | OptionalValue.Present(v) -&gt; printfn &quot;Contains %d&quot; v
+
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.OptionalValueModule.ofOption``1(Microsoft.FSharp.Core.FSharpOption{``0})">
+<summary>
+ Turns a standard F# `option&lt;T&gt;` value into a corresponding `OptionalValue&lt;T&gt;`
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.OptionalValueModule.asOption``1(FSharp.DataFrame.OptionalValue{``0})">
+<summary>
+ Turns the `OptionalValue&lt;T&gt;` into a corresponding standard F# `option&lt;T&gt;` value
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.OptionalValueModule.OfNullable``1(System.Nullable{``0})">
+<summary>
+ Creates `OptionalValue&lt;T&gt;` from a .NET `Nullable&lt;T&gt;` type.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.OptionalValueModule.OfTuple``1(System.Boolean,``0)">
+<summary>
+ Creates `OptionalValue&lt;T&gt;` from a tuple of type `bool * &apos;T`. This function
+ can be used with .NET methods that use `out` arguments. For example:
+
+     Int32.TryParse(&quot;42&quot;) |&gt; OptionalValue.ofTuple
+
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.OptionalValueModule.Map``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},FSharp.DataFrame.OptionalValue{``0})">
+<summary>
+ If the `OptionalValue&lt;T&gt;` does not contain a value, then returns a new 
+ `OptionalValue&lt;R&gt;.Empty`. Otherwise, returns the result `OptionalValue&lt;R&gt;`
+ containing the result of applying the function `f` to the value contained 
+ in the provided optional value.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.OptionalValueModule.Bind``2(Microsoft.FSharp.Core.FSharpFunc{``0,FSharp.DataFrame.OptionalValue{``1}},FSharp.DataFrame.OptionalValue{``0})">
+<summary>
+ If the `OptionalValue&lt;T&gt;` does not contain a value, then returns a new 
+ `OptionalValue&lt;R&gt;.Empty`. Otherwise, returns the result of applying the 
+ function `f` to the value contained in the provided optional value.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.OptionalValueModule">
+<summary>
+ Provides various helper functions for using the `OptionalValue&lt;T&gt;` type from F#
+ (The functions are similar to those in the standard `Option` module).
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Reflection">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.fillMissing``2(FSharp.DataFrame.Direction,FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Fill missing values in the series with the nearest available value
+ (using the specified direction). Note that the series may still contain
+ missing values after call to this function. This operation can only be
+ used on ordered series.
+
+ Example:
+
+     let sample = Series.ofValues [ Double.NaN; 1.0; Double.NaN; 3.0 ]
+
+     // Returns a series consisting of [1; 1; 3; 3]
+     sample |&gt; Series.fillMissing Direction.Backward
+
+     // Returns a series consisting of [&lt;missing&gt;; 1; 1; 3]
+     sample |&gt; Series.fillMissing Direction.Forward 
+
+ Parameters:
+  * `direction` - Specifies the direction used when searching for 
+    the nearest available value. `Backward` means that we want to
+    look for the first value with a smaller key while `Forward` searches
+    for the nearest greater key.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.fillMissingUsing``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Fill missing values in the series using the specified function.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.countKeys``2(FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Returns the total number of keys in the specified series. This returns
+ the total length of the series, including keys for which there is no 
+ value available.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.countValues``2(FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Returns the total number of values in the specified series. This excludes
+ missing values or not available values (such as values created from `null`,
+ `Double.NaN`, or those that are missing due to outer join etc.).
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.get``2(``0,FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Get the value for the specified key.
+ Uses exact lookup semantics for key lookup - use `lookupAll` for more options
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.lookup``2(``0,FSharp.DataFrame.Lookup,FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Get the value for the specified key.
+ Use the specified lookup semantics - for exact matching, use `get`
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.getAll``2(System.Collections.Generic.IEnumerable{``0},FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Create a new series that contains values for all provided keys.
+ Uses exact lookup semantics for key lookup - use `lookupAll` for more options
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.lookupAll``2(System.Collections.Generic.IEnumerable{``0},FSharp.DataFrame.Lookup,FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Create a new series that contains values for all provided keys.
+ Use the specified lookup semantics - for exact matching, use `getAll`
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.observationsAll``2(FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Returns all keys from the sequence, together with the associated (optional) values. 
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.observations``2(FSharp.DataFrame.Series{``0,``1})">
+<summary>
+ Return observations with available values. The operation skips over 
+ all keys with missing values (such as values created from `null`,
+ `Double.NaN`, or those that are missing due to outer join etc.).
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.SeriesModule.StandardDeviation``1(FSharp.DataFrame.Series{``0,System.Double})">
+<summary>
+ If there are missing values, they are skipped over.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.SeriesModule">
+<summary>
+ Series module comment..
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.VectorExtensions.IVector`1.get_DataSequence``1(FSharp.DataFrame.IVector{``0})">
+<summary>
+ Returns the data of the vector as a lazy sequence. (This preserves the 
+ order of elements in the vector and so it also returns missing values.)
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.VectorExtensions">
+<summary>
+ Module with extensions for generic vector type
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.VectorHelpers.VectorValueTransform.RightIfAvailable">
+<summary>
+ A generic transformation that prefers the left value (if it is not missing)
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.VectorHelpers.VectorValueTransform.LeftOrRight">
+<summary>
+ A generic transformation that works when at most one value is defined
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.VectorHelpers.VectorValueTransform.LeftIfAvailable">
+<summary>
+ A generic transformation that prefers the left value (if it is not missing)
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.VectorHelpers.VectorValueTransform.Create``1(Microsoft.FSharp.Core.FSharpFunc{FSharp.DataFrame.OptionalValue{``0},Microsoft.FSharp.Core.FSharpFunc{FSharp.DataFrame.OptionalValue{``0},FSharp.DataFrame.OptionalValue{``0}}})">
+<summary>
+ Creates a transformation that applies the specified function on `&apos;T` values 
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.VectorHelpers.VectorValueTransform">
+<summary>
+ A type that implements common vector value transformations and 
+ a helper method for creating transformation on values of known types
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.VectorHelpers.VectorCallSite2`1">
+<summary>
+ Represents a generic function `\forall.&apos;T.(IVector&lt;&apos;T&gt; * IVector&lt;&apos;T&gt; -&gt; &apos;R)`. The function 
+ can be generically invoked on a pair of `IVector` values using `createTwoVectorDispatcher`
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.VectorHelpers.VectorCallSite1`1">
+<summary>
+ Represents a generic function `\forall.&apos;T.(IVector&lt;&apos;T&gt; -&gt; &apos;R)`. The function can be 
+ generically invoked on an argument of type `IVector` using `createVectorDispatcher`
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.VectorHelpers.ValueCallSite1`1">
+<summary>
+ Represents a generic function `\forall.&apos;T.(&apos;T -&gt; &apos;R)`. The function can be 
+ generically invoked on an argument of type `obj` using `createValueDispatcher`
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.VectorHelpers.createTwoVectorDispatcher``1(FSharp.DataFrame.VectorHelpers.VectorCallSite2{``0})">
+<summary>
+ Creates a function `IVector * IVector -&gt; &apos;R` that dynamically invokes to 
+ a generic `Invoke` method of the provided `VectorCallSite2&lt;&apos;R&gt;`
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.VectorHelpers.createVectorDispatcher``1(FSharp.DataFrame.VectorHelpers.VectorCallSite1{``0})">
+<summary>
+ Creates a function `IVector -&gt; &apos;R` that dynamically invokes to 
+ a generic `Invoke` method of the provided `VectorCallSite1&lt;&apos;R&gt;`
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.VectorHelpers.createValueDispatcher``1(FSharp.DataFrame.VectorHelpers.ValueCallSite1{``0})">
+<summary>
+ Creates a function `obj -&gt; &apos;R` that dynamically invokes to 
+ a generic `Invoke` method of the provided `ValueCallSite1&lt;&apos;R&gt;`
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.VectorHelpers.stringCode">
+<summary>
+ Type code of the `string` type for efficient type equality test
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.VectorHelpers.intCode">
+<summary>
+ Type code of the `int` type for efficient type equality test
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.VectorHelpers.doubleCode">
+<summary>
+ Type code of the `float` type for efficient type equality test
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.VectorHelpers.delegatedVector``1(Microsoft.FSharp.Core.FSharpRef{FSharp.DataFrame.IVector{``0}})">
+<summary>
+ Create a new vector that delegates all functionality to a ref vector
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.VectorHelpers.prettyPrintVector``1(FSharp.DataFrame.IVector{``0})">
+<summary>
+ Pretty printer for vectors. This uses the &apos;Data&apos; property
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.VectorHelpers">
+<summary>
+ A module with various utilities for working with vectors. 
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Vectors.IVectorBuilder.CreateMissing``1(FSharp.DataFrame.OptionalValue{``0}[])">
+<summary>
+ Create a vector from an array containing values that may be missing. 
+ Even if a value is passed, it may be a missing value such as `Double.NaN`
+ or `null`. The vector builder should hanlde this.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Vectors.IVectorBuilder.Create``1(``0[])">
+<summary>
+ Create a vector from an array containing values. The values may 
+ still represent missing values and the vector should handle this.
+ For example `Double.NaN` or `null` should be turned into a missing
+ value in the returned vector.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Vectors.IVectorBuilder.Build``1(FSharp.DataFrame.Vectors.VectorConstruction,FSharp.DataFrame.IVector{``0}[])">
+<summary>
+ Apply a vector construction to a given vector. The second parameter
+ is an array of arguments (&quot;variables&quot;) that may be referenced from the
+ `VectorConstruction` using the `Return 0` construct.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.IVectorBuilder">
+<summary>
+ Represents an object that can construct vector values by processing 
+ the &quot;mini-DSL&quot; representation `VectorConstruction`.
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Vectors.IVectorValueTransform.GetFunction``1">
+<summary>
+ Returns a function that combines two values stored in vectors into a new vector value.
+ Although generic, this function will only be called with the `T` set to the
+ type of vector that is being built. Since `VectorConstruction` is not generic,
+ the type cannot be statically propagated.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.IVectorValueTransform">
+<summary>
+ Represent a transformation that is applied when combining two vectors
+ (because we are combining untyped `IVector` values, the transformation
+ is also untyped)
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorConstruction.CustomCommand">
+<summary>
+ Apply a custom command to a vector - this can be used by special indices (e.g. index
+ for a lazy vector) to provide a custom operations to be used. The first parameter
+ is a list of sub-vectors to be combined (if as in e.g. `Append`) and the
+ second argument is a function that will be called with evaluated vectors and is
+ supposed to create the new vector.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorConstruction.Combine">
+<summary>
+ Combine two aligned vectors. The `IVectorValueTransform` object
+ specifies how to merge values (in case there is a value at a given address
+ in both of the vectors).
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorConstruction.Append">
+<summary>
+ Append two vectors after each other
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorConstruction.GetRange">
+<summary>
+ Get the specified range of addresses from the vector and return it as a new vector
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorConstruction.DropRange">
+<summary>
+ Drop the specified range of addresses from the vector 
+ and return a new vector that excludes the range
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorConstruction.Relocate">
+<summary>
+ Reorders elements of the vector. Carries a new required vector range and a list
+ of relocations (each pair of addresses specifies that an element at a new address 
+ should be filled with an element from an old address). THe addresses may be out of range!
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorConstruction.Return">
+<summary>
+ When constructing vectors, we get an array of vectors to be used as &quot;variables&quot;
+ - this element represent getting one of the variables.
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorConstruction">
+<summary>
+ A &quot;mini-DSL&quot; that describes construction of a vector. Vector can be constructed
+ from various range operations (relocate, drop, slicing, appending), by combination
+ of two vectors or by taking a vector from a list of variables.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorData`1">
+<summary>
+ Provides a way to get the data of an arbitrary vector. This is a concrete type used 
+ by functions that operate on vectors (like `Series.sum`, etc.). The vector may choose
+ to return the data as `IReadOnlyList` (with or without N/A values) which is more
+ efficient to use or as a lazy sequence (slower, but more general).
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorHole">
+<summary>
+ Representes a &quot;variable&quot; in the mini-DSL below
+</summary>
+</member>
+<member name="T:FSharp.DataFrame.Vectors.VectorRange">
+<summary>
+ Represents a range inside a vector
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Vectors.ArrayVector.ArrayVector`1">
+<summary>
+ --------------------------------------------------------------------------------------
+ Vector that stores data in an array. The data is stored using the
+ `ArrayVectorData&lt;&apos;T&gt;` type (discriminated union)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="F:FSharp.DataFrame.Vectors.ArrayVector.FSharp.DataFrame.Vectors.ArrayVector.ArrayVectorBuilder.vectorBuilder">
+<summary>
+ Instance of the vector builder
+</summary>
+</member>
+<member name="P:FSharp.DataFrame.Vectors.ArrayVector.ArrayVectorBuilder.Instance">
+<summary>
+ Provides a global access to an instance of the `ArrayVectorBuilder`
+</summary>
+</member>
+<member name="M:FSharp.DataFrame.Vectors.ArrayVector.ArrayVectorBuilder.buildArrayVector``1(FSharp.DataFrame.Vectors.VectorConstruction,FSharp.DataFrame.IVector{``0}[])">
+<summary>
+ Builds a vector using the specified commands, ensures that the
+ returned vector is ArrayVector (if no, it converts it) and then
+ returns the internal representation of the vector
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.DataFrame.Vectors.ArrayVector.ArrayVectorBuilder.FSharp-DataFrame-Vectors-IVectorBuilder-Build``1(FSharp.DataFrame.Vectors.VectorConstruction,FSharp.DataFrame.IVector{``0}[])">
+<summary>
+ Given a vector construction command(s) produces a new IVector
+ (the result is typically ArrayVector, but this is not guaranteed)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Vectors.ArrayVector.ArrayVectorBuilder">
+<summary>
+ Implements a builder object (`IVectorBuilder`) for creating
+ vectors of type `ArrayVector&lt;&apos;T&gt;`. This includes operations such as
+ appending, relocating values, creating vectors from arrays etc.
+ The vector builder automatically switches between the two possible
+ representations of the vector - when a missing value is present, it
+ uses `ArrayVectorData.VectorOptional`, otherwise it uses 
+ `ArrayVectorData.VectorNonOptional`.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.DataFrame.Vectors.ArrayVector.ArrayVectorData`1">
+<summary>
+ --------------------------------------------------------------------------------------
+ ArrayVector - stores data of the vector in a continuous memory block. If the vector
+ contains missing values, then uses `OptionalValue&lt;&apos;T&gt;[]`, otherwise uses just `&apos;T[]`.
+ --------------------------------------------------------------------------------------
+ Internal representation of the ArrayVector. To make this more 
+ efficient, we distinguish between &quot;sparse&quot; vectors that have missing 
+ values and &quot;dense&quot; vectors without N/As.
+</summary>
+</member>
+</members>
+</doc>
