@@ -75,6 +75,11 @@ event { for e in frm.MouseDown do
 
 
 
+
+
+
+
+
 let cancel, evt = downloadPrices "MSFT"
 
 event { for e in evt do

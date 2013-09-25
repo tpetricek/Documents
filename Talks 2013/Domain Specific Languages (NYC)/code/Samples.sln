@@ -21,6 +21,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Queries", "4 Queries", "{
 		EventQuery\EventQuery.fsx = EventQuery\EventQuery.fsx
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Stocks", "2 Stocks", "{D82A2C1B-B747-4B47-A69F-519E1CA3F2F4}"
+	ProjectSection(SolutionItems) = preProject
+		Stocks\1 Options.fsx = Stocks\1 Options.fsx
+		Stocks\2 Options DSL.fsx = Stocks\2 Options DSL.fsx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
