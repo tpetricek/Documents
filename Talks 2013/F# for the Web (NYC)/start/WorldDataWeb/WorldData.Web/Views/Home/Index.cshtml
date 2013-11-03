@@ -1,0 +1,55 @@
+@{
+    ViewBag.Title = "World Data dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+
+  // Load the Visualization API and the piechart package.
+  google.load('visualization', '1.0', {'packages':['corechart']});
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart(source, title) {
+    $.ajax({
+      type: "GET",
+      url: "/api/dashboard/" + source,
+      context: this,
+      dataType: "json",
+      success: function (results) {
+        
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Key');
+        data.addColumn('number', 'Value');
+        data.addRows(results);
+
+        // Set chart options
+        var options = {
+          'title': title,
+          'width': 800, 'height': 600, backgroundColor: { fill: 'transparent' }
+        };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    });
+  }
+</script>
+
+
+<section class="featured">
+    <div class="content-wrapper">
+        <ul>
+          <li><a href="#" onclick="drawChart('populationInEuroArea', 'Population in EURO area');">Population in EURO area</a> - display population in EURO countries</li>
+          <li><a href="#" onclick="drawChart('populationInUSA', 'Population in USA');">Population in USA</a> - display population in US states</li>
+          <li><a href="#" onclick="drawChart('populationInOECD', 'Population in OECD');">Population in OECD</a> - display population in OECD countries</li>
+        </ul>
+    </div>
+</section>
+<section class="content-wrapper main-content clear-fix">
+    <div id="chart_div"></div>
+</section>
+

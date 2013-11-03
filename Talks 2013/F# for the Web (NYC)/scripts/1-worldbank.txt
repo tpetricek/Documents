@@ -1,0 +1,28 @@
+type WorldBank = WorldBankDataProvider<"World Development Indicators", Asynchronous=true>
+
+
+let countries = 
+ [| data.Countries.``Arab World`` 
+    data.Countries.``European Union``
+    data.Countries.Australia
+    data.Countries.Brazil
+    data.Countries.Canada
+    data.Countries.Chile
+    data.Countries.``Czech Republic``
+    data.Countries.Denmark
+    data.Countries.France
+    data.Countries.Greece
+    data.Countries.``Low income``
+    data.Countries.``High income``
+    data.Countries.``United Kingdom``
+    data.Countries.``United States`` |]
+
+	
+	
+[ for c in countries -> 
+    c.Indicators.``School enrollment, tertiary (% gross)`` ]
+|> Async.Parallel
+|> Async.RunSynchronously
+|> Array.map Chart.Line
+|> Chart.Combine
+	

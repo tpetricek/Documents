@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tesco>
+  <category name="Fresh Food">
+    <product name="Tesco Bramley Apples Loose" price="0.49" />
+    <product name="Tesco Bramley Cooking Apples Min 4 Pack" price="1.95" />
+    <product name="Tesco Braeburn Apples Loose" price="0.31" />
+    <product name="Tesco Braeburn Apples Min 5 Fruit" price="1.7" />
+    <product name="Tesco British Apples Min 5 Pack" price="1.5" />
+    <product name="Tesco Cox Apples Loose" price="0.32" />
+    <product name="Tesco Cox Apples Min 6 Pack" price="1.65" />
+    <product name="Tesco Everyday Value Apples Min 4 Pack" price="0.84" />
+    <product name="Tesco Gala Apples Loose" price="0.3" />
+    <product name="Tesco Gala Apples Min 6 Pack" price="1.95" />
+    <product name="Tesco Goodness Apples Min 7 Pack" price="1.4" />
+    <product name="Tesco Jazz Apples Min 6 Fruit" price="2.1" />
+    <product name="Tesco Kanzi Apples Loose" price="0.4" />
+    <product name="Tesco Kanzi Apples Min 4 Fruit" price="2.25" />
+    <product name="Tesco Orchard ion Braeburn Apples Min 4 Pack" price="2" />
+    <product name="Tesco Orchard ion Royal Gala Apples Min 4Pack" price="2" />
+    <product name="Tesco Pink Lady Apples 4 Pack" price="2.25" />
+    <product name="Tesco Pink Lady Apples 6 Pack" price="3" />
+    <product name="Tesco Pink Lady Apples Loose" price="0.5" />
+    <product name="Tesco Golden Delicious Apples Loose" price="0.35" />
+    <product name="Tesco Golden Delicious Apples Min 5 Fruit" price="1.6" />
+    <product name="Tesco Granny Smith Apples Loose" price="0.31" />
+    <product name="Tesco Granny Smith Apples Min 5 Pack" price="1.7" />
+    <product name="Tesco Mixed Apples Min 6 Fruit" price="2.3" />
+    <product name="Tesco Conference Pears 5 Pack" price="1.95" />
+    <product name="Tesco Conference Pears Loose" price="0.47" />
+    <product name="Tesco Everyday Value Pears Min 4 Pack" price="0.9" />
+    <product name="Tesco Goodness Pears Min 7 Pack" price="1.3" />
+    <product name="Tesco Green Pears Loose" price="0.34" />
+    <product name="Tesco Pears Min 5 Pack" price="2" />
+    <product name="Tesco Perfectly Ripe Conference Pears 4 Pack" price="2.05" />
+    <product name="Tesco Blush Pear 4 Pack" price="2.5" />
+    <product name="Tesco Blush Pears Loose" price="0.45" />
+    <product name="Tesco Blush Pears Min 5 Fruit" price="1.95" />
+    <product name="Tesco Perfectly Ripe Pear 4 Pack" price="1.85" />
+    <product name="Tesco Variety Pears 4 Pack" price="2" />
+    <product name="Tesco Goodness Apple And Grapes Snack Pack 80G" price="0.5" />
+    <product name="Tesco Rhubarb 400G" price="3" />
+    <product name="Tesco Organic Braeburn Apples Min 5 Pack" price="2.5" />
+    <product name="Tesco Organic Gala Apples Min 6 Pack" price="2" />
+    <product name="Tesco Organic Goodness Apples 6 Pack" price="2.5" />
+    <product name="Tesco Organic Pink Lady Apples Min 4 Fruit" price="2.2" />
+    <product name="Tesco Organic Ripe And Ready To Eat Pears 4 Pack" price="2" />
+    <product name="Tesco Organic ed Pears Min 5 Pack" price="2" />
+    <product name="Tesco Goodness Apple Snack Pack 80G" price="0.5" />
+    <product name="Tesco Ready To Eat Avocados Twin Pack" price="2" />
+    <product name="Tesco Ready To Eat Large Avocados Each" price="1.1" />
+    <product name="Tesco Finest Avocado Each" price="1.5" />
+    <product name="Tesco Ripen At Home Avocados 4 Pack" price="1.2" />
+    <product name="Tesco Bananas Loose" price="0.14" />
+    <product name="Tesco Everyday Value Bananas" price="1.15" />
+    <product name="Tesco Organic Fair Trade Bananas 6 Pack" price="1.4" />
+    <product name="Tesco Organic Goodness Bananas Pack" price="1.5" />
+  </category>
+  <category name="Bakery">
+    <product name="Rankin Irish Brown Soda 400G" price="1.25" />
+    <product name="Baltona Bread Dark 800G" price="1.25" />
+    <product name="Baltona Bread White 800G" price="1" />
+    <product name="Elephant Atta Chapattis 8Pk 360G" price="1" />
+    <product name="Polish Half Wheat Half Rye 400G" price="0.65" />
+    <product name="Polish Half Wheat Half Rye 800G" price="1" />
+    <product name="Sunflower Bread 800G" price="1.2" />
+    <product name="Tesco Cheese And Tomato Flatbread" price="1.2" />
+    <product name="Tesco Ciabatta Bread" price="1.3" />
+    <product name="Tesco Finest Half Ciabatta 2 Pack" price="1.7" />
+    <product name="Tesco Finest Plain Ciabatta" price="1.5" />
+    <product name="Cranks Wholemeal 800G" price="1.5" />
+    <product name="Tesco Everyday Value Medium Sliced Wholemeal Bread 800G" price="0.47" />
+    <product name="Tesco Stay Fresh Wholemeal Medium Bread 800G" price="0.9" />
+    <product name="Tesco Wholemeal Medium 800G" price="0.79" />
+    <product name="Tesco Wholemeal Thick 800G" price="0.79" />
+    <product name="Allinson Wholemeal Loaf 800G" price="1.5" />
+    <product name="Hovis Original Wheatgerm 400G" price="0.7" />
+    <product name="Hovis Wholemeal Farmers Loaf 800G" price="1.5" />
+    <product name="Hovis Wholemeal Medium 800G" price="1.35" />
+    <product name="Hovis Wholemeal Thick 800G" price="1.35" />
+    <product name="Kingsmill Great Everyday Tasty Wholemeal Thick 800G" price="1.35" />
+    <product name="Kingsmill Tasty Wholemeal Little Big Loaf 470G" price="0.85" />
+    <product name="Kingsmill Tasty Wholemeal Medium 800G" price="1.35" />
+    <product name="Warburtons Farmhouse Soft Brown 800G" price="1.45" />
+    <product name="Warburtons Wholemeal Bread Medium Sliced 400G" price="0.8" />
+    <product name="Warburtons Wholemeal Bread Medium Sliced 800G" price="1.45" />
+    <product name="Wheatfield Wholemeal Batch 800G" price="0.85" />
+    <product name="Hovis Nimble Wholemeal Sliced Loaf 400G" price="0.75" />
+    <product name="Tesco Danish Thick 400G" price="0.55" />
+    <product name="Vogels Soya And Linseed Bread 800G" price="1.5" />
+    <product name="Vogels Sunflower And Barley 400G" price="1.2" />
+    <product name="Warburtons B Pool Milk Roll Sliced White Bread 400G" price="0.87" />
+    <product name="Warburtons Danish Sliced White Bread 400G" price="0.75" />
+    <product name="Weight Watchers Malted Danish Sliced Bread 400G" price="0.93" />
+    <product name="Weight Watchers Thick Grained Loaf 400G" price="0.93" />
+    <product name="Weight Watchers Thick Sliced White" price="0.93" />
+    <product name="Weight Watchers Wholemeal Thick 400G" price="0.93" />
+    <product name="Allinson High Fibre White 800G" price="1.5" />
+    <product name="Hovis Best Of Both Medium White 800G" price="1.35" />
+    <product name="Hovis Best Of Both Thick White 800G" price="1.35" />
+    <product name="Kingsmill 50 50 400G" price="0.75" />
+    <product name="Kingsmill 50 50 Crusts Away 400G" price="1.25" />
+    <product name="Kingsmill 50 50 Medium 800G" price="1.35" />
+    <product name="Kingsmill 50 50 Thick Bread 800G" price="1.35" />
+    <product name="Tesco 4 Homebake Baguettes" price="1.9" />
+    <product name="Burgen Chia Bread 750G" price="1.5" />
+    <product name="Burgen Soya And Linseed Bread 800G" price="1.5" />
+    <product name="Hovis 7 Seeds Wholemeal 800G" price="1.49" />
+    <product name="Hovis Country Granary 800G" price="1.45" />
+    <product name="Hovis Granary Thick 800G" price="1.45" />
+    <product name="Hovis Original 7 Seeds 800G" price="1.49" />
+    <product name="Kingsmill Oatilicious Medium 800G" price="1.45" />
+    <product name="Tesco Finest Chocolate Bread 470G" price="1.4" />
+    <product name="Tesco Finest Cranberry And Orange Bread 470G" price="1.4" />
+    <product name="Tesco Finest Heritage Grain Farmhouse 400G" price="1.25" />
+    <product name="Tesco Finest Multiseed Bloomer 400G" price="1.25" />
+    <product name="Tesco Finest Oat Spelt And Barley Farmhouse 800G" price="1.5" />
+    <product name="Tesco Finest Rye Cob 600G" price="1.4" />
+    <product name="Tesco Finest Sun Dried Tomato And Basil Cob 600G" price="1.4" />
+    <product name="Tesco Finest Sunflower And Honey Bloomer 400G" price="1.25" />
+    <product name="UNAVAILABLE: Tesco Finest Super Seeded Bread 800G" price="1.5" />
+    <product name="Tesco Finest White With Olive Cob 600G" price="1.4" />
+    <product name="Tesco Finest White With Onion Cob 600G" price="1.4" />
+    <product name="Tesco Wheatfield Multigrain Batch Bread 800G" price="0.89" />
+    <product name="Warburtons Seeded Batch 400G" price="0.89" />
+    <product name="Warburtons Seeded Batch 800G" price="1.5" />
+    <product name="Wheatfield Multiseed Batch 800G" price="0.99" />
+    <product name="Tesco Everyday Value Sliced White Bread 800G" price="0.5" />
+    <product name="Tesco Stay Fresh White Medium Bread 800G" price="0.9" />
+    <product name="Tesco White Medium 800G" price="0.79" />
+    <product name="Tesco White Thick 800G" price="0.79" />
+    <product name="Baker Soft White Bread Medium 800G" price="1" />
+    <product name="Baker Soft White Bread Thick 800G" price="1" />
+    <product name="Hovis Soft White Medium 800G" price="1.35" />
+    <product name="Hovis Soft White Thick 800G" price="1.35" />
+    <product name="Kingsmill Ged Little Big Loaf 525G" price="0.85" />
+    <product name="Kingsmill Great Everyday Soft White Thick 800G" price="1.35" />
+    <product name="Kingsmill Soft White Medium 800g" price="1.35" />
+    <product name="Kingsmill Toastie White Thick 800G" price="1.35" />
+    <product name="Mothers Pride Scottish Plain Medium White Bread 800G" price="0.98" />
+  </category>
+  <category name="Food Cupboard">
+    <product name="Batchelors Bolognese Style 120G" price="0.89" />
+    <product name="Batchelors Deli Box Barbeque Beef Noodles 75G" price="1.19" />
+    <product name="Batchelors Deli Box Chicken Noodles 75G" price="1.19" />
+    <product name="Batchelors Deli Box Chow Mein Noodles 75G" price="1.19" />
+    <product name="Batchelors Deli Box Curry Noodles 75G" price="1.19" />
+    <product name="Dolmio Pasta Vita Bolognese 300G" price="1.99" />
+    <product name="Dolmio Pasta Vita Garlic And Tomato 300G" price="1.99" />
+    <product name="Dolmio Pasta Vita Sweet Pepper 300G" price="1.99" />
+    <product name="Dolmio Pasta Vita Tomato And Basil 300G" price="1.99" />
+    <product name="Dolmio Pasta Vita Tomato And Chilli 300G" price="1.99" />
+    <product name="King Pot Noodle Beef And Tomato 114G" price="1.36" />
+    <product name="King Pot Noodle Chicken And Mushroom 114G" price="1.36" />
+    <product name="King Pot Noodle Spicy Curry 114G" price="1.36" />
+    <product name="Mug Shot On The Go Chicken Noodle 54G" price="0.99" />
+    <product name="Mug Shot On The Go Sweet And Spicy Noodle 67G" price="0.99" />
+    <product name="Mug Shot On The Go Tomato And Herb Pasta 64G" price="0.99" />
+    <product name="Pot Noodle 4 Pack Original Curry 360G" price="3.89" />
+    <product name="Pot Noodle Beef And Tomato 4 Pack" price="3.89" />
+    <product name="Pot Noodle Beef And Tomato 90G" price="1" />
+    <product name="Pot Noodle Bombay Bad Boy 90G" price="1" />
+    <product name="Pot Noodle Chicken And Mushroom 4 Pack" price="3.89" />
+    <product name="Pot Noodle Chicken And Mushroom 90G" price="1" />
+    <product name="Pot Noodle Chilli Beef 90G" price="1" />
+    <product name="Pot Noodle Chow Mein 90G" price="1" />
+    <product name="Pot Noodle Spicy Curry 90G" price="1" />
+    <product name="Pot Noodle Sweet And Sour 90G" price="1" />
+    <product name="Pot Noodles Sticky Rib 90G" price="1" />
+    <product name="Risotto Gallo Chick And Mushroom 325G" price="2.29" />
+    <product name="Risotto Gallo Ham And Tomato 325G" price="2.29" />
+    <product name="Tesco Everyday Value Beef And Tomato Noodle Pot 70G" price="0.4" />
+    <product name="Tesco Everyday Value Noodles Spice Curry Flavoured 70G" price="0.35" />
+    <product name="Uncle Bens Rice Time Medium Curry 300G" price="1.99" />
+    <product name="Uncle Bens Rice Time Mexican Chilli 300G" price="1.99" />
+    <product name="Uncle Bens Rice Time Spicy Tikka Masala 300G" price="1.99" />
+    <product name="Uncle Bens Rice Time Sweet And Sour 300G" price="1.99" />
+    <product name="Vesta Chow Mein 161G" price="1.56" />
+    <product name="Batch Pasta  N  Sauce Cheese And Broccoli 123G" price="0.95" />
+    <product name="Batch Pasta  N  Sauce Cheese Leek And Ham 120G" price="0.95" />
+    <product name="Batch Pasta  N  Sauce Chicken And Mushroom 122G" price="0.95" />
+    <product name="Batchelors Pasta  N  Sauce Macaroni Cheese 108G" price="0.95" />
+    <product name="Batchelors Vegetable Pasta Chunk Tom And Basil 75G" price="0.95" />
+    <product name="Campbell s Cheese And Broccoli Pasta   Sauce120g" price="0.95" />
+    <product name="Campbell s Cheese Leek And Ham Pasta And Sauce 120G" price="0.95" />
+    <product name="Campbell s Chicken And Mushroom Pasta   Sauce120g" price="0.95" />
+    <product name="Tesco Everyday Value Tomato And Onion Pasta n sce 110G" price="0.23" />
+    <product name="Tesco Pasta In Sauce Chicken And Mushroom 120G" price="0.75" />
+    <product name="Tesco Pasta In Sauce Mushroom 110G" price="0.75" />
+    <product name="Tesco Pasta In Sauce Tomato And Onion 120G" price="0.75" />
+    <product name="Heinz Cheese And Tomato Tortellini 250G" price="1.32" />
+    <product name="Heinz Macaroni Cheese 200G" price="0.7" />
+    <product name="Heinz Macaroni Cheese 400G" price="0.95" />
+    <product name="Heinz Ravioli In Tomato Sauce 200G" price="0.7" />
+    <product name="Heinz Ravioli In Tomato Sauce 410G" price="0.95" />
+    <product name="Heinz Red Pepper And Mushroom Sauce Penne 250G" price="1.35" />
+    <product name="Heinz Spaghetti Bolognese 200G" price="0.7" />
+    <product name="Heinz Spaghetti Bolognese 400G" price="0.95" />
+    <product name="Heinz Spaghetti With Meatballs 400G" price="0.95" />
+    <product name="Heinz Spicy Tomato And Pepperoni Fusilli 250G" price="1.35" />
+    <product name="Tesco Beef Ravioli In Tomato And Beef Sauce 400G" price="0.6" />
+    <product name="Tesco Everyday Value Macaroni Cheese 395G" price="0.4" />
+    <product name="Tesco Everyday Value Ravioli In Tomato Sauce 400G" price="0.35" />
+  </category>
+  <category name="Frozen Food">
+    <product name="Bernard Matthews 10 Golden Drummers 500G" price="2" />
+    <product name="Bernard Matthews 10 Turkey Dinosaurs 500G" price="2" />
+    <product name="Bernard Matthews 15 Mini Kievs 340G" price="2" />
+    <product name="Big Al s 4 Classic Crumb Chicken 380G" price="2" />
+    <product name="Big Al s 4 Southern Fried Chicken 380G" price="2" />
+    <product name="Big Al s 8 Chicken Burgers 400G" price="2.4" />
+    <product name="Big Al s Southern Fried Goujons 360G" price="3.39" />
+    <product name="Birds Eye 10 Chicken Fingers 250G" price="1.35" />
+    <product name="Birds Eye 12 Crispy Chicken Dippers 220G" price="1.69" />
+    <product name="Birds Eye 18 Chicken Nuggets 355G" price="3.19" />
+    <product name="Birds Eye 2 Creamy Garlic And Herb Chicken Chargrills 174G" price="1.69" />
+    <product name="Birds Eye 2 Creamy Mushroom Chicken Chargrills 174G" price="1.69" />
+    <product name="Birds Eye 2 Crispy Chicken 170G" price="1.69" />
+    <product name="Birds Eye 2 Garlic And Herb Chicken 180G" price="1.69" />
+    <product name="Birds Eye 2 Hot And Spicy Chicken 180G" price="1.69" />
+    <product name="Birds Eye 2 Original Chicken Chargrills 170G" price="1" />
+    <product name="Birds Eye 2 Reggae Reggae Chicken Chargrills 170G" price="1.69" />
+    <product name="Birds Eye 2 Southern Fried Chicken 180G" price="1.69" />
+    <product name="Birds Eye 2 Sticky And Sweet Barbeque Chicken Chargrills 174G" price="1.69" />
+    <product name="Birds Eye 24 Crispy Chicken Dippers 440G" price="2" />
+    <product name="Birds Eye 4 Chicken Burgers 200G" price="1" />
+    <product name="Birds Eye 4 Chicken Quarter Pounders 454G" price="2.99" />
+    <product name="Birds Eye 4 Crispy Chicken 340G" price="1.62" />
+    <product name="Birds Eye 4 Southern Fried Chicken 360G" price="3.25" />
+    <product name="Birds Eye 42 Crispy Chicken Dippers 770G" price="4.39" />
+    <product name="Birds Eye 8 Original Chicken Chargrills 680G" price="5" />
+    <product name="Birds Eye Original Chicken Strips 250G" price="2.99" />
+    <product name="Birds Eye Southern Fried Chicken Strips 250G" price="2.99" />
+    <product name="Birds Eye Southern Fried Mini Fillets 250G" price="2.99" />
+    <product name="Sfc Chicken Poppets 190G" price="0.8" />
+    <product name="Tesco 2 Bacon And Cheese Chicken Kievs 250G" price="1.3" />
+    <product name="Tesco 20 Battered Chicken Dippers 450G" price="1" />
+    <product name="Tesco 30 Piece Bumper Chicken Takeout 900G" price="5" />
+    <product name="Tesco 4 Breaded Chicken 380G" price="2" />
+    <product name="Tesco 4 Breaded Chicken Breast Fillets 400G" price="2.5" />
+    <product name="Tesco 4 Crispy Chicken 380G" price="2" />
+    <product name="Tesco 4 Garlic Butter Chicken Kievs 500G" price="2.4" />
+    <product name="Tesco 4 Garlic Chicken 380G" price="2" />
+    <product name="Tesco 4 Hot And Spicy Chicken 380G" price="2" />
+    <product name="Tesco 4 Southern Fried Chicken 380G" price="2" />
+    <product name="Tesco Breaded Chicken Nuggets 450G" price="2" />
+    <product name="Tesco Breaded Mini Chicken Breast Fillets 300G" price="2" />
+    <product name="Tesco Everyday Value 2 Chicken Kievs 250G" price="0.88" />
+    <product name="Tesco Everyday Value 4 Breaded Chicken 380G" price="1.15" />
+    <product name="Tesco Everyday Value 8 Breaded Chicken Burgers 456G" price="0.97" />
+    <product name="Tesco Everyday Value Chicken Goujons And Pops 450G" price="2" />
+    <product name="Tesco Everyday Value Chicken Nuggets 320G" price="0.72" />
+    <product name="Tesco Southern Fried 4 Chicken Breast Fillets 400G" price="2.5" />
+    <product name="Tesco Southern Fried Chicken Combo Wings 750G" price="3" />
+    <product name="Tesco Southern Fried Chicken Drumsticks And Thighs 680G" price="3" />
+    <product name="Tesco Southern Fried Chicken Pops 190G" price="1" />
+    <product name="Tesco Southern Fried Mini Chicken Fillets 300G" price="2.5" />
+    <product name="Tesco Ultimate Battered Chicken Dippers 400G" price="3" />
+    <product name="Tesco Ultimate Breaded Chicken Nuggets 400G" price="2.5" />
+    <product name="Birds Eye 12 Beef Burgers 680G" price="3" />
+    <product name="Birds Eye 4 Original Beef Burgers 227G" price="1.35" />
+    <product name="Birds Eye 4 Original Beef Quarter Pounders 454G" price="2.49" />
+    <product name="Birds Eye Premium 4 Beef Quarter Pounders 454G" price="3.29" />
+    <product name="Cherry Valley 2 Duck Legs In Orange Sauce 450G" price="2.99" />
+    <product name="China Wok Crispy Duck 270G" price="2" />
+    <product name="Tesco Everyday Value Lamb Chops 700G" price="3.99" />
+  </category>
+  <category name="Drinks">
+    <product name="7Up Cherry 2 Litre" price="1.98" />
+    <product name="7Up Cherry 6Pk Cans" price="3.19" />
+    <product name="Cherry Coke 2 Litre Bottle" price="1.98" />
+    <product name="Cherry Coke 8X330ml" price="4.2" />
+    <product name="Coca Cola Regular  Gb  12 X 330Ml Pack" price="4" />
+    <product name="Coca Cola Regular 2 Litre Bottle" price="1.98" />
+    <product name="Coca Cola Regular 24 X 330Ml Pack" price="7" />
+    <product name="Coca Cola Regular 4 X 2 Ltrs Pack" price="6" />
+    <product name="Coca Cola Regular 8X330ml" price="4.2" />
+    <product name="Coca Cola Zero 1.5 Litre" price="1.68" />
+    <product name="Coca-Cola Zero 12X330ml" price="4" />
+    <product name="Coke Regular 1.5L" price="1.68" />
+    <product name="Coke Zero 2 Litre" price="1.98" />
+    <product name="Coke Zero 8X330ml" price="4.2" />
+    <product name="Diet Coke  Gb  12 X 330Ml Pack" price="4" />
+    <product name="Diet Coke 1.5L" price="1.68" />
+    <product name="Diet Coke 2 Litre Bottle" price="1.98" />
+    <product name="Diet Coke 24 X 330Ml Pack" price="7" />
+    <product name="Diet Coke 4 X 2 Ltrs Pack" price="6" />
+    <product name="Diet Coke 8X330ml" price="4.2" />
+    <product name="Diet Coke Caffeine Free 12 X 330Ml  Gb" price="4" />
+    <product name="Diet Coke Caffeine Free 2 Litre Bottle" price="1.98" />
+    <product name="Diet Coke Caffeine Free 8X330ml" price="4.2" />
+    <product name="Diet Coke Cherry 2 Litre Bottle" price="1.98" />
+    <product name="Diet Coke Cherry 8 X 330Ml" price="4.2" />
+    <product name="Diet Pepsi 12X250ml" price="4.49" />
+    <product name="Diet Pepsi 24X250ml" price="5" />
+    <product name="Pepsi 24X250ml" price="5" />
+    <product name="Pepsi Diet 2 Litre Bottle" price="0.99" />
+    <product name="Pepsi Diet 8 X 330Ml" price="1.99" />
+    <product name="Pepsi Max 12X250ml" price="4.49" />
+    <product name="Pepsi Max 2 Litre Bottle" price="0.99" />
+    <product name="Pepsi Max 24X250ml" price="5" />
+    <product name="Pepsi Max 8X330ml" price="1.99" />
+    <product name="Pepsi Max Cherry 2L" price="0.99" />
+    <product name="Pepsi Regular 2 Litre Bottle" price="0.99" />
+    <product name="Pepsi Regular 8X330ml" price="1.99" />
+    <product name="Sunsip Cola 2Ltr" price="0.39" />
+    <product name="Sunsip Diet Cola 2Ltr" price="0.39" />
+    <product name="Tesco Cola 2 Litre Bottle" price="0.57" />
+    <product name="Tesco Cola 8 X 330Ml" price="1.99" />
+    <product name="Tesco Diet Cola 12X250ml" price="2.4" />
+    <product name="Tesco Diet Cola 2 Litre Bottle" price="0.57" />
+    <product name="Tesco Diet Cola 6X500ml" price="1.55" />
+    <product name="Tesco Diet Cola 8 X 330Ml" price="1.99" />
+    <product name="Tesco Everyday Value Sugar Free Cola 2 Litre Bottle" price="0.17" />
+    <product name="Tesco Xero Cola 2 Litre" price="0.57" />
+    <product name="Robinsons Barley Water Lemon 850Ml" price="1.99" />
+    <product name="Robinsons Barley Water Orange 850Ml" price="1.99" />
+    <product name="Robinsons Fruit And Barley Apple And Pear 1L" price="1" />
+    <product name="Robinsons Fruit And Barley Grapefruit 1L" price="1" />
+    <product name="Robinsons Fruit And Barley Orange 1L" price="1" />
+    <product name="Robinsons Fruit And Barley Peach 1L" price="1" />
+    <product name="Robinsons Fruit And Barley Strawberry And Kiwi 1L" price="1" />
+    <product name="Robinsons Fruit And Barley Summer Fruits 1L" price="1" />
+    <product name="Robinsons Fruit And Barley Tropical 1L" price="1" />
+    <product name="Tesco Fruit And Barley Orange No Added Sugar 1L" price="0.89" />
+    <product name="Tesco Fruit And Barley Peach  Apricot No Added Sugar 1L" price="0.89" />
+    <product name="Tesco Fruit And Barley Summerfruits No Added Sugar 1L" price="0.89" />
+    <product name="Belvoir Apple Blackcurrant Cordial 500Ml" price="2.89" />
+    <product name="Belvoir Elderflower Cordial 500Ml" price="2.89" />
+    <product name="Belvoir Ginger Cordial 500Ml" price="2.89" />
+    <product name="Belvoir Raspberry   Lemon Cordial 500Ml" price="2.89" />
+    <product name="Blossom Cottage Elderflower Cordial 50Cl" price="2.2" />
+    <product name="Bottlegreen Elderflower Cordial 50Cl" price="3.15" />
+    <product name="Ocean Spray Cranberry   Raspberry 1 Litre" price="1.99" />
+    <product name="Ribena Strawberry 1 Litre" price="2.86" />
+    <product name="Sunsip Apple High Juice 1 Litre" price="1.09" />
+    <product name="Sunsip Orange High Juice 1 Litre" price="1.09" />
+    <product name="Sunsip Summer Fruits High Juice 1L" price="1.09" />
+    <product name="Tesco High Juice Apple And Mango Squash No Added Sugar 1Ltr" price="1.49" />
+    <product name="Tesco High Juice Apple Squash 1L" price="1.49" />
+    <product name="Tesco High Juice Blackcurrant Squash 1L" price="1.49" />
+    <product name="Tesco High Juice Blackcurrant Squash No Added Sugar 1L" price="1.49" />
+    <product name="Tesco High Juice Orange Mandarin And Lemon Squash 1L" price="1.49" />
+    <product name="Tesco High Juice Orange Squash 1L" price="1.49" />
+    <product name="Tesco High Juice Orange Squash No Added Sugar 1L" price="1.49" />
+    <product name="Tesco High Juice Pineapple Squash 1L" price="1.49" />
+    <product name="Tesco High Juice Pink Grapefruit Squash No Added Sugar 1L" price="1.49" />
+    <product name="Calypso Clear Cups Drinks 12X185ml" price="1.28" />
+    <product name="Calypso Glee Strawberry   Blackberry Flavoured Water 4X350 Ml" price="2.09" />
+    <product name="Capri Sun Apple 10 X 200Ml" price="2.98" />
+    <product name="Capri Sun Blackcurrant 10X200ml" price="2.98" />
+    <product name="Capri Sun Blackcurrant 5X200ml" price="1.86" />
+    <product name="Capri Sun Orange 10X200ml" price="2.98" />
+    <product name="Capri Sun Orange 5X200ml" price="1.86" />
+    <product name="Capri Sun Summer Berries 10X200ml" price="2.98" />
+    <product name="Capri Sun Tropical 10X200ml" price="2.98" />
+    <product name="Fruit Shoot Hydro Blackcurrant 200Ml 8 Pack" price="2" />
+  </category>
+  <category name="Baby">
+    <product name="Huggies Little Swimmers 5-6 X11" price="5.93" />
+    <product name="Huggies Little Swimmers Size 2-3 X12" price="5.93" />
+    <product name="Huggies Pull Ups Night Time Boy Size 6 Biga 10" price="5.48" />
+    <product name="Huggies Pull Ups Size 4 Boy Carry Pack 16" price="5.48" />
+    <product name="Huggies Pull Ups Size 5 Boy Carry Pack 14" price="5.48" />
+    <product name="Huggies Pull Ups Size 5 Boy Night Time 12" price="5.48" />
+    <product name="Huggies Pull Ups Size 5 Girl Carry Pack 14" price="5.48" />
+    <product name="Huggies Pull Ups Size 5 Girl Night Time 12" price="5.48" />
+    <product name="Huggies Pull Ups Size 6 Boy Carry Pack 12" price="5.48" />
+    <product name="Huggies Pull Ups Size 6 Girl Carry Pack 12" price="5.48" />
+    <product name="Huggies Pull-Ups Size 6 Girl Economy X22" price="8.59" />
+    <product name="Huggies Drynites Pyjama Pants X10 Boy 4-7 Years" price="5.89" />
+    <product name="Huggies Drynites Pyjama Pants X10 Girl 4-7 Years" price="5.89" />
+    <product name="Huggies Drynites Pyjama Pants X9 Boy 8-15 Years" price="5.89" />
+    <product name="Huggies Drynites Pyjama Pants X9 Girl 8-15 Years" price="5.89" />
+    <product name="Huggies Pull Ups Night Time Girl Size 6 Biga 10" price="5.48" />
+    <product name="UNAVAILABLE: Tesco Everyday Value Nappy Bags 300" price="0.35" />
+    <product name="Tesco My Babys Nappy Bags 75" price="0.75" />
+    <product name="Pampers New Baby Size 0 Micro Carry Pack 24" price="3.47" />
+    <product name="Pampers New Baby Size 2 Mini Carry Pack 33" price="5.95" />
+    <product name="Pampers New Baby Size 2 Mini Economy Pack 58" price="9.98" />
+    <product name="Pampers New Baby Size 2 Mini Jumbo Pack 80" price="12" />
+    <product name="Pampers New Baby Size 3 Midi Carry Pack 31" price="5.97" />
+    <product name="Pampers New Baby Size 3 Midi Economy Pack 54" price="9.98" />
+    <product name="Pampers New Baby Size 3 Midi Jumbo Pack 74" price="12" />
+    <product name="Pampers New Baby Size1 Newborn Carry Pack 27" price="3.5" />
+    <product name="Pampers New Baby Size1 Newborn Economy Pack 50" price="6.66" />
+    <product name="Tesco Loves Baby Mini Size 2 Mini Economy Pack 33" price="2.57" />
+    <product name="Tesco Loves Baby Ultra Soft New Born Pack 25" price="2.57" />
+    <product name="Tesco Newborn Nappies Carry Pack Premature 24" price="2.57" />
+    <product name="Huggies Drynites Pyjama Pants X10 Boy 4-7 Years" price="5.89" />
+    <product name="Huggies Drynites Pyjama Pants X10 Girl 4-7 Years" price="5.89" />
+    <product name="Huggies Drynites Pyjama Pants X9 Boy 8-15 Years" price="5.89" />
+    <product name="Huggies Drynites Pyjama Pants X9 Girl 8-15 Years" price="5.89" />
+    <product name="Huggies Drynites Bed Mats X7" price="3.5" />
+    <product name="Pampers New Baby Size 0 Micro Carry Pack 24" price="3.47" />
+    <product name="Pampers New Baby Size 2 Mini Carry Pack 33" price="5.95" />
+    <product name="Pampers New Baby Size 2 Mini Economy Pack 58" price="9.98" />
+    <product name="Pampers New Baby Size 2 Mini Jumbo Pack 80" price="12" />
+    <product name="Pampers New Baby Size 3 Midi Carry Pack 31" price="5.97" />
+    <product name="Pampers New Baby Size 3 Midi Economy Pack 54" price="9.98" />
+    <product name="Pampers New Baby Size 3 Midi Jumbo Pack 74" price="12" />
+    <product name="Pampers New Baby Size1 Newborn Carry Pack 27" price="3.5" />
+    <product name="Pampers New Baby Size1 Newborn Economy Pack 50" price="6.66" />
+    <product name="Cheeky Bots Midi Size 3 Nappies 180" price="20" />
+    <product name="Pampers Baby Dry Carry Pack Midi Plus 32" price="6.49" />
+    <product name="Pampers Baby Dry Economy Pack Midi Plus 56" price="9.99" />
+    <product name="Pampers Baby Dry Size 2 Mini Carry Pack 41" price="6.49" />
+    <product name="Pampers Baby Dry Size 3 Midi Carry Pack 34" price="6.49" />
+    <product name="Pampers Baby Dry Size 3 Midi Economy Pack 60" price="9.99" />
+    <product name="Pampers Baby Dry Size 3 Midi Jumbo Pack 92" price="12.99" />
+    <product name="Pampers Baby Dry Size 4 Maxi Carry Pack 30" price="6.49" />
+    <product name="Pampers Baby Dry Size 4 Maxi Economy Pack 52" price="9.99" />
+    <product name="Pampers Baby Dry Size 4 Maxi Jumbo Pack 78" price="12.99" />
+    <product name="Pampers Baby Dry Size 4  Maxi  Carry Pack 28" price="6.49" />
+    <product name="Pampers Baby Dry Size 4  Maxi  Economy Pack 48" price="9.99" />
+    <product name="Pampers Baby Dry Size 4  Maxi  Jumbo Pack 70" price="12.99" />
+    <product name="Pampers Baby Dry Size 5 Junior Carry Pack 27" price="6.49" />
+    <product name="Pampers Baby Dry Size 5 Junior Economy Pack 45" price="9.99" />
+    <product name="Pampers Baby Dry Size 5 Junior Jumbo Pack 66" price="12" />
+    <product name="Pampers Baby Dry Size 5  Jnr  Carry Pack 25" price="6.49" />
+    <product name="Pampers Baby Dry Size 5  Jnr  Economy Pack 41" price="9.99" />
+    <product name="Pampers Baby Dry Size 6 Exlge Carry Pack 21" price="6.49" />
+    <product name="Pampers Simply Dry Size 3Midi Economy Pack 60" price="8.49" />
+    <product name="Pampers Simply Dry Size 4Maxi Carry Pack 26" price="5" />
+    <product name="Pampers Simply Dry Size 4Maxi Economy Pack 50" price="8.49" />
+    <product name="Pampers Simply Dry Size 5 Junior Carry Pack 22" price="5" />
+    <product name="Pampers Simply Dry Size 5 Junior Economy Pack 44" price="8.49" />
+    <product name="Pampers Simply Dry Size4  Maxi  Carry Pack 24" price="5" />
+    <product name="Pampers Simply Dry Size4  Maxi  Economy Pack 47" price="8.49" />
+    <product name="Pampers Active Fit Size 3 Midi Carry Pack 33" price="6.49" />
+    <product name="Pampers Active Fit Size 3 Midi Economy Pack 56" price="9.99" />
+    <product name="Pampers Active Fit Size 3 Midi Jumbo Pack 84" price="12.99" />
+    <product name="Pampers Active Fit Size 4 Maxi Carry Pack 27" price="6.49" />
+    <product name="Pampers Active Fit Size 4 Maxi Economy Pack 46" price="9.99" />
+    <product name="Pampers Active Fit Size 4 Maxi Jumbo Pack 68" price="12.99" />
+    <product name="Pampers Active Fit Size 4  Maxi  Carry Pack 26" price="6.49" />
+    <product name="Pampers Active Fit Size 4  Maxi  Economy Pack 44" price="9.99" />
+    <product name="Pampers Active Fit Size 4  Maxi  Jumbo Pack 66" price="12.99" />
+    <product name="Pampers Active Fit Size 5 Junior Carry Pack 25" price="6.49" />
+    <product name="Pampers Active Fit Size 5 Junior Economy Pack 44" price="9.99" />
+    <product name="Pampers Active Fit Size 5 Junior Jumbo Pack 62" price="12.99" />
+    <product name="Pampers Active Fit Size 5  Jnr  Carry Pack 24" price="6.49" />
+    <product name="Pampers Active Fit Size 5  Jnr  Economy Pack 42" price="9.99" />
+    <product name="Pampers Active Fit Size 5  Jnr  Jumbo Pack 58" price="12.99" />
+    <product name="Pampers Baby Dry Size 6 Exlge Economy Pack 36" price="9.99" />
+    <product name="Pampers Easy Ups Carry Packs Extra Large 19" price="6.49" />
+    <product name="Pampers Easy Ups Size 4 Maxi Carry Pack 22" price="6.49" />
+    <product name="Pampers Easy Ups Size 4 Maxi Economy Pack 46" price="9.99" />
+    <product name="Pampers Easy Ups Size 5 Junior Carry Pack 22" price="6.49" />
+    <product name="Pampers Easy Ups Size 5 Junior Economy Pack 42" price="9.99" />
+    <product name="Pampers Easy Ups Size 6 Exlge Economy Pack 38" price="9.99" />
+    <product name="Tesco Easy Fit Pants Economy Pack Extra Large 34" price="6.46" />
+    <product name="Tesco Loves Baby E Fit Size 5 Junior Economy Pack 38" price="6.46" />
+    <product name="Tesco Loves Baby E.Fit Sze 4 Maxi Maxi Economy 42 Pack" price="6.46" />
+    <product name="Tesco Loves Baby Esy Fit Size 4 Maxi Carry Pack 22" price="3.55" />
+    <product name="Tesco Loves Baby Esy Fit Sze 5 Jr Junior Carry Pack 20" price="3.55" />
+    <product name="Tesco Loves Baby Esy Fit Sze 6 Extra Large Carry Pack 18" price="3.55" />
+    <product name="Huggies Unisex Little Swimmers Size 3-4" price="5.9" />
+    <product name="Tesco Loves Baby Mini Size 2 Mini Economy Pack 33" price="2.57" />
+    <product name="Tesco Loves Baby Ultra Soft New Born Pack 25" price="2.57" />
+    <product name="Tesco Newborn Nappies Carry Pack Premature 24" price="2.57" />
+    <product name="Tesco Baby Essentials Carry Pack Maxi Plus 24" price="4.68" />
+    <product name="Tesco Loves Baby Ultra Dry Size 3 Midi Carry 36Pk" price="4.68" />
+    <product name="Tesco Loves Baby Ultra Dry Size 3 Midi Economy Pack 56" price="5.97" />
+    <product name="Tesco Loves Baby Ultra Dry Size 4 Maxi Carry 30Pk" price="4.68" />
+    <product name="Tesco Loves Baby Ultra Dry Size 4 Maxi Economy Pack 48" price="5.97" />
+    <product name="Tesco Loves Baby Ultra Dry Size 4  Maxi  Economy Pack 44" price="5.97" />
+    <product name="Tesco Loves Baby Ultra Dry Size 5 Junior Carry Pack 26" price="4.68" />
+  </category>
+  <category name="Health &amp; Beauty">
+    <product name="Aussie Aussome Volume 2 In 1 300Ml" price="4.48" />
+    <product name="Dove Shampoo Daily Care 2 In 1 250Ml" price="2.32" />
+    <product name="Head And Shoulders Anti Hairloss 2 In 1 450Ml" price="4.99" />
+    <product name="Head And Shoulders Citrus Fresh 2 In 1 450Ml" price="4.99" />
+    <product name="Head And Shoulders Dry Scalp 2 In 1 450 Ml" price="4.99" />
+    <product name="Head And Shoulders Itchy Scalp 2 In 1 450Ml" price="4.99" />
+    <product name="Head And Shoulders Sensitive 2 In 1 450Ml" price="4.99" />
+    <product name="Head And Shoulders Smooth And Silky 2 In 1 450Ml" price="4.99" />
+    <product name="Herbal Essences Dazzling Shine 2 In 1 200Ml" price="2.25" />
+    <product name="Herbal Essences Dazzling Shine 2 In 1 400Ml" price="1.89" />
+    <product name="Pantene Classic Care 2 In 1 250Ml" price="2.87" />
+    <product name="Pantene Classic Care 2 In 1 500Ml" price="4.49" />
+    <product name="Pantene Smooth And Sleek 2 In 1 250Ml" price="2.87" />
+    <product name="Pantene Smooth And Sleek 2 In 1 500Ml" price="4.49" />
+    <product name="Pantene Volume And Body 2 In 1 250Ml" price="2.87" />
+    <product name="Pantene Volume And Body 2 In 1 500Ml" price="4.49" />
+    <product name="Tesco 2 In 1 Shampoo 300Ml" price="0.89" />
+    <product name="Tresemme 2 In 1 900Ml" price="4.69" />
+    <product name="Wash And Go 2 In 1 Sport 200Ml" price="1" />
+    <product name="Wash And Go Menthol Fresh Shampoo 200Ml" price="1" />
+    <product name="Wash And Go Universal Shampoo 200Ml" price="1" />
+    <product name="L oreal Kids 2 In 1 Shampoo Mango Tango 250Ml" price="1.99" />
+    <product name="L oreal Kids 2 In 1 Shampoo Strawberry 250Ml" price="1.99" />
+    <product name="L oreal Kids Conditioner So Strawberry 250Ml" price="1.99" />
+    <product name="L oreal Kids Lavender Shampoo 250Ml" price="1.99" />
+    <product name="L oreal Kids Tangle Tamer 150Ml" price="1.99" />
+    <product name="Schw Supersoft Kids Boys Shampoo Shower Gel 250Ml" price="1" />
+    <product name="Schwarzkopf Girl Kids Detangling Spray 150Ml" price="1" />
+    <product name="Schwarzkopf Kids Girls Shampoo And Conditioner 250Ml" price="1" />
+    <product name="Tesco Kids Apple And Melon 2 In 1 Shampoo 250Ml" price="1" />
+    <product name="Tesco Kids Strawberry 2 In 1 Shampoo 250Ml" price="1" />
+    <product name="Alpecin Caffeine Shampoo 250Ml" price="5.29" />
+    <product name="Elvive Shampoo Anti-Dandruff Normal Greasy 400Ml" price="3.99" />
+    <product name="Elvive Vitamax Multi-Vitamins 2 In 1 400Ml" price="3.99" />
+    <product name="Head And Shoulder Active Sport Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulder Damage Rescue Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulder Dry Scalp Care Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulder Endurance Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulder For Men Shampoo 250Ml" price="2.79" />
+    <product name="Head And Shoulder Menthol Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulders Active Sport Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Apple Fresh Conditioner 400Ml" price="4.99" />
+    <product name="Head And Shoulders Apple Fresh Conditioner200ml" price="2.99" />
+    <product name="Head And Shoulders Apple Fresh Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulders Apple Fresh Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Citrus Fresh Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulders Citrus Fresh Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Classic Clean 2 In 1 Shampoo 500M" price="4.99" />
+    <product name="Head And Shoulders Classic Clean Conditioner200ml" price="2.99" />
+    <product name="Head And Shoulders Classic Clean Conditoner 400Ml" price="4.99" />
+    <product name="Head And Shoulders Classic Clean Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulders Classic Clean Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Colour Care Conditioner200ml" price="2.99" />
+    <product name="Head And Shoulders Colour Care Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulders Colour Care Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Damage Rescue Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Dry Scalp Conditioner200ml" price="2.99" />
+    <product name="Head And Shoulders Dry Scalp Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Endurance Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Intensive Treatment Shampoo 400Ml" price="5" />
+    <product name="Head And Shoulders Itchy Scalp Conditioner 400Ml" price="4.99" />
+    <product name="Head And Shoulders Itchy Scalp Conditioner200ml" price="2.99" />
+    <product name="Head And Shoulders Itchy Scalp Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulders Itchy Scalp Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Menthol Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Sensitive Scalp Shampoo 250Ml" price="2.99" />
+    <product name="Head And Shoulders Sensitive Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Shampoo For Men 500Ml" price="4.99" />
+    <product name="Head And Shoulders Smooth And Silky Conditioner 400Ml" price="4.99" />
+    <product name="Head And Shoulders Smooth And Silky Shampoo 500Ml" price="4.99" />
+    <product name="Head And Shoulders Smooth And Sleek Conditioner200ml" price="2.99" />
+    <product name="Neutrogena T Gel Therapeutic Shampoo 125Ml" price="4.89" />
+    <product name="Nizoral Anti-Dandruff Shampoo 60Ml" price="6.08" />
+    <product name="Pantene Anti Dandruff Shampoo 500Ml" price="4.49" />
+    <product name="Pantene Classics Care 2 In 1 Anti Dandruff 500Ml" price="4.49" />
+  </category>
+  <category name="Pets">
+    <product name="Iams Cat Adult Chicken 300G" price="1.99" />
+    <product name="Iams Cat Food Adult Chicken 1Kg" price="5.39" />
+    <product name="Iams Cat Food Adult Chicken 3Kg" price="14.69" />
+    <product name="Iams Cat Food Adult Lamb 1Kg" price="5.39" />
+    <product name="Iams Cat Food Adult Lamb 3Kg" price="14.69" />
+    <product name="Iams Cat Food Adult Ocean Fish 1Kg" price="5.39" />
+    <product name="Iams Cat Food Adult Ocean Fish 300G" price="1.99" />
+    <product name="Iams Cat Food Adult Ocean Fish 3Kg" price="14.69" />
+    <product name="Iams Cat Food Adult Salmon 1Kg" price="5.39" />
+    <product name="Nutricat Sensitive Chicken And Rice 2.5Kg" price="10" />
+    <product name="Purina One Cat Adult Chicken And Rice 300G" price="2.09" />
+    <product name="Purina One Cat Adult Chicken And Rice 3Kg" price="10" />
+    <product name="Purina One Cat Adult Chicken And Rice 800G" price="4" />
+    <product name="Purina One Cat Adult Salmon And Rice 300G" price="2.09" />
+    <product name="Purina One Cat Adult Salmon And Rice 3Kg" price="10" />
+    <product name="Purina One Cat Adult Salmon And Rice 800G" price="4" />
+    <product name="Purina One Cat Indoor Formula Turkey Rice 800G" price="4" />
+    <product name="Purina One Cat Light 800G" price="4" />
+    <product name="Purina One Cat Sensitive 800G" price="4" />
+    <product name="Felix Fish Variety Pack 6 X 400G" price="3.75" />
+    <product name="Felix Mixed ion In Jelly 6X400g" price="3.75" />
+    <product name="Kitekat Fish Megamix In Jelly 6X400g" price="2.99" />
+    <product name="Kitekat Megamix In Jelly 6 X 400G" price="2.99" />
+    <product name="Tesco Cat Cutsin Gravy ion 6Pack 6X400g" price="2.79" />
+    <product name="Tesco Catcuts In Jelly ion 12Pack 12X400g" price="5.28" />
+    <product name="Tesco Catcuts In Jelly ion 6Pack 6X400g" price="2.79" />
+    <product name="Tesco Standard Cuts In Gravy ion12x400g" price="5.19" />
+    <product name="Tesco Standard Cuts In Jelly Salmon 400G" price="0.47" />
+    <product name="Tesco Supermeat ion 6X395g" price="2.79" />
+    <product name="Whiskas Adult Fish ion In Jelly 6X390g" price="3.65" />
+    <product name="Whiskas Adult Jelly ion 12 X 390G" price="6.78" />
+    <product name="Whiskas Adult Mixed ion In Gravy 6X400g" price="3.65" />
+    <product name="Whiskas Adult Mixed ion In Jelly 6 X 390G" price="3.65" />
+    <product name="Whiskas Chicken In Jelly 390G" price="0.59" />
+    <product name="Whiskas In Jelly Salmon 390G" price="0.59" />
+    <product name="Claude Cat Crunchies With Ocean Fish 1Kg" price="0.95" />
+    <product name="Claude Cat Crunchies With Poultry 1Kg" price="0.95" />
+    <product name="Go Cat Adult Salmon And Trout And Tuna 340G" price="1.29" />
+    <product name="Go Cat Chicken Beef And Liver 340G" price="1.29" />
+    <product name="Go Cat Chicken Duck Rabbit 2Kg" price="4.2" />
+    <product name="Go Cat Crunchy And Tender Beef Ckn Veg375g" price="1.49" />
+    <product name="Go Cat Duck Rabbit And Chicken 340G" price="1" />
+    <product name="Go Cat Duck Rabbit And Chicken 950G" price="2.2" />
+    <product name="Go Cat For Indoor Cats Chicken And Vegetable 2Kg" price="4.2" />
+    <product name="Go Cat For Indoor Cats Chicken And Vegetable 950G" price="2.99" />
+    <product name="Go Cat Rabbit Turkey And Vegetable 950G" price="2.2" />
+    <product name="Go Cat Salmon Trout And Tuna 2Kg" price="4.2" />
+    <product name="Go Cat Salmon Trout And Tuna 950G" price="2.2" />
+    <product name="Go Cat Tuna Herring And Vegetable 950G" price="2.2" />
+    <product name="Go-Cat Neutered Rabbit And Vegetable 950G" price="2.99" />
+    <product name="Go-Cat Tuna Herring And Vegetable 2Kg" price="4.2" />
+    <product name="Tesco Premium Cat Crunchies Duck Rabbit Chicken Vegetable 2.25Kg" price="2.79" />
+    <product name="Tesco Premium Cat Crunchies Duck Rabbit Chicken Vegetables 1Kg" price="1.39" />
+    <product name="Tesco Premium Cat Crunchies Duck Rabbit Chicken Vegetables 500G" price="0.85" />
+    <product name="Tesco Premium Cat Crunchies Herring Pilchard Veg 1Kg" price="1.39" />
+    <product name="Tesco Premium Cat Crunchies Salmon Trout Tuna And Shrimp 1Kg" price="1.39" />
+    <product name="Whiskas Adult Chicken Vegetable And Meaty Nuggets 2Kg" price="3.5" />
+    <product name="Whiskas Adult Complete Chicken 950G" price="2.55" />
+    <product name="Whiskas Adult Complete Duck And Turkey 2Kg" price="3.5" />
+    <product name="Whiskas Adult Complete Duck And Turkey 950G" price="2.55" />
+    <product name="Whiskas Adult Complete Tuna 950G" price="2.55" />
+    <product name="Whiskas Adult Tuna And Vegetable And Nuggets 2Kg" price="3.5" />
+    <product name="Whiskas Complete Chicken 375G" price="1.36" />
+    <product name="Whiskas Complete Tuna 375G" price="1.36" />
+    <product name="Felix Agail Kitten Fish 12 X 100G" price="4" />
+    <product name="Felix As Good As It Looks Kitten In Jelly 12X100g" price="4" />
+    <product name="Felix Pouch Kitten In Jelly 12X100g" price="3" />
+    <product name="Felix Pouch Kitten Mixed ion In Jelly 12X100g" price="3.28" />
+    <product name="Go Cat Kitten 375G" price="1.29" />
+    <product name="Go Cat Kitten Chicken Carrot And Milk Nuggets 950G" price="2.99" />
+  </category>
+  <category name="Household">
+    <product name="Comfort Vaporesse Blue 1 Litre" price="1" />
+    <product name="Comfort Vaporesse Blueberry Jasmine 1" price="1" />
+    <product name="Dylon Spray Starch 300Ml" price="1.5" />
+    <product name="Febreeze Fabric Refresher Classic 500Ml" price="2.99" />
+    <product name="Febreze Fabric Refresher Thai Orchid 500Ml" price="2.99" />
+    <product name="Lenor Summer Breeze Tumble Dryer Sheets" price="3.1" />
+    <product name="Tesco Fabric Freshener 500Ml" price="0.8" />
+    <product name="Tesco Ironing Water Linen Fresh 1Ltr" price="1.15" />
+    <product name="Tesco Ironing Water Spring Petals 1 Litre" price="1.15" />
+    <product name="Tesco Spring Fresh Tumble Dryer Sheets 60" price="2" />
+    <product name="Ace Gentle Stain Remover 1Ltr" price="1.94" />
+    <product name="Ariel Stain Remover Blue Powder 450G" price="4.55" />
+    <product name="Ariel Stain Remover Blue Powder 920G" price="8.58" />
+    <product name="Ariel Stain Remover White 3D Boosters 14 S" price="3" />
+    <product name="Ariel Stain Remover White Powder 450G" price="4.55" />
+    <product name="Ariel Stain Remover White Powder 920G" price="8.58" />
+    <product name="Bio-Tex Stain Remover 500G" price="2" />
+    <product name="Calgon Expressball Tabs 15Pack" price="5.3" />
+    <product name="Calgon Powder 600G" price="4.3" />
+    <product name="Calgon Tablets 45S" price="12.5" />
+    <product name="De Beckmann Colour Dirt Collector 20Sht" price="2.2" />
+    <product name="De.Solv.It Stain Remover 100Ml" price="2" />
+    <product name="Dlyon Colour Catcher Plus Oxi Stain Remover4pk" price="2" />
+    <product name="Dr Beckmann Colour Run Remover 3 Pack" price="2.4" />
+    <product name="Dr Beckmann Glo White 3 Sachets" price="1.2" />
+    <product name="Dr Beckmann Service It Machine Cleaner" price="3.3" />
+    <product name="Dr Beckmann Service-It Deep Clean" price="3.3" />
+    <product name="Dri Pak Soda Crystals 1Kg" price="1" />
+    <product name="Dylon Colour Catcher 24 Sheets" price="2" />
+    <product name="Dylon Fabric Colour Set Black" price="5" />
+    <product name="Dylon Ultra Whitener And Oxi Stain Rmvr 6Pk" price="2" />
+    <product name="Ecover Delicate Washing Liquid 500Ml" price="1.5" />
+    <product name="Persil Powder Handwash 900G" price="3" />
+    <product name="Persil Silk And Wool 750Ml" price="3.5" />
+    <product name="T Protect Darker For Longer Darks Wash 500Ml" price="2" />
+    <product name="T Protect Denim For Longer Denim Wash 500Ml" price="2" />
+    <product name="Tesco Colour Sheets 24 S" price="2" />
+    <product name="Tesco Limescale Prevention Tabs 40 Pack" price="4.2" />
+    <product name="Tesco Non Bio Handwash Powder 800G" price="1.29" />
+    <product name="Tesco Oxi Powder Colours 500G" price="2.2" />
+    <product name="Tesco Oxi Powder Whites 500G" price="2.2" />
+    <product name="Tesco Oxi Stain Remover Spray 500Ml" price="1.9" />
+    <product name="Tesco Silk And Delicates Handwash 750Ml" price="1.59" />
+    <product name="Vanish Crystal White 500G" price="3" />
+    <product name="Vanish Crystal Whites Powder 1.5Kg" price="7" />
+    <product name="Vanish Extra Hygiene Powder 470G" price="3" />
+    <product name="Vanish In Wash Liquid 1 Litre" price="2.4" />
+    <product name="Vanish Oxi Action 1 Kilograms" price="8.7" />
+    <product name="Vanish Oxi Action 500G" price="3" />
+    <product name="Vanish Oxi Action Crystal White 750G" price="4" />
+    <product name="Vanish Oxi Action Multi 1.5Kg" price="7" />
+    <product name="Vanish Oxi Action Pre Wash Spray 500Ml" price="3.98" />
+    <product name="Vanish Oxiaction Sensitive Powder 470G" price="3" />
+    <product name="Vanish Power Gel Caps" price="4.59" />
+    <product name="Vanish Power Gel Oxi Action Multi 1 Litre" price="3" />
+    <product name="Vanish Pre-Wash Stain Remover Spray 500Ml" price="2.3" />
+    <product name="Vanish Stain Stick 75G" price="2" />
+    <product name="Vanish Stain Stop Aerosol 300Ml" price="4.7" />
+    <product name="Wizz Oxi Ultra Stain Remover Powder 1Kg" price="2.5" />
+    <product name="Woolite Hand   Machine Wash 750Ml" price="3.5" />
+    <product name="Ariel Excel Gel Bio 24 Wash 888Ml" price="8.17" />
+    <product name="Ariel Excel Gel Bio Detergent 592Ml" price="3" />
+    <product name="Ariel Excel Gel Colour 16 Wash 592Ml" price="3" />
+    <product name="Ariel Excel Gel Colour 24 Wash 888 Ml" price="8.17" />
+    <product name="Ariel Excel Gel With Febreze 16 Wash 592Ml" price="3" />
+    <product name="Ariel Excel Gel With Febreze 24 Wash 888Ml" price="8.17" />
+    <product name="Bold 2 In 1 Gel Blue 16 Wash 592Ml" price="3" />
+    <product name="Bold 2 In 1 Gel Lavender And Camomile 24 Wash 888Ml" price="4" />
+    <product name="Bold 2 In 1 Gel Rose Blush And Peony 24W 888Ml" price="4" />
+    <product name="Bold Gel Blue Crystal Rain 24 Wash 888Ml" price="4" />
+    <product name="Daisy Bio Superconcentate 28Wash 980Ml" price="2.39" />
+    <product name="Daisy Colour Superconcentate 28 Wash 980Ml" price="2.39" />
+    <product name="Daz Liquid Violet Blossom 880Ml" price="4" />
+    <product name="Ecover Concentrated Liquid 1Ltr 28 Wash" price="4.5" />
+    <product name="Ecover Laundry Gel Nonbio 630Ml" price="3.5" />
+    <product name="Fairy Excel Gel Non Bio 16 Wash 592Ml" price="4" />
+    <product name="Fairy Excel Gel Non Bio 24 Wash 888Ml" price="5" />
+    <product name="Fairy Liquid Non Bio Wash 18 Wash 1.3L" price="6.5" />
+    <product name="Naturally Powered Non Biological Laundry Liqd750m" price="3" />
+    <product name="Persil 2In1small And Mighty 875Ml Passion Flower" price="5" />
+    <product name="Persil 2In1small And Mighty 875Ml Sunshiny Days" price="5" />
+    <product name="Persil Small And Mighty Bio 1890Ml" price="10.5" />
+    <product name="Persil Small And Mighty Bio 18W 630Ml" price="3" />
+    <product name="Persil Small And Mighty Bio 28W 1Litre" price="5" />
+    <product name="Persil Small And Mighty Colour 1890Ml" price="10.5" />
+    <product name="Persil Small And Mighty Colour 28W 1Litre" price="5" />
+    <product name="Persil Small And Mighty Non Bio 1890Ml" price="10.5" />
+    <product name="Persil Small And Mighty Non Bio 18W 630Ml" price="3" />
+    <product name="Persil Small And Mighty Non Bio 28W 1Litre" price="5" />
+    <product name="Surcare Concentrated Liquid 630Ml" price="2.79" />
+    <product name="Surf S M 28Wash Mystic Waterfall" price="3" />
+    <product name="Surf Small And Mighty Oriental 28W 1 Litre" price="3" />
+    <product name="Surf Small And Mighty Sunshine 28W 1 Litre" price="3" />
+    <product name="Surf Small And Mighty Tropical 28W 1 Litre" price="3" />
+    <product name="Tesco Ambience Lavender Liquid 630Ml" price="2.9" />
+    <product name="Tesco Ambience Liquid Forget Me Not 630 Ml" price="2.9" />
+    <product name="Tesco Ambience Liquid Pretty In Pink 630 Ml" price="2.9" />
+    <product name="Tesco Everyday Value Bio Concentrated Ldd Wash 1Litre" price="1.6" />
+    <product name="Tesco Laundry Gel 2 In 1 Lavender 630Ml" price="2.25" />
+    <product name="Tesco Laundry Gel Bio 630Ml" price="2.25" />
+    <product name="Tesco Laundry Gel Colour 630Ml" price="2.25" />
+    <product name="Tesco Laundry Gel Non Biological 630Ml" price="2.25" />
+    <product name="Tesco Laundry Gel Orange 630Ml" price="2.25" />
+    <product name="Tesco Super Concentrated Bio Liquid 630Ml" price="2.9" />
+    <product name="Tesco Super Concentrated Colour Liquid 630Ml" price="2.9" />
+    <product name="Tesco Super Concentrated Liquid Non Bio 960Ml" price="4" />
+    <product name="Tesco Super Concentrated Non Bio Liquid 630Ml" price="2.9" />
+    <product name="Ariel Colour Liqui Tabs 11S" price="4.3" />
+    <product name="Ariel Liquitabs Bio 11 S" price="4.3" />
+    <product name="Ariel Liquitabs Bio 20 S" price="7" />
+    <product name="Ariel Liquitabs Bio 40 S" price="7" />
+    <product name="Ariel Liquitabs Colour 20 S" price="7" />
+    <product name="Ariel Ltb Febreze 20 Wash" price="7.09" />
+    <product name="Bold Liquitabs Crystal Rain 20S" price="4" />
+    <product name="Bold Liquitabs Crystal Rain 33 Wash" price="11" />
+    <product name="Bold Liquitabs Lavender And Camomile 11 S" price="4.15" />
+    <product name="Bold Liquitabs Lavender And Camomile 20 S" price="4" />
+    <product name="Bold Liquitabs Lavender And Camomile 33 S" price="11" />
+    <product name="Bold Liquitabs Orange Blossom 20 S" price="4" />
+    <product name="Bold Liquitabs Peony 33 S" price="11" />
+    <product name="Bold Liquitabs Rose Blush And Peony 20S" price="4" />
+  </category>
+  <category name="Home &amp; Ents">
+    <product name="Tesco Kids Single Reverisble Duvet Set Blue" price="10" />
+    <product name="Breville Vin210 2400W Digital Steam Iron" price="24.5" />
+    <product name="Breville Vin225 Iron" price="15" />
+    <product name="Elgento E22002 2000W Steam Iron" price="7.5" />
+    <product name="Morphy Richards 40754 Comfigrip Iron" price="39" />
+    <product name="Rh Desire Hand Blender" price="22.5" />
+    <product name="Rh Desire Hand Mixer" price="22.5" />
+    <product name="Russell Hobbs 14449 Food Blender" price="24.5" />
+    <product name="Russell Hobbs 15075 White Kettle" price="18" />
+    <product name="Russell Hobbs 18157 Stainless Steel Kettle" price="24.5" />
+    <product name="Russell Hobbs 18720 2400W Ceramic Iron" price="20" />
+    <product name="Russell Hobbs 18743 Ceramic Steam Iron" price="22" />
+    <product name="Russell Hobbs 18770 Stainless Steel Kettle" price="19.97" />
+    <product name="Russell Hobbs 18780 Stainless 2 Slice Toaster" price="19.5" />
+    <product name="Russell Hobbs 19670 Richmond Polished Kettle" price="20" />
+    <product name="Tefal Fresh Express" price="49.5" />
+    <product name="Tefal Fv3770 Iron" price="29.5" />
+    <product name="Tesco 2Tbp12 Black Plastic 2 Slice Toaster" price="10" />
+    <product name="Tesco 2Tss11 2 Slice Ss" price="15" />
+    <product name="Tesco 4Tss11 4 Slice Ss" price="19.5" />
+    <product name="Tesco Bl13 Jug Blender Black" price="14.5" />
+    <product name="Tesco Everyday Value 2T07 2 Slice Toaster" price="7" />
+    <product name="Tesco Everyday Value 4T10 Long Slot 4 Slice Toaster" price="10" />
+    <product name="Tesco Everyday Value Hb07 Hand Blender" price="6.5" />
+    <product name="Tesco Everyday Value Smwp12 Sandwich Toaster" price="5.97" />
+    <product name="Tesco Everyday Value Vhm10 Handmixer" price="5.5" />
+    <product name="Tesco Hm09 Handmixer" price="9.5" />
+    <product name="Tesco Jk29 Stainless Steel Kettle" price="9.97" />
+    <product name="Tesco Jkl11 1.7L 3Kw Kettle" price="19.5" />
+    <product name="Tesco Jkl11c 3Kw Cream Ss Kettle" price="24.5" />
+    <product name="Tesco Jkwp12 2.2Kw White Plastic Kettle" price="12" />
+    <product name="Tesco Scss12 3L Slow Cooker" price="14.96" />
+    <product name="Tesco Sm12 Sandwich Toaster" price="9.97" />
+    <product name="Tesco Stmp11 Stand Mixer" price="19.5" />
+    <product name="Tesco Tk12 Traditional Steel Kettle" price="18" />
+    <product name="Tescojk12 Valuekettle" price="6" />
+    <product name="Minky Reflector Ironing Board Cover 122 X 38" price="3.88" />
+    <product name="Minky Smart Fit Ironing Board Cover" price="5.98" />
+    <product name="T 4 Pack Choc Taupe Reversable Faux Leather Placemat" price="10" />
+    <product name="T 4 Pack Choc Taupe Reversible Faux Leather Coaster" price="3.5" />
+    <product name="Tesco Circus Design 4 Pack Coasters" price="3" />
+    <product name="Tesco Circus Design 4 Pack Placemats" price="6.5" />
+    <product name="Tesco Circus Lap Tray" price="8.5" />
+    <product name="Tesco Cutlery Drainer Cream" price="2" />
+    <product name="Tesco Cutlery Drainer Platinum" price="2" />
+    <product name="Tesco Cutlery Tray Cream" price="2" />
+    <product name="Tesco Cutlery Tray Platinum" price="2" />
+    <product name="Tesco Dish Drainer Cream" price="2" />
+    <product name="Tesco Dish Drainer Platinum" price="2" />
+    <product name="Tesco Dustpan And Brush" price="1.97" />
+  </category>
+</tesco>

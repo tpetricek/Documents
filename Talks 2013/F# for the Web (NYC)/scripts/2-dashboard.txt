@@ -1,0 +1,13 @@
+  [ for c in wb.Regions.``Euro area``.Countries ->
+      let _, population = c.Indicators.``Population, total`` |> Seq.maxBy fst 
+      c.Name, population ]
+
+	  
+ US = CsvProvider<"us-states.csv", InferRows=10, IgnoreErrors=true>
+let liveUrl = "http://visualizing.org/sites/default/files/data_set/admin/NST_EST2009_ALLDATA.csv"
+
+
+  let live = US.Load(liveUrl)
+  [ for row in live.Data do
+      if row.SUMLEV = 40 then
+        yield row.NAME, row.CENSUS2000POP ]
