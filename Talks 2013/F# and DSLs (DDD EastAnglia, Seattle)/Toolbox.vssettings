@@ -1,0 +1,488 @@
+<UserSettings>
+	<ApplicationIdentity version="11.0"/>
+	<ToolsOptions/>
+	<Category name="Environment_Group" RegisteredName="Environment_Group">
+		<Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package">
+			<PropertyValue name="ShowAllTabs">false</PropertyValue>
+			<PropertyValue name="Version">1</PropertyValue>
+			<PropertyValue name="DeletedTabCount">0</PropertyValue>
+			<PropertyValue name="Tab0.ID">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Tab0.Name">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Tab0.View">0</PropertyValue>
+			<PropertyValue name="Tab0.UseDefaultName">false</PropertyValue>
+			<PropertyValue name="Tab0.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab0.Position">54</PropertyValue>
+			<PropertyValue name="Tab0.OriginalName">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Tab1.ID">2 Stocks</PropertyValue>
+			<PropertyValue name="Tab1.Name">2 Stocks</PropertyValue>
+			<PropertyValue name="Tab1.View">0</PropertyValue>
+			<PropertyValue name="Tab1.UseDefaultName">false</PropertyValue>
+			<PropertyValue name="Tab1.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab1.Position">55</PropertyValue>
+			<PropertyValue name="Tab1.OriginalName">2 Stocks</PropertyValue>
+			<PropertyValue name="Tab2.ID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Tab2.Name">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Tab2.View">0</PropertyValue>
+			<PropertyValue name="Tab2.UseDefaultName">false</PropertyValue>
+			<PropertyValue name="Tab2.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab2.Position">56</PropertyValue>
+			<PropertyValue name="Tab2.OriginalName">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Tab3.ID">4 Classifiers</PropertyValue>
+			<PropertyValue name="Tab3.Name">4 Classifiers</PropertyValue>
+			<PropertyValue name="Tab3.View">0</PropertyValue>
+			<PropertyValue name="Tab3.UseDefaultName">false</PropertyValue>
+			<PropertyValue name="Tab3.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab3.Position">57</PropertyValue>
+			<PropertyValue name="Tab3.OriginalName">4 Classifiers</PropertyValue>
+			<PropertyValue name="Tab4.ID">4 Markdown</PropertyValue>
+			<PropertyValue name="Tab4.Name">4 Markdown</PropertyValue>
+			<PropertyValue name="Tab4.View">0</PropertyValue>
+			<PropertyValue name="Tab4.UseDefaultName">false</PropertyValue>
+			<PropertyValue name="Tab4.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab4.Position">58</PropertyValue>
+			<PropertyValue name="Tab4.OriginalName">4 Markdown</PropertyValue>
+			<PropertyValue name="TabCount">5</PropertyValue>
+			<PropertyValue name="DeletedItemCount">0</PropertyValue>
+			<PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item0.ID">32905A618627DE29AFCC80AED801DA87</PropertyValue>
+			<PropertyValue name="Item0.Name">Text: let tower x z = 
+  (Fun.cylinder
+     |&gt; Fun.scale (1.0, 1.0, 3.0) 
+     |&gt; Fun.translate (0.0, 0.0, 1.0)
+     |&gt; Fun.color Color.DarkGoldenrod ) $ 
+  (Fun.cone 
+     |&gt; Fun.scale (1.3, 1.3, 1.3) 
+     |&gt; Fun.translate (0.0, 0.0, -1.0)
+     |&gt; Fun.color Color.Red )
+  |&gt; Fun.rotate (90.0, 0.0, 0.0)
+  |&gt; Fun.translate (x, 0.5, z)</PropertyValue>
+			<PropertyValue name="Item0.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item0.Tab">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item0.TabID">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item0.OriginalTabID">General</PropertyValue>
+			<PropertyValue name="Item0.OriginalTab">General</PropertyValue>
+			<PropertyValue name="Item0.RecordType">1</PropertyValue>
+			<PropertyValue name="Item0.Data">let tower x z = 
+  (Fun.cylinder
+     |&gt; Fun.scale (1.0, 1.0, 3.0) 
+     |&gt; Fun.translate (0.0, 0.0, 1.0)
+     |&gt; Fun.color Color.DarkGoldenrod ) $ 
+  (Fun.cone 
+     |&gt; Fun.scale (1.3, 1.3, 1.3) 
+     |&gt; Fun.translate (0.0, 0.0, -1.0)
+     |&gt; Fun.color Color.Red )
+  |&gt; Fun.rotate (90.0, 0.0, 0.0)
+  |&gt; Fun.translate (x, 0.5, z)</PropertyValue>
+			<PropertyValue name="Item0.Position">1</PropertyValue>
+			<PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item1.ID">C692CE712CAD5A5BABC67E182FB1E4FD</PropertyValue>
+			<PropertyValue name="Item1.Name">Text: let sizedCube height = 
+  Fun.cube 
+  |&gt; Fun.scale (0.5, height, 1.0) 
+  |&gt; Fun.translate (-0.5, height/2.0 - 1.0, 0.0)
+
+let twoCubes =
+  sizedCube 0.8 $ (sizedCube 1.0 |&gt; Fun.translate (0.5, 0.0, 0.0))
+</PropertyValue>
+			<PropertyValue name="Item1.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item1.Tab">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item1.TabID">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item1.OriginalTabID">General</PropertyValue>
+			<PropertyValue name="Item1.OriginalTab">General</PropertyValue>
+			<PropertyValue name="Item1.RecordType">1</PropertyValue>
+			<PropertyValue name="Item1.Data">let sizedCube height = 
+  Fun.cube 
+  |&gt; Fun.scale (0.5, height, 1.0) 
+  |&gt; Fun.translate (-0.5, height/2.0 - 1.0, 0.0)
+
+let twoCubes =
+  sizedCube 0.8 $ (sizedCube 1.0 |&gt; Fun.translate (0.5, 0.0, 0.0))
+</PropertyValue>
+			<PropertyValue name="Item1.Position">2</PropertyValue>
+			<PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item2.ID">1D1F194400837AFFFBD637BDA1C440B3</PropertyValue>
+			<PropertyValue name="Item2.Name">Text: let block = 
+  [ for offset in -4.0 .. +4.0 -&gt;
+      twoCubes |&gt; Fun.translate (offset, 0.0, 0.0) ]
+  |&gt; Seq.reduce ($)
+  |&gt; Fun.scale (0.5, 2.0, 0.3)
+  |&gt; Fun.color Color.DarkGray
+</PropertyValue>
+			<PropertyValue name="Item2.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item2.Tab">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item2.TabID">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item2.OriginalTabID">General</PropertyValue>
+			<PropertyValue name="Item2.OriginalTab">General</PropertyValue>
+			<PropertyValue name="Item2.RecordType">1</PropertyValue>
+			<PropertyValue name="Item2.Data">let block = 
+  [ for offset in -4.0 .. +4.0 -&gt;
+      twoCubes |&gt; Fun.translate (offset, 0.0, 0.0) ]
+  |&gt; Seq.reduce ($)
+  |&gt; Fun.scale (0.5, 2.0, 0.3)
+  |&gt; Fun.color Color.DarkGray
+</PropertyValue>
+			<PropertyValue name="Item2.Position">3</PropertyValue>
+			<PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item3.ID">B78E0BD0EDCF15E23C4D3A177ADC8543</PropertyValue>
+			<PropertyValue name="Item3.Name">Text: let wall offs rotate = 
+  let rotationArg = if rotate then (0.0, 90.0, 0.0) else (0.0, 0.0, 0.0)
+  let translationArg = if rotate then (offs, 0.0, 0.0) else (0.0, 0.0, offs)
+  block |&gt; Fun.rotate rotationArg |&gt; Fun.translate translationArg
+</PropertyValue>
+			<PropertyValue name="Item3.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item3.Tab">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item3.TabID">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item3.OriginalTabID">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item3.OriginalTab">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item3.RecordType">1</PropertyValue>
+			<PropertyValue name="Item3.Data">let wall offs rotate = 
+  let rotationArg = if rotate then (0.0, 90.0, 0.0) else (0.0, 0.0, 0.0)
+  let translationArg = if rotate then (offs, 0.0, 0.0) else (0.0, 0.0, offs)
+  block |&gt; Fun.rotate rotationArg |&gt; Fun.translate translationArg
+</PropertyValue>
+			<PropertyValue name="Item3.Position">4</PropertyValue>
+			<PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item4.ID">87FFBB5C433A819F9D9700B3BFF29F8C</PropertyValue>
+			<PropertyValue name="Item4.Name">Text: tower -2.0 -2.0 $ tower 2.0 -2.0 $ 
+  tower -2.0 2.0 $ tower 2.0 2.0 $
+  wall -2.0 true $ wall 2.0 true $
+  wall -2.0 false $ wall 2.0 false
+</PropertyValue>
+			<PropertyValue name="Item4.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item4.Tab">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item4.TabID">1 Funcitonal 3D</PropertyValue>
+			<PropertyValue name="Item4.OriginalTabID">General</PropertyValue>
+			<PropertyValue name="Item4.OriginalTab">General</PropertyValue>
+			<PropertyValue name="Item4.RecordType">1</PropertyValue>
+			<PropertyValue name="Item4.Data">tower -2.0 -2.0 $ tower 2.0 -2.0 $ 
+  tower -2.0 2.0 $ tower 2.0 2.0 $
+  wall -2.0 true $ wall 2.0 true $
+  wall -2.0 false $ wall 2.0 false
+</PropertyValue>
+			<PropertyValue name="Item4.Position">5</PropertyValue>
+			<PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item5.ID">5B9698C2377C059B2539418F3A0517B5</PropertyValue>
+			<PropertyValue name="Item5.Name">Text: let BottomStraddle exercisePrice actualPrice = 
+  // buy put at exercise &amp; buy call at exercise
+  EuroCall exercisePrice actualPrice +
+  EuroPut exercisePrice actualPrice
+
+let Strangle lowPrice highPrice actualPrice = 
+  // buy put at low &amp; buy call at high
+  EuroCall highPrice actualPrice +
+  EuroPut lowPrice actualPrice
+
+let BullSpread lowPrice highPrice actualPrice = 
+  // buy call at low &amp; sell call at high
+  (EuroCall lowPrice actualPrice) -
+  (EuroCall highPrice actualPrice)
+
+let ButterflySpread lowPrice highPrice actualPrice = 
+  (EuroCall lowPrice actualPrice) +
+  (EuroCall highPrice actualPrice) -
+  2.0 * (EuroCall ((lowPrice + highPrice) / 2.0) actualPrice)
+</PropertyValue>
+			<PropertyValue name="Item5.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item5.Tab">2 Stocks</PropertyValue>
+			<PropertyValue name="Item5.TabID">2 Stocks</PropertyValue>
+			<PropertyValue name="Item5.OriginalTabID">General</PropertyValue>
+			<PropertyValue name="Item5.OriginalTab">General</PropertyValue>
+			<PropertyValue name="Item5.RecordType">1</PropertyValue>
+			<PropertyValue name="Item5.Data">let BottomStraddle exercisePrice actualPrice = 
+  // buy put at exercise &amp; buy call at exercise
+  EuroCall exercisePrice actualPrice +
+  EuroPut exercisePrice actualPrice
+
+let Strangle lowPrice highPrice actualPrice = 
+  // buy put at low &amp; buy call at high
+  EuroCall highPrice actualPrice +
+  EuroPut lowPrice actualPrice
+
+let BullSpread lowPrice highPrice actualPrice = 
+  // buy call at low &amp; sell call at high
+  (EuroCall lowPrice actualPrice) -
+  (EuroCall highPrice actualPrice)
+
+let ButterflySpread lowPrice highPrice actualPrice = 
+  (EuroCall lowPrice actualPrice) +
+  (EuroCall highPrice actualPrice) -
+  2.0 * (EuroCall ((lowPrice + highPrice) / 2.0) actualPrice)
+</PropertyValue>
+			<PropertyValue name="Item5.Position">1</PropertyValue>
+			<PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item6.ID">475B947D4D28CDBE228858A1586A5318</PropertyValue>
+			<PropertyValue name="Item6.Name">Text: Chart.Rows
+ [ Chart.Columns
+    [ PlotOption(BottomStraddle 30.0).AndTitle("Bottom straddle") 
+      PlotOption(ButterflySpread 20.0 80.0).AndTitle("Butterfly spread") ]
+   Chart.Columns
+    [ PlotOption(BullSpread 20.0 80.0).AndTitle("Bull spread") 
+      PlotOption(Strangle 20.0 80.0).AndTitle("Strangle") ] ]
+</PropertyValue>
+			<PropertyValue name="Item6.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item6.Tab">2 Stocks</PropertyValue>
+			<PropertyValue name="Item6.TabID">2 Stocks</PropertyValue>
+			<PropertyValue name="Item6.OriginalTabID">2 Stocks</PropertyValue>
+			<PropertyValue name="Item6.OriginalTab">2 Stocks</PropertyValue>
+			<PropertyValue name="Item6.RecordType">1</PropertyValue>
+			<PropertyValue name="Item6.Data">Chart.Rows
+ [ Chart.Columns
+    [ PlotOption(BottomStraddle 30.0).AndTitle("Bottom straddle") 
+      PlotOption(ButterflySpread 20.0 80.0).AndTitle("Butterfly spread") ]
+   Chart.Columns
+    [ PlotOption(BullSpread 20.0 80.0).AndTitle("Bull spread") 
+      PlotOption(Strangle 20.0 80.0).AndTitle("Strangle") ] ]
+</PropertyValue>
+			<PropertyValue name="Item6.Position">2</PropertyValue>
+			<PropertyValue name="Item7.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item7.ID">3DE766F5D58ADCAD387F4043804EBDB3</PropertyValue>
+			<PropertyValue name="Item7.Name">Text: type Kind = Put | Call
+
+type Option = 
+  | Euro of Kind * string * decimal
+  | Combine of Option * Option
+  | Times of int * Option
+</PropertyValue>
+			<PropertyValue name="Item7.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item7.Tab">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item7.TabID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item7.OriginalTabID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item7.OriginalTab">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item7.RecordType">1</PropertyValue>
+			<PropertyValue name="Item7.Data">type Kind = Put | Call
+
+type Option = 
+  | Euro of Kind * string * decimal
+  | Combine of Option * Option
+  | Times of int * Option
+</PropertyValue>
+			<PropertyValue name="Item7.Position">1</PropertyValue>
+			<PropertyValue name="Item8.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item8.ID">3DFDCEE81592EDF858EF0607B0E9450B</PropertyValue>
+			<PropertyValue name="Item8.Name">Text: let ButterflySpread stock lowPrice highPrice  = 
+  Combine
+    ( Euro(Call, stock, lowPrice),
+      Combine
+        ( Euro(Call, stock, highPrice),
+          Times(2, Euro(Call, stock, ((lowPrice + highPrice) / 2.0M))) ))
+</PropertyValue>
+			<PropertyValue name="Item8.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item8.Tab">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item8.TabID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item8.OriginalTabID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item8.OriginalTab">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item8.RecordType">1</PropertyValue>
+			<PropertyValue name="Item8.Data">let ButterflySpread stock lowPrice highPrice  = 
+  Combine
+    ( Euro(Call, stock, lowPrice),
+      Combine
+        ( Euro(Call, stock, highPrice),
+          Times(2, Euro(Call, stock, ((lowPrice + highPrice) / 2.0M))) ))
+</PropertyValue>
+			<PropertyValue name="Item8.Position">2</PropertyValue>
+			<PropertyValue name="Item9.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item9.ID">683324D1B17184A231915D7949B5DAB2</PropertyValue>
+			<PropertyValue name="Item9.Name">Text: let Sell(option) = Times(-1, option)
+
+type Option with
+  static member (*) (x:int, option:Option) =
+    Times(x, option)     
+  static member ($) (option1:Option, option2:Option) = 
+    Combine(option1, option2)  
+</PropertyValue>
+			<PropertyValue name="Item9.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item9.Tab">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item9.TabID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item9.OriginalTabID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item9.OriginalTab">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item9.RecordType">1</PropertyValue>
+			<PropertyValue name="Item9.Data">let Sell(option) = Times(-1, option)
+
+type Option with
+  static member (*) (x:int, option:Option) =
+    Times(x, option)     
+  static member ($) (option1:Option, option2:Option) = 
+    Combine(option1, option2)  
+</PropertyValue>
+			<PropertyValue name="Item9.Position">3</PropertyValue>
+			<PropertyValue name="Item10.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item10.ID">874EAB781215D3A135804B192A9A4E99</PropertyValue>
+			<PropertyValue name="Item10.Name">Text: let rec payoff option = 
+  match option with
+  | Euro(Call, stockName, exercisePrice) -&gt;
+      let actualPrice = getPrice stockName
+      max 0.0M (actualPrice - exercisePrice)
+  | Euro(Put, stockName, exercisePrice) -&gt;
+      let actualPrice = getPrice stockName
+      max 0.0M (exercisePrice -  actualPrice)
+  | Combine(option1, option2) -&gt;
+      (payoff option1) + (payoff option2) 
+  | Times(n, option) -&gt;
+      decimal n * (payoff option)
+</PropertyValue>
+			<PropertyValue name="Item10.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item10.Tab">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item10.TabID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item10.OriginalTabID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item10.OriginalTab">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item10.RecordType">1</PropertyValue>
+			<PropertyValue name="Item10.Data">let rec payoff option = 
+  match option with
+  | Euro(Call, stockName, exercisePrice) -&gt;
+      let actualPrice = getPrice stockName
+      max 0.0M (actualPrice - exercisePrice)
+  | Euro(Put, stockName, exercisePrice) -&gt;
+      let actualPrice = getPrice stockName
+      max 0.0M (exercisePrice -  actualPrice)
+  | Combine(option1, option2) -&gt;
+      (payoff option1) + (payoff option2) 
+  | Times(n, option) -&gt;
+      decimal n * (payoff option)
+</PropertyValue>
+			<PropertyValue name="Item10.Position">4</PropertyValue>
+			<PropertyValue name="Item11.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item11.ID">C1AB6F400B33DABB2142E19769BD1BDA</PropertyValue>
+			<PropertyValue name="Item11.Name">Text: type Stocks = CsvProvider&lt;"lib\\MSFT.csv"&gt;
+
+let getPrice = Helpers.memoize (fun name -&gt;
+  let prices = Stocks.Load("http://ichart.finance.yahoo.com/table.csv?s=" + name)
+  query { for p in prices.Data do
+          sortByDescending p.Date
+          select p.Close
+          headOrDefault })
+</PropertyValue>
+			<PropertyValue name="Item11.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item11.Tab">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item11.TabID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item11.OriginalTabID">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item11.OriginalTab">3 Stocks DSL</PropertyValue>
+			<PropertyValue name="Item11.RecordType">1</PropertyValue>
+			<PropertyValue name="Item11.Data">type Stocks = CsvProvider&lt;"lib\\MSFT.csv"&gt;
+
+let getPrice = Helpers.memoize (fun name -&gt;
+  let prices = Stocks.Load("http://ichart.finance.yahoo.com/table.csv?s=" + name)
+  query { for p in prices.Data do
+          sortByDescending p.Date
+          select p.Close
+          headOrDefault })
+</PropertyValue>
+			<PropertyValue name="Item11.Position">5</PropertyValue>
+			<PropertyValue name="Item12.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item12.ID">392847B18EBB5AC0DB7DFB5A4C36F8BA</PropertyValue>
+			<PropertyValue name="Item12.Name">Text: // Pattern that detects when price is going up and is above given limit
+let highAndRising limit = 
+  Price.bothAnd 
+    (Price.average |&gt; Price.map (fun v -&gt; v &gt; limit))
+    mostlyUp
+
+win.Add("High &amp; rising", highAndRising 30.0)
+</PropertyValue>
+			<PropertyValue name="Item12.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item12.Tab">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item12.TabID">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item12.OriginalTabID">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item12.OriginalTab">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item12.RecordType">1</PropertyValue>
+			<PropertyValue name="Item12.Data">// Pattern that detects when price is going up and is above given limit
+let highAndRising limit = 
+  Price.bothAnd 
+    (Price.average |&gt; Price.map (fun v -&gt; v &gt; limit))
+    mostlyUp
+
+win.Add("High &amp; rising", highAndRising 30.0)
+</PropertyValue>
+			<PropertyValue name="Item12.Position">1</PropertyValue>
+			<PropertyValue name="Item13.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item13.ID">E346EB12CFBF172D1672CFD517E66D26</PropertyValue>
+			<PropertyValue name="Item13.Name">Text: let diff = 
+  Price.both Price.minimum Price.maximum 
+  |&gt; Price.map (fun (l, h) -&gt; h - l)
+
+win.Add("Difference", diff)
+</PropertyValue>
+			<PropertyValue name="Item13.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item13.Tab">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item13.TabID">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item13.OriginalTabID">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item13.OriginalTab">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item13.RecordType">1</PropertyValue>
+			<PropertyValue name="Item13.Data">let diff = 
+  Price.both Price.minimum Price.maximum 
+  |&gt; Price.map (fun (l, h) -&gt; h - l)
+
+win.Add("Difference", diff)
+</PropertyValue>
+			<PropertyValue name="Item13.Position">2</PropertyValue>
+			<PropertyValue name="Item14.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item14.ID">B3B7258C4280B9574F5CB340D871C934</PropertyValue>
+			<PropertyValue name="Item14.Name">Text: // Price is declining and average is more than 27
+let downOver27 = classify { 
+  // Calculate average over the range
+  let! avg = Price.average
+  // Test if the price is mostly declining
+  let! down = Price.regression Price.declining
+  // Evaluate the condition 
+  return down &amp;&amp; (avg &gt;= 27.0) }
+
+win.Add("Down &gt;27", downOver27)
+</PropertyValue>
+			<PropertyValue name="Item14.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item14.Tab">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item14.TabID">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item14.OriginalTabID">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item14.OriginalTab">4 Classifiers</PropertyValue>
+			<PropertyValue name="Item14.RecordType">1</PropertyValue>
+			<PropertyValue name="Item14.Data">// Price is declining and average is more than 27
+let downOver27 = classify { 
+  // Calculate average over the range
+  let! avg = Price.average
+  // Test if the price is mostly declining
+  let! down = Price.regression Price.declining
+  // Evaluate the condition 
+  return down &amp;&amp; (avg &gt;= 27.0) }
+
+win.Add("Down &gt;27", downOver27)
+</PropertyValue>
+			<PropertyValue name="Item14.Position">3</PropertyValue>
+			<PropertyValue name="Item15.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item15.ID">B887FC63597F24A3F6A1216EE724A681</PropertyValue>
+			<PropertyValue name="Item15.Name">Text:   | Delimited ['*'; '*' ] (body, chars)
+  | Delimited ['_'; '_' ] (body, chars) -&gt;
+      Some(chars, Strong(parseSpans [] body |&gt; List.ofSeq))
+  | Delimited ['*' ] (body, chars)
+  | Delimited ['_' ] (body, chars) -&gt;
+      Some(chars, Emphasis(parseSpans [] body |&gt; List.ofSeq))
+</PropertyValue>
+			<PropertyValue name="Item15.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item15.Tab">4 Markdown</PropertyValue>
+			<PropertyValue name="Item15.TabID">4 Markdown</PropertyValue>
+			<PropertyValue name="Item15.OriginalTabID">4 Markdown</PropertyValue>
+			<PropertyValue name="Item15.OriginalTab">4 Markdown</PropertyValue>
+			<PropertyValue name="Item15.RecordType">1</PropertyValue>
+			<PropertyValue name="Item15.Data">  | Delimited ['*'; '*' ] (body, chars)
+  | Delimited ['_'; '_' ] (body, chars) -&gt;
+      Some(chars, Strong(parseSpans [] body |&gt; List.ofSeq))
+  | Delimited ['*' ] (body, chars)
+  | Delimited ['_' ] (body, chars) -&gt;
+      Some(chars, Emphasis(parseSpans [] body |&gt; List.ofSeq))
+</PropertyValue>
+			<PropertyValue name="Item15.Position">1</PropertyValue>
+			<PropertyValue name="Item16.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item16.ID">93B9309D7BFFFF2A41B6ECE1F9B6DC77</PropertyValue>
+			<PropertyValue name="Item16.Name">Text:   | Bracketed ['['] [']'] (body, Bracketed ['('] [')'] (url, chars)) -&gt;
+      Some(chars, HyperLink(parseSpans [] body |&gt; List.ofSeq, toString url))
+</PropertyValue>
+			<PropertyValue name="Item16.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item16.Tab">4 Markdown</PropertyValue>
+			<PropertyValue name="Item16.TabID">4 Markdown</PropertyValue>
+			<PropertyValue name="Item16.OriginalTabID">4 Markdown</PropertyValue>
+			<PropertyValue name="Item16.OriginalTab">4 Markdown</PropertyValue>
+			<PropertyValue name="Item16.RecordType">1</PropertyValue>
+			<PropertyValue name="Item16.Data">  | Bracketed ['['] [']'] (body, Bracketed ['('] [')'] (url, chars)) -&gt;
+      Some(chars, HyperLink(parseSpans [] body |&gt; List.ofSeq, toString url))
+</PropertyValue>
+			<PropertyValue name="Item16.Position">2</PropertyValue>
+			<PropertyValue name="ItemCount">17</PropertyValue>
+		</Category>
+	</Category>
+</UserSettings>

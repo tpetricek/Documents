@@ -17,6 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Stocks", "2 Stocks", "{D8
 		Stocks\2 Options DSL.fsx = Stocks\2 Options DSL.fsx
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Markdown", "4 Markdown", "{3F0F94CB-3AD9-4B9E-9791-0CE03A537D50}"
+	ProjectSection(SolutionItems) = preProject
+		Markdown\Markdown.fsx = Markdown\Markdown.fsx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

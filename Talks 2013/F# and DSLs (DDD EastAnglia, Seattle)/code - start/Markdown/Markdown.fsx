@@ -1,30 +1,25 @@
-﻿#r "nunit.framework.dll"
-open System
-open NUnit.Framework
+﻿open System
 
-// ----------------------------------------------------------------------------
+// -------------------------------------------------------
+// Markdown domain model
+// -------------------------------------------------------
 
-// Markdown inline formatting
 type MarkdownSpan =
   | Literal of string
   | InlineCode of string
   | Strong of MarkdownSpans
   | Emphasis of MarkdownSpans
   | HyperLink of MarkdownSpans * string
-  | HardLineBreak
 
 and MarkdownSpans = list<MarkdownSpan>
 
-// ----------------------------------------------------------------------------
+// -------------------------------------------------------
+// Active patterns for parsing
+// -------------------------------------------------------
 
-let toString chars =
-  System.String(chars |> Array.ofList)
-
-// ----------------------------------------------------------------------------
-
-// DEMO: A parameterized active pattern that checks
-// if 'list' starts with a given 'prefix' (and returns
-// the rest of the input)
+/// A parameterized active pattern that checks
+/// if 'list' starts with a given 'prefix' (and returns
+/// the rest of the input)
 let (|StartsWith|_|) prefix list =
   let rec loop = function
     | [], rest -> Some(rest)
@@ -32,40 +27,52 @@ let (|StartsWith|_|) prefix list =
     | _ -> None
   loop (prefix, list)
 
-// DEMO: Parse input until we reach 'closing' sub-list
-let rec parseBracketedBody closing acc = function
-  | StartsWith closing (rest) -> Some(List.rev acc, rest)
-  | c::chars -> parseBracketedBody closing (c::acc) chars
-  | _ -> None
-
-// DEMO: Parse input that matches the scheme
-//   <opening> .* <closing> .*
-let (|Bracketed|_|) opening closing = function
+/// Parse input that matches the scheme: <opening> .* <closing> .*
+let (|Bracketed|_|) opening closing input = 
+  let rec parseBracketedBody closing acc = function
+    | StartsWith closing (rest) -> Some(List.rev acc, rest)
+    | c::chars -> parseBracketedBody closing (c::acc) chars
+    | _ -> None
+  match input with
   | StartsWith opening chars -> parseBracketedBody closing [] chars
   | _ -> None
 
-// TODO: Implement an active pattern (using 'Bracketed')
-// that tests whether input contains a sequence:
-//   <delim> .* <delim> .*
-let (|Delimited|_|) delim = (|Bracketed|_|) delim delim
+// Detect string delimited with some characters: <delim> .* <delim> .*
+let (|Delimited|_|) delim = (|Bracketed|_|) delim delim 
 
-// ----------------------------------------------------------------------------
-    
-let rec parseSpans acc chars = seq {
-  // emit literal if we skipped some characters
+// -------------------------------------------------------
+// Writing Markdown parser
+// -------------------------------------------------------
+
+let toString chars =
+  System.String(chars |> Array.ofList)
+
+let rec (|Command|_|) = function 
+  | Delimited ['`'] (body, chars) ->
+      Some(chars, InlineCode(toString body))
+
+  // DEMO
+  //   Detect **bold** or __bold__ and also *italic* or _italic_
+  //   (parseSpans [] body |> List.ofSeq to parse nested formatting)
+
+  // DEMO 
+  //   Detect: [hyperlink](http://somewhere) etc.
+
+  | _ -> None
+
+// -------------------------------------------------------
+// Putting things together
+// -------------------------------------------------------
+
+and parseSpans acc chars = seq {
   let emitLiteral() = seq {
     if acc <> [] then 
       yield acc |> List.rev |> toString |> Literal }
-
-  // now we can use nice pattern matching to detect spans!
   match chars with
-  | Delimited ['`'] (body, chars) ->
-      yield! emitLiteral ()
-      yield InlineCode(toString body)
-      yield! parseSpans [] chars
-
-  // TODO: Add lots of other features using active patterns!
-
+  | Command(chars, cmd) ->
+        yield! emitLiteral ()
+        yield cmd
+        yield! parseSpans [] chars
   | c::chars ->
       yield! parseSpans (c::acc) chars
   | [] ->
@@ -73,50 +80,11 @@ let rec parseSpans acc chars = seq {
 
 // ----------------------------------------------------------------------------
 
-
-
 let sample = 
   "The _most important_ F# keyword is `let`. For more " +
   "see [F# web site](http://www.fsharp.net)."
 
-parseSpans [] (List.ofSeq sample)
-
-
-
-// ----------------------------------------------------------------------------
-
-[<TestFixture>]
-module Tests = 
-
-  [<Test>]
-  let ``Recognize line breaks`` () = 
-    let res = "a  \n" |> List.ofSeq |> parseSpans [] |> List.ofSeq
-    Assert.That((res = [Literal "a"; HardLineBreak]))
-
-  [<Test>]
-  let ``Recognize strong text`` () = 
-    let res = "a**a**" |> List.ofSeq |> parseSpans [] |> List.ofSeq
-    Assert.That((res = [Literal "a"; Strong [Literal "a"]]))
-
-  [<Test>]
-  let ``Recognize emphasis using underscore`` () = 
-    let res = "a _b_ c" |> List.ofSeq |> parseSpans [] |> List.ofSeq
-    Assert.That((res = [Literal "a "; Emphasis [Literal "b"]; Literal " c"]))
-
-  [<Test>]
-  let ``Recognize emhpasis using star`` () =
-    let res = "a _b_ c" |> List.ofSeq |> parseSpans [] |> List.ofSeq
-    Assert.That((res = [Literal "a "; Emphasis [Literal "b"]; Literal " c"]))
-
-  [<Test>]
-  let ``Recognize hyperlinks`` () = 
-    let res = "a [text](http://url) c" |> List.ofSeq |> parseSpans [] |> List.ofSeq
-    Assert.That((res = [Literal "a "; HyperLink ([Literal "text"],"http://url"); Literal " c"]))
-
-// ----------------------------------------------------------------------------
-
-  do
-    ``Recognize strong text`` () 
-    ``Recognize emphasis using underscore`` () 
-    ``Recognize emhpasis using star`` ()
-    ``Recognize hyperlinks`` () 
+sample
+|> List.ofSeq
+|> parseSpans []
+|> List.ofSeq

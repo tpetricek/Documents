@@ -29,7 +29,7 @@ let highAndRising limit =
   |> Price.map (fun (avg, up) ->
       avg > limit && up)
 
-win.Add("High & rising", highAndRising 60.0)
+win.Add("High & rising", highAndRising 30.0)
 
 
 

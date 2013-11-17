@@ -1,70 +1,42 @@
-﻿type Kind = Put | Call
+﻿// -------------------------------------------------------
+// Modeling stock options
+// -------------------------------------------------------
 
-type Option = 
-  | Euro of Kind * string * decimal
-  | Combine of Option * Option
-  | Times of int * Option
+// TODO
+//   What is the model??
 
-let Sell(option) = Times(-1, option)
+// TODO
+//   ButterflySpread "MSFT" 10.0M 20.0M $
+//   ButterflySpread "MSFT" 50.0M 60.0M
 
-type Option with
-  static member (*) (x:int, option:Option) =
-    Times(x, option)     
-  static member ($) (option1:Option, option2:Option) = 
-    Combine(option1, option2)  
-
-let ButterflySpread lowPrice highPrice  = 
-  Euro(Call, "MSFT", lowPrice) $
-  Euro(Call, "MSFT", highPrice) $
-  -2 * Euro(Call, "MSFT", ((lowPrice + highPrice) / 2.0M))
+// TODO
+//   Can we make it easier to use? 
+//   (support * and $, add Sell function)
 
 
-ButterflySpread 10.0M 20.0M $
-ButterflySpread 50.0M 60.0M
 
 
-(*
-  (EuroCall lowPrice actualPrice) +
-  (EuroCall highPrice actualPrice) -
-  2.0 * (EuroCall ((lowPrice + highPrice) / 2.0) actualPrice)
-*)
 
+// -------------------------------------------------------
+// Calculating payoff using current prices
 // -------------------------------------------------------
 
 #load "Helpers.fsx"
 #r "lib\\FSharp.Data.dll"
 open FSharp.Data
 
-type Stocks = CsvProvider<"lib\\MSFT.csv">
 
-let getPrice = Helpers.memoize (fun name ->
-  let prices = Stocks.Load("http://ichart.finance.yahoo.com/table.csv?s=" + name)
-  query { for p in prices.Data do
-          sortByDescending p.Date
-          select p.Close
-          headOrDefault })
+// DEMO
+//   CsvProvider using lib/MSFT.csv as a sample
+//   Write 'getPrice name' function
+//   -> Download "http://ichart.finance.yahoo.com/table.csv?s=" + name
+//   -> sort by date, get closing rice, last or default value
+//   -> Helpers.memoize
 
-// TODO: payoff function
-let rec payoff option = 
-  match option with
-  | Euro(Call, stockName, exercisePrice) ->
-      let actualPrice = getPrice stockName
-      max 0.0M (actualPrice - exercisePrice)
-  | Euro(Put, stockName, exercisePrice) ->
-      let actualPrice = getPrice stockName
-      max 0.0M (exercisePrice -  actualPrice)
-  | Combine(option1, option2) ->
-      (payoff option1) + (payoff option2) 
-  | Times(n, option) ->
-      decimal n * (payoff option)
+// DEMO
+//   Implement recursive payoff function
 
-
-(ButterflySpread 10.0M 50.0M)
-|> payoff
-
-
-
-
-payoff (ButterflySpread "MSFT" 30.0M 60.0M)
-payoff (ButterflySpread "MSFT" 20.0M 50.0M)
-payoff (ButterflySpread "MSFT" 0.0M 70.0M)
+// DEMO
+//   ButterflySpread "MSFT" 10.0M 50.0M |> payoff
+//   ButterflySpread "MSFT" 0.0M 70.0M |> payoff
+//   ButterflySpread "MSFT" 40.0M 60.0M |> payoff
