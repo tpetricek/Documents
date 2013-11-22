@@ -1,10 +1,33 @@
-﻿#load @"packages\FsLab.0.0.6-beta\FsLab.fsx"
-#load @"vega\Vega.fsx"
-open Deedle
-open VegaHub
-open FSharp.Data
+﻿#load "FsLab.fsx"
+#load "Vega/Vega.fsx"
+#load "Excel/Excel.fsx"
 open System
 open System.Linq
+
+open Excel
+open VegaHub
+open FsLab
+open Deedle
+open FSharp.Data
+open FSharp.Charting
+
+// ----------------------------------------------------------------------------
+// Sample plotting with Vega and R data sets
+// ----------------------------------------------------------------------------
+
+open RProvider
+open RProvider.datasets
+
+Vega.Scatter [ for x in 1.0 .. 0.1 .. 4.0 -> x, sin x, "A", 100 ]
+
+let mtcars = R.mtcars.GetValue<Frame<string, string>>()
+mtcars?name <- mtcars.RowKeys
+
+Vega.BarColor(mtcars, y="mpg")
+Vega.BarColor(mtcars, y="mpg", color="name")
+Vega.BarColor(mtcars, y="mpg", color="gear")
+
+Vega.Open()
 
 // ----------------------------------------------------------------------------
 // Getting debt data
@@ -12,9 +35,12 @@ open System.Linq
 
 // Loading US debt data from CSV file & making the data set nicer
 let debtData = 
-  Frame.ReadCsv("C:/Data/us-debt.csv")
+  Frame.ReadCsv(__SOURCE_DIRECTORY__ + "/data/us-debt.csv")
   |> Frame.indexRowsInt "Year"
   |> Frame.indexColsWith ["Year"; "GDP"; "Population"; "Debt"; "?" ]
+
+// Easily pass data to Excel
+xl?A1 <- debtData
 
 // Compare the GDP data with what we can get from WorldBank
 let wb = WorldBankData.GetDataContext()
@@ -30,9 +56,6 @@ debtData?GDP_WB <- wbGdp / 1.0e9
     yield year, v, "WorldBank", 20.0 ]
 |> Vega.Scatter
 
-// Open web browser with the visualization
-// (
-Vega.Open()
 
 // For the rest of the analysis, we need just the Debt
 let debt = debtData.Columns.[ ["Debt"] ]
@@ -136,5 +159,4 @@ Vega.BarColor(aligned, y="Debt", color="President")
 
 // Bar chart displaying debt per party per year 
 Vega.BarColor(aligned, y="Debt", color="Party") 
-
 
