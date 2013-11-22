@@ -1,0 +1,141 @@
+<UserSettings><ApplicationIdentity version="12.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="Tab0.Name">Advertising</PropertyValue><PropertyValue name="Tab0.View">0</PropertyValue><PropertyValue name="Tab0.UseDefaultName">true</PropertyValue><PropertyValue name="Tab0.RecordType">4</PropertyValue><PropertyValue name="Tab0.Position">42</PropertyValue><PropertyValue name="Tab1.ID">MSVSTORibbonV11</PropertyValue><PropertyValue name="Tab1.Name">Office Ribbon Controls</PropertyValue><PropertyValue name="Tab1.View">0</PropertyValue><PropertyValue name="Tab1.UseDefaultName">true</PropertyValue><PropertyValue name="Tab1.RecordType">4</PropertyValue><PropertyValue name="Tab1.Position">58</PropertyValue><PropertyValue name="Tab2.ID">Titanic</PropertyValue><PropertyValue name="Tab2.Name">1 Titanic</PropertyValue><PropertyValue name="Tab2.View">0</PropertyValue><PropertyValue name="Tab2.UseDefaultName">false</PropertyValue><PropertyValue name="Tab2.RecordType">1</PropertyValue><PropertyValue name="Tab2.Position">69</PropertyValue><PropertyValue name="Tab2.OriginalName">Titanic</PropertyValue><PropertyValue name="Tab3.ID">2 The World</PropertyValue><PropertyValue name="Tab3.Name">2 The World</PropertyValue><PropertyValue name="Tab3.View">0</PropertyValue><PropertyValue name="Tab3.UseDefaultName">false</PropertyValue><PropertyValue name="Tab3.RecordType">1</PropertyValue><PropertyValue name="Tab3.Position">70</PropertyValue><PropertyValue name="Tab3.OriginalName">2 The World</PropertyValue><PropertyValue name="Tab4.ID">3 Presidents</PropertyValue><PropertyValue name="Tab4.Name">3 Presidents</PropertyValue><PropertyValue name="Tab4.View">0</PropertyValue><PropertyValue name="Tab4.UseDefaultName">false</PropertyValue><PropertyValue name="Tab4.RecordType">1</PropertyValue><PropertyValue name="Tab4.Position">71</PropertyValue><PropertyValue name="Tab4.OriginalName">3 Presidents</PropertyValue><PropertyValue name="TabCount">5</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">BA0C0ECD253CA1F4A6D33E2BE7FE83DE</PropertyValue><PropertyValue name="Item0.Name">Text: // Count number of survived/died in each group
+let survivals = 
+  survivedByClass
+  |&gt; Series.applyLevel fst (fun sr -&gt; 
+      sr.Values |&gt; Seq.countBy id |&gt; series)
+  |&gt; Frame.ofRows
+  |&gt; Frame.indexColsWith ["Died"; "Survived"]
+
+// Count total number of passangers in each group
+survivals?Total &lt;- byClass |&gt; Frame.applyLevel fst Series.countKeys
+</PropertyValue><PropertyValue name="Item0.UseDefaultName">true</PropertyValue><PropertyValue name="Item0.Tab">Titanic</PropertyValue><PropertyValue name="Item0.TabID">Titanic</PropertyValue><PropertyValue name="Item0.OriginalTabID">Titanic</PropertyValue><PropertyValue name="Item0.OriginalTab">1 Titanic</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">// Count number of survived/died in each group
+let survivals = 
+  survivedByClass
+  |&gt; Series.applyLevel fst (fun sr -&gt; 
+      sr.Values |&gt; Seq.countBy id |&gt; series)
+  |&gt; Frame.ofRows
+  |&gt; Frame.indexColsWith ["Died"; "Survived"]
+
+// Count total number of passangers in each group
+survivals?Total &lt;- byClass |&gt; Frame.applyLevel fst Series.countKeys
+</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">3030E07C80950E25BBF023D6FF0EA4AF</PropertyValue><PropertyValue name="Item1.Name">Text: let summary = 
+  [ "Survived (%)" =&gt; survivals?Survived / survivals?Total * 100.0
+    "Died (%)" =&gt; survivals?Died/ survivals?Total * 100.0 ] |&gt; frame
+  |&gt; round
+</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">Titanic</PropertyValue><PropertyValue name="Item1.TabID">Titanic</PropertyValue><PropertyValue name="Item1.OriginalTabID">General</PropertyValue><PropertyValue name="Item1.OriginalTab">General</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">let summary = 
+  [ "Survived (%)" =&gt; survivals?Survived / survivals?Total * 100.0
+    "Died (%)" =&gt; survivals?Died/ survivals?Total * 100.0 ] |&gt; frame
+  |&gt; round
+</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">CE921DDF463D5BF38434256CD8392292</PropertyValue><PropertyValue name="Item2.Name">Text: let countries = [
+    wb.Countries.China;
+    wb.Countries.``United States``;
+    wb.Countries.``United Kingdom``;
+    wb.Countries.France;
+    wb.Countries.``Czech Republic``
+    wb.Countries.Brazil;
+    wb.Countries.``Russian Federation``
+    wb.Countries.Japan;
+    wb.Countries.``South Africa``;
+    wb.Countries.Germany;
+    wb.Countries.Mexico; ]
+</PropertyValue><PropertyValue name="Item2.UseDefaultName">true</PropertyValue><PropertyValue name="Item2.Tab">2 The World</PropertyValue><PropertyValue name="Item2.TabID">2 The World</PropertyValue><PropertyValue name="Item2.OriginalTabID">2 The World</PropertyValue><PropertyValue name="Item2.OriginalTab">2 The World</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">let countries = [
+    wb.Countries.China;
+    wb.Countries.``United States``;
+    wb.Countries.``United Kingdom``;
+    wb.Countries.France;
+    wb.Countries.``Czech Republic``
+    wb.Countries.Brazil;
+    wb.Countries.``Russian Federation``
+    wb.Countries.Japan;
+    wb.Countries.``South Africa``;
+    wb.Countries.Germany;
+    wb.Countries.Mexico; ]
+</PropertyValue><PropertyValue name="Item2.Position">1</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">EDAB34CDBBAE5E559546495785D23DCE</PropertyValue><PropertyValue name="Item3.Name">Text: info?Growth &lt;- [ for c in countries -&gt; c.Indicators.``GDP per capita growth (annual %)``.[2000] ]
+info?Population &lt;- [ for c in countries -&gt; c.Indicators.``Population (Total)``.[2000] ]
+info?Pollution &lt;- [ for c in countries -&gt; c.Indicators.``CO2 emissions (kg per PPP $ of GDP)``.[2000] ]
+info?Gender &lt;- [ for c in countries -&gt; c.Indicators.``Employment to population ratio, 15+, female (%)``.[2000] ]
+</PropertyValue><PropertyValue name="Item3.UseDefaultName">true</PropertyValue><PropertyValue name="Item3.Tab">2 The World</PropertyValue><PropertyValue name="Item3.TabID">2 The World</PropertyValue><PropertyValue name="Item3.OriginalTabID">General</PropertyValue><PropertyValue name="Item3.OriginalTab">General</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">info?Growth &lt;- [ for c in countries -&gt; c.Indicators.``GDP per capita growth (annual %)``.[2000] ]
+info?Population &lt;- [ for c in countries -&gt; c.Indicators.``Population (Total)``.[2000] ]
+info?Pollution &lt;- [ for c in countries -&gt; c.Indicators.``CO2 emissions (kg per PPP $ of GDP)``.[2000] ]
+info?Gender &lt;- [ for c in countries -&gt; c.Indicators.``Employment to population ratio, 15+, female (%)``.[2000] ]
+</PropertyValue><PropertyValue name="Item3.Position">2</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">C00A5EFC2768F0AA73082530DAB55429</PropertyValue><PropertyValue name="Item4.Name">Text:   |&gt; Frame.indexRowsInt "Year"
+  |&gt; Frame.indexColsWith ["Year"; "GDP"; "Population"; "Debt"; "?" ]
+</PropertyValue><PropertyValue name="Item4.UseDefaultName">true</PropertyValue><PropertyValue name="Item4.Tab">3 Presidents</PropertyValue><PropertyValue name="Item4.TabID">3 Presidents</PropertyValue><PropertyValue name="Item4.OriginalTabID">3 Presidents</PropertyValue><PropertyValue name="Item4.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">  |&gt; Frame.indexRowsInt "Year"
+  |&gt; Frame.indexColsWith ["Year"; "GDP"; "Population"; "Debt"; "?" ]
+</PropertyValue><PropertyValue name="Item4.Position">1</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">B80BD75EB6B3D7303CF6669D1BD270FD</PropertyValue><PropertyValue name="Item5.Name">Text: [ for (KeyValue(year, v)) in debtData?GDP.Observations  do
+    yield year, v, "UsDebt", 50.0
+  for (KeyValue(year, v)) in debtData?GDP_WB.Observations do
+    yield year, v, "WorldBank", 20.0 ]
+|&gt; Vega.Scatter
+</PropertyValue><PropertyValue name="Item5.UseDefaultName">true</PropertyValue><PropertyValue name="Item5.Tab">3 Presidents</PropertyValue><PropertyValue name="Item5.TabID">3 Presidents</PropertyValue><PropertyValue name="Item5.OriginalTabID">3 Presidents</PropertyValue><PropertyValue name="Item5.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">[ for (KeyValue(year, v)) in debtData?GDP.Observations  do
+    yield year, v, "UsDebt", 50.0
+  for (KeyValue(year, v)) in debtData?GDP_WB.Observations do
+    yield year, v, "WorldBank", 20.0 ]
+|&gt; Vega.Scatter
+</PropertyValue><PropertyValue name="Item5.Position">2</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">DC856D5130C8E13FA49A87E3C3144599</PropertyValue><PropertyValue name="Item6.Name">Text: // Get list of pres
+let presidentTerms =
+  [ for pres in presidentInfos do
+    for pos in pres.``Government Positions Held`` do
+    if string pos.``Basic title`` = "President" then
+      // Get start and end year of the position
+      let starty = DateTime.Parse(pos.From).Year
+      let endy = if pos.To = null then 2013 else
+                   DateTime.Parse(pos.To).Year
+      // Get their party
+      let dem = pres.Party |&gt; Seq.exists (fun p -&gt; p.Party.Name = "Democratic Party")
+      let rep = pres.Party |&gt; Seq.exists (fun p -&gt; p.Party.Name = "Republican Party")
+      let pty = if dem then "Democrat" elif rep then "Republican" else null
+      // Return three element tuple with the info
+      yield (pres.Name, starty, endy, pty) ]
+</PropertyValue><PropertyValue name="Item6.UseDefaultName">true</PropertyValue><PropertyValue name="Item6.Tab">3 Presidents</PropertyValue><PropertyValue name="Item6.TabID">3 Presidents</PropertyValue><PropertyValue name="Item6.OriginalTabID">3 Presidents</PropertyValue><PropertyValue name="Item6.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">// Get list of pres
+let presidentTerms =
+  [ for pres in presidentInfos do
+    for pos in pres.``Government Positions Held`` do
+    if string pos.``Basic title`` = "President" then
+      // Get start and end year of the position
+      let starty = DateTime.Parse(pos.From).Year
+      let endy = if pos.To = null then 2013 else
+                   DateTime.Parse(pos.To).Year
+      // Get their party
+      let dem = pres.Party |&gt; Seq.exists (fun p -&gt; p.Party.Name = "Democratic Party")
+      let rep = pres.Party |&gt; Seq.exists (fun p -&gt; p.Party.Name = "Republican Party")
+      let pty = if dem then "Democrat" elif rep then "Republican" else null
+      // Return three element tuple with the info
+      yield (pres.Name, starty, endy, pty) ]
+</PropertyValue><PropertyValue name="Item6.Position">3</PropertyValue><PropertyValue name="Item7.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item7.ID">D52BFCBB9B0F85833608BF0F358B2067</PropertyValue><PropertyValue name="Item7.Name">Text:   |&gt; Frame.indexColsWith ["President"; "Start"; "End"; "Party"]
+</PropertyValue><PropertyValue name="Item7.UseDefaultName">true</PropertyValue><PropertyValue name="Item7.Tab">3 Presidents</PropertyValue><PropertyValue name="Item7.TabID">3 Presidents</PropertyValue><PropertyValue name="Item7.OriginalTabID">3 Presidents</PropertyValue><PropertyValue name="Item7.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item7.RecordType">1</PropertyValue><PropertyValue name="Item7.Data">  |&gt; Frame.indexColsWith ["President"; "Start"; "End"; "Party"]
+</PropertyValue><PropertyValue name="Item7.Position">4</PropertyValue><PropertyValue name="Item8.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item8.ID">F6CEA63E21B72A22486632AED70FA349</PropertyValue><PropertyValue name="Item8.Name">Text: // Get debt at the end of the presidential term
+let byEnd = presidents |&gt; Frame.indexRowsInt "End"
+let endDebt = byEnd.Join(debt, JoinKind.Left)
+
+// Total accumulated debt by president
+Vega.BarColor(endDebt, x="End", y="Debt")
+</PropertyValue><PropertyValue name="Item8.UseDefaultName">true</PropertyValue><PropertyValue name="Item8.Tab">3 Presidents</PropertyValue><PropertyValue name="Item8.TabID">3 Presidents</PropertyValue><PropertyValue name="Item8.OriginalTabID">3 Presidents</PropertyValue><PropertyValue name="Item8.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item8.RecordType">1</PropertyValue><PropertyValue name="Item8.Data">// Get debt at the end of the presidential term
+let byEnd = presidents |&gt; Frame.indexRowsInt "End"
+let endDebt = byEnd.Join(debt, JoinKind.Left)
+
+// Total accumulated debt by president
+Vega.BarColor(endDebt, x="End", y="Debt")
+</PropertyValue><PropertyValue name="Item8.Position">5</PropertyValue><PropertyValue name="Item9.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item9.ID">9FF55ED6E82422D31E3FF23F405E6DB0</PropertyValue><PropertyValue name="Item9.Name">Text: // For each year, find the corresponding president and party
+let byStart = presidents |&gt; Frame.indexRowsInt "Start"
+let aligned = debt.Join(byStart, JoinKind.Left, Lookup.NearestSmaller)
+
+// Bar chart displaying debt per president per year 
+Vega.BarColor(aligned, y="Debt", color="President")  
+
+// Bar chart displaying debt per party per year 
+Vega.BarColor(aligned, y="Debt", color="Party") 
+
+
+</PropertyValue><PropertyValue name="Item9.UseDefaultName">true</PropertyValue><PropertyValue name="Item9.Tab">3 Presidents</PropertyValue><PropertyValue name="Item9.TabID">3 Presidents</PropertyValue><PropertyValue name="Item9.OriginalTabID">3 Presidents</PropertyValue><PropertyValue name="Item9.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item9.RecordType">1</PropertyValue><PropertyValue name="Item9.Data">// For each year, find the corresponding president and party
+let byStart = presidents |&gt; Frame.indexRowsInt "Start"
+let aligned = debt.Join(byStart, JoinKind.Left, Lookup.NearestSmaller)
+
+// Bar chart displaying debt per president per year 
+Vega.BarColor(aligned, y="Debt", color="President")  
+
+// Bar chart displaying debt per party per year 
+Vega.BarColor(aligned, y="Debt", color="Party") 
+
+
+</PropertyValue><PropertyValue name="Item9.Position">6</PropertyValue><PropertyValue name="ItemCount">10</PropertyValue></Category></Category></UserSettings>
