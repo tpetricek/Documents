@@ -12,7 +12,7 @@ open System.Linq
 
 // Loading US debt data from CSV file & making the data set nicer
 let debtData = 
-  Frame.ReadCsv("C:/Data/us-debt.csv")
+  Frame.ReadCsv(__SOURCE_DIRECTORY__ + "/../data/us-debt.csv")
   |> Frame.indexRowsInt "Year"
   |> Frame.indexColsWith ["Year"; "GDP"; "Population"; "Debt"; "?" ]
 

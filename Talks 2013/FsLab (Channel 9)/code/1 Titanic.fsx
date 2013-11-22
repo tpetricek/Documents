@@ -7,7 +7,7 @@ open FSharp.Charting
 // Exploring Titanic disaster
 // ----------------------------------------------------------------------------
 
-let titanic = Frame.ReadCsv("C:/data/Titanic.csv")
+let titanic = Frame.ReadCsv(__SOURCE_DIRECTORY__ + "/../data/Titanic.csv")
 
 // Count number of surivals and deaths
 titanic
