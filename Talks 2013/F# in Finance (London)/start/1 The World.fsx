@@ -1,4 +1,4 @@
-﻿#load @"packages\FsLab.0.0.6-beta\FsLab.fsx"
+﻿#load @"..\packages\FsLab.0.0.6-beta\FsLab.fsx"
 open Deedle
 open FSharp.Data
 open FSharp.Net
