@@ -2,8 +2,8 @@ Understanding the World with F# (Channel 9)
 -------------------------------------------
 
 To run the samples, open the solution in the `code` folder (or download the contents of the
-folder in the `code.zip` file) and build the solution (for the first time) to restore 
-NuGet packages that are used in the F# scripts. Then you can open the `fsx` files and
+folder in the `code.zip` file) and build the solution (this is needed just once, to restore 
+NuGet packages that are used in the F# scripts). Then you can open the three sample `fsx` files and
 follow the script. You can ignore the `start` folder,
 which contains the initial source code used in the talk.
  
