@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Vega Chart</title>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/d3.geo.projection.min.js"></script>
+    <script src="js/vega.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+  </head>
+  <body style="overflow:hidden;background:#202020">
+    <div id="vis"></div>
+    <script type="text/javascript">
+      function parse(spec, widMargin, hgtMargin) {
+        var wid = window.innerWidth - 10;
+        var hgt = window.innerHeight - 10;
+        vg.parse.spec(spec, function (chart) {
+          try {
+            chart({ el: "#vis" }).width(wid - widMargin).height(hgt - hgtMargin).viewport([wid, hgt]).update();
+          }
+          catch (e) { }
+        });
+      }
+      var lastId = 0;
+      setInterval(function () {
+        try
+        {
+          var rnd = new Date().getTime(); 
+          $.ajax("meta.json?" + rnd).done(function (r) {
+            try {
+              if (r.id > lastId)
+                parse("spec.json?" + rnd, r.marginWid, r.marginHgt);
+            } catch (e) { }
+          });
+        } catch(e) {}
+      }, 250);
+    </script>
+</body>
+</html>
