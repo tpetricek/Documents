@@ -14,7 +14,7 @@ which contains the initial source code used in the talk.
  * [Understanding the World with F#](http://channel9.msdn.com/posts/Understanding-the-World-with-F)
    is a recorded version of a very similar talk at Channel 9
 
- * [Slides from the talk](http://www.slideshare.net/tomaspfb/doing-data-science-with-f) are also available for easy viewing on SlideShare
+ * [Slides from the talk](http://www.slideshare.net/tomaspfb/doing-data-science-with-f-28891405) are also available for easy viewing on SlideShare
 
 ### Vega plugin 
 
