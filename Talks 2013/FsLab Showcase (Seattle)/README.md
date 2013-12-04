@@ -1,8 +1,8 @@
-Understanding the World with F# (Channel 9)
+MVP Showcase (November 2013)
 -------------------------------------------
 
-To run the samples, open the solution in the `code` folder (or download the contents of the
-folder in the `code.zip` file) and build the solution (for the first time) to restore 
+To run the samples, open the solution in the `code` folder
+and build the solution (for the first time) to restore 
 NuGet packages that are used in the F# scripts. Then you can open the `fsx` files and
 follow the script.
  
