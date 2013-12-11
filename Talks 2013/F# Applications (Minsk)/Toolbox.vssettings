@@ -1,0 +1,248 @@
+<UserSettings>
+	<ApplicationIdentity version="11.0"/>
+	<ToolsOptions/>
+	<Category name="Environment_Group" RegisteredName="Environment_Group">
+		<Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package">
+			<PropertyValue name="ShowAllTabs">false</PropertyValue>
+			<PropertyValue name="Version">1</PropertyValue>
+			<PropertyValue name="DeletedTabCount">0</PropertyValue>
+			<PropertyValue name="Tab0.ID">#1 Domain</PropertyValue>
+			<PropertyValue name="Tab0.Name">#1 Domain</PropertyValue>
+			<PropertyValue name="Tab0.View">0</PropertyValue>
+			<PropertyValue name="Tab0.UseDefaultName">false</PropertyValue>
+			<PropertyValue name="Tab0.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab0.Position">56</PropertyValue>
+			<PropertyValue name="Tab0.OriginalName">#1 Domain</PropertyValue>
+			<PropertyValue name="Tab1.ID">#2 Console</PropertyValue>
+			<PropertyValue name="Tab1.Name">#2 Console</PropertyValue>
+			<PropertyValue name="Tab1.View">0</PropertyValue>
+			<PropertyValue name="Tab1.UseDefaultName">false</PropertyValue>
+			<PropertyValue name="Tab1.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab1.Position">57</PropertyValue>
+			<PropertyValue name="Tab1.OriginalName">#2 Console</PropertyValue>
+			<PropertyValue name="Tab2.ID">#3 User interface</PropertyValue>
+			<PropertyValue name="Tab2.Name">#3 User interface</PropertyValue>
+			<PropertyValue name="Tab2.View">0</PropertyValue>
+			<PropertyValue name="Tab2.UseDefaultName">false</PropertyValue>
+			<PropertyValue name="Tab2.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab2.Position">58</PropertyValue>
+			<PropertyValue name="Tab2.OriginalName">#3 User interface</PropertyValue>
+			<PropertyValue name="TabCount">3</PropertyValue>
+			<PropertyValue name="DeletedItemCount">0</PropertyValue>
+			<PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item0.ID">8511481D50FD13B856B3EC8447D8BD74</PropertyValue>
+			<PropertyValue name="Item0.Name">Text: let products =
+  [ Product("32499021", "Biscuits", "N/A", 1.50M)
+    Product("98234923", "Earl Gray Tea", "N/A", 2.60M)
+    Product("9770013061206", "The Economist", "N/A", 4.20M) ]
+</PropertyValue>
+			<PropertyValue name="Item0.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item0.Tab">#1 Domain</PropertyValue>
+			<PropertyValue name="Item0.TabID">#1 Domain</PropertyValue>
+			<PropertyValue name="Item0.OriginalTabID">#1 Domain</PropertyValue>
+			<PropertyValue name="Item0.OriginalTab">#1 Domain</PropertyValue>
+			<PropertyValue name="Item0.RecordType">1</PropertyValue>
+			<PropertyValue name="Item0.Data">let products =
+  [ Product("32499021", "Biscuits", "N/A", 1.50M)
+    Product("98234923", "Earl Gray Tea", "N/A", 2.60M)
+    Product("9770013061206", "The Economist", "N/A", 4.20M) ]
+</PropertyValue>
+			<PropertyValue name="Item0.Position">1</PropertyValue>
+			<PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item1.ID">E5592DD7C70A677DB77B25B3F8FF1F6B</PropertyValue>
+			<PropertyValue name="Item1.Name">Text: let processPurchase (line : LinePurchase) : FinalPurchase =
+  // Build a list of cancelled items
+  let cancelled = line |&gt; Seq.choose (function
+      | CancelLineItem id -&gt; Some id | _ -&gt; None) |&gt; set
+
+  // Pick all items that have not been cancelled
+  // Group them by product and add quantities in each group
+  line 
+  |&gt; Seq.choose (function
+      | SaleLineItem(id, prod, q) when not(cancelled.Contains(id)) -&gt;
+          Some(prod, q)
+      | _ -&gt; None)
+  |&gt; Seq.groupBy fst
+  |&gt; Seq.map (fun (p, pqs) -&gt; 
+      p, pqs |&gt; Seq.sumBy snd) 
+  |&gt; Map.ofSeq
+</PropertyValue>
+			<PropertyValue name="Item1.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item1.Tab">#1 Domain</PropertyValue>
+			<PropertyValue name="Item1.TabID">#1 Domain</PropertyValue>
+			<PropertyValue name="Item1.OriginalTabID">#1 Domain</PropertyValue>
+			<PropertyValue name="Item1.OriginalTab">#1 Domain</PropertyValue>
+			<PropertyValue name="Item1.RecordType">1</PropertyValue>
+			<PropertyValue name="Item1.Data">let processPurchase (line : LinePurchase) : FinalPurchase =
+  // Build a list of cancelled items
+  let cancelled = line |&gt; Seq.choose (function
+      | CancelLineItem id -&gt; Some id | _ -&gt; None) |&gt; set
+
+  // Pick all items that have not been cancelled
+  // Group them by product and add quantities in each group
+  line 
+  |&gt; Seq.choose (function
+      | SaleLineItem(id, prod, q) when not(cancelled.Contains(id)) -&gt;
+          Some(prod, q)
+      | _ -&gt; None)
+  |&gt; Seq.groupBy fst
+  |&gt; Seq.map (fun (p, pqs) -&gt; 
+      p, pqs |&gt; Seq.sumBy snd) 
+  |&gt; Map.ofSeq
+</PropertyValue>
+			<PropertyValue name="Item1.Position">2</PropertyValue>
+			<PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item2.ID">7AF53E35E4DB9F05A53A03D214E66145</PropertyValue>
+			<PropertyValue name="Item2.Name">Text: let fin =
+  [ SaleLineItem(1, search "9770013061206", 2.0M)
+    CancelLineItem(1)
+    SaleLineItem(2, search "98234923", 1.0M)
+    SaleLineItem(2, search "98234923", 3.0M) ]
+  |&gt; processPurchase
+
+fin = Map.ofSeq [ search "98234923", 4.0M ]
+
+</PropertyValue>
+			<PropertyValue name="Item2.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item2.Tab">#1 Domain</PropertyValue>
+			<PropertyValue name="Item2.TabID">#1 Domain</PropertyValue>
+			<PropertyValue name="Item2.OriginalTabID">#1 Domain</PropertyValue>
+			<PropertyValue name="Item2.OriginalTab">#1 Domain</PropertyValue>
+			<PropertyValue name="Item2.RecordType">1</PropertyValue>
+			<PropertyValue name="Item2.Data">let fin =
+  [ SaleLineItem(1, search "9770013061206", 2.0M)
+    CancelLineItem(1)
+    SaleLineItem(2, search "98234923", 1.0M)
+    SaleLineItem(2, search "98234923", 3.0M) ]
+  |&gt; processPurchase
+
+fin = Map.ofSeq [ search "98234923", 4.0M ]
+
+</PropertyValue>
+			<PropertyValue name="Item2.Position">3</PropertyValue>
+			<PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item3.ID">1C4ABE8E30742DA52886409D3FA8A8DF</PropertyValue>
+			<PropertyValue name="Item3.Name">Text: [&lt;Test&gt;]
+let ``Correctly process sample purchase with cancellation`` () =
+  let fin =
+    [ SaleLineItem(1, search "9770013061206", 2.0M)
+      CancelLineItem(1)
+      SaleLineItem(2, search "98234923", 1.0M)
+      SaleLineItem(2, search "98234923", 3.0M) ]
+    |&gt; processPurchase
+
+  Assert.AreEqual(fin, Map.ofSeq [ search "98234923", 4.0M ])
+</PropertyValue>
+			<PropertyValue name="Item3.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item3.Tab">#2 Console</PropertyValue>
+			<PropertyValue name="Item3.TabID">#2 Console</PropertyValue>
+			<PropertyValue name="Item3.OriginalTabID">#2 Console</PropertyValue>
+			<PropertyValue name="Item3.OriginalTab">#2 Console</PropertyValue>
+			<PropertyValue name="Item3.RecordType">1</PropertyValue>
+			<PropertyValue name="Item3.Data">[&lt;Test&gt;]
+let ``Correctly process sample purchase with cancellation`` () =
+  let fin =
+    [ SaleLineItem(1, search "9770013061206", 2.0M)
+      CancelLineItem(1)
+      SaleLineItem(2, search "98234923", 1.0M)
+      SaleLineItem(2, search "98234923", 3.0M) ]
+    |&gt; processPurchase
+
+  Assert.AreEqual(fin, Map.ofSeq [ search "98234923", 4.0M ])
+</PropertyValue>
+			<PropertyValue name="Item3.Position">1</PropertyValue>
+			<PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item4.ID">7F97F43B8BCF1439B777E667AF081C81</PropertyValue>
+			<PropertyValue name="Item4.Name">Text: svc.Login("tomas@tomasp.net", "fsharp", "fjvRSQvEooAyLq3VhJgJ", "5E7B910E52079C9264CA")</PropertyValue>
+			<PropertyValue name="Item4.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item4.Tab">#2 Console</PropertyValue>
+			<PropertyValue name="Item4.TabID">#2 Console</PropertyValue>
+			<PropertyValue name="Item4.OriginalTabID">#2 Console</PropertyValue>
+			<PropertyValue name="Item4.OriginalTab">#2 Console</PropertyValue>
+			<PropertyValue name="Item4.RecordType">1</PropertyValue>
+			<PropertyValue name="Item4.Data">svc.Login("tomas@tomasp.net", "fsharp", "fjvRSQvEooAyLq3VhJgJ", "5E7B910E52079C9264CA")</PropertyValue>
+			<PropertyValue name="Item4.Position">2</PropertyValue>
+			<PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item5.ID">55FEDB3E7A82D330AB3A322EE858D832</PropertyValue>
+			<PropertyValue name="Item5.Name">Text: let rec running items = 
+  let input = Console.ReadLine()
+  if input = "q" then items else
+    let prod = searchTesco input
+    printfn "\nADDING:\n%A" prod
+    running (SaleLineItem(List.length items, prod, 1.0M)::items)
+
+do
+  let lines = running []
+  let final = processPurchase lines
+  printfn "\nFINAL:\n%A" final</PropertyValue>
+			<PropertyValue name="Item5.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item5.Tab">#2 Console</PropertyValue>
+			<PropertyValue name="Item5.TabID">#2 Console</PropertyValue>
+			<PropertyValue name="Item5.OriginalTabID">#2 Console</PropertyValue>
+			<PropertyValue name="Item5.OriginalTab">#2 Console</PropertyValue>
+			<PropertyValue name="Item5.RecordType">1</PropertyValue>
+			<PropertyValue name="Item5.Data">let rec running items = 
+  let input = Console.ReadLine()
+  if input = "q" then items else
+    let prod = searchTesco input
+    printfn "\nADDING:\n%A" prod
+    running (SaleLineItem(List.length items, prod, 1.0M)::items)
+
+do
+  let lines = running []
+  let final = processPurchase lines
+  printfn "\nFINAL:\n%A" final</PropertyValue>
+			<PropertyValue name="Item5.Position">3</PropertyValue>
+			<PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item6.ID">6487CA8594923C9EC300975F7554EE23</PropertyValue>
+			<PropertyValue name="Item6.Name">Text:   let main () = async {
+    app.MainWindow.Content &lt;- root
+    
+    // Repeatedly process individual purchases
+    while true do
+      // Display the checkout line control
+      let check = new CheckoutLine()
+      showPage(check.Control) 
+    
+      // Wait until the checkout line completes
+      let! items = Async.AwaitEvent check.Completed
+
+      // Transform LineItem data to final aggregated purchase
+      let final = Purchase.processPurchase items
+    
+      // Display the final bill control
+      let sum = new Summary(final)
+      showPage(sum.Control)  
+      do! Async.AwaitEvent sum.NextCustomer }
+</PropertyValue>
+			<PropertyValue name="Item6.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item6.Tab">#3 User interface</PropertyValue>
+			<PropertyValue name="Item6.TabID">#3 User interface</PropertyValue>
+			<PropertyValue name="Item6.OriginalTabID">#3 User interface</PropertyValue>
+			<PropertyValue name="Item6.OriginalTab">#3 User interface</PropertyValue>
+			<PropertyValue name="Item6.RecordType">1</PropertyValue>
+			<PropertyValue name="Item6.Data">  let main () = async {
+    app.MainWindow.Content &lt;- root
+    
+    // Repeatedly process individual purchases
+    while true do
+      // Display the checkout line control
+      let check = new CheckoutLine()
+      showPage(check.Control) 
+    
+      // Wait until the checkout line completes
+      let! items = Async.AwaitEvent check.Completed
+
+      // Transform LineItem data to final aggregated purchase
+      let final = Purchase.processPurchase items
+    
+      // Display the final bill control
+      let sum = new Summary(final)
+      showPage(sum.Control)  
+      do! Async.AwaitEvent sum.NextCustomer }
+</PropertyValue>
+			<PropertyValue name="Item6.Position">1</PropertyValue>
+			<PropertyValue name="ItemCount">7</PropertyValue>
+		</Category>
+	</Category>
+</UserSettings>
