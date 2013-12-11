@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Home</title>  
+    <link>http://www.bbc.co.uk/news/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Home section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 22 Nov 2013 20:27:23 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Home</title>  
+      <link>http://www.bbc.co.uk/news/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>'Disturbing picture' in slavery case</title>  
+      <description>Detectives investigating the case of three women allegedly held as slaves for 30 years in south London uncover a "complicated and disturbing picture of emotional control".</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-london-25055337#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-london-25055337</guid>  
+      <pubDate>Fri, 22 Nov 2013 18:22:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71282000/jpg/_71282441_44797439.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71282000/jpg/_71282442_44797439.jpg"/> 
+    </item>  
+    <item> 
+      <title>US remembers Kennedy 50 years on</title>  
+      <description>Flags are lowered, bells toll and wreaths are laid, as the US marks half a century since President John F Kennedy's assassination in Dallas.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-25046604#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-25046604</guid>  
+      <pubDate>Fri, 22 Nov 2013 19:55:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71271000/jpg/_71271495_71271488.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71271000/jpg/_71271496_71271488.jpg"/> 
+    </item>  
+    <item> 
+      <title>Deaths rise in Latvia store collapse</title>  
+      <description>Latvian rescuers search for survivors in the rubble of a supermarket in the capital Riga which collapsed on Thursday, killing at least 50.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-25045879#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-25045879</guid>  
+      <pubDate>Fri, 22 Nov 2013 19:34:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71290000/jpg/_71290097_71286431.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71290000/jpg/_71290098_71286431.jpg"/> 
+    </item>  
+    <item> 
+      <title>Osborne confirms Co-op Bank inquiry</title>  
+      <description>An independent inquiry into events at the Co-op Bank is confirmed by the chancellor, as the bank's former chairman is arrested over drugs allegations.</description>  
+      <link>http://www.bbc.co.uk/news/uk-25059633#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-25059633</guid>  
+      <pubDate>Fri, 22 Nov 2013 18:59:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71292000/jpg/_71292721_71290487.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71292000/jpg/_71292722_71290487.jpg"/> 
+    </item>  
+    <item> 
+      <title>City intern died from epilepsy</title>  
+      <description>An intern working for Bank of America Merrill Lynch in London died from epilepsy, which could have been triggered by "working so hard", an inquest hears.</description>  
+      <link>http://www.bbc.co.uk/news/business-25051924#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-25051924</guid>  
+      <pubDate>Fri, 22 Nov 2013 15:25:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71282000/jpg/_71282816_boamerryll.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71282000/jpg/_71282817_boamerryll.jpg"/> 
+    </item>  
+    <item> 
+      <title>Police to probe undercover Army unit</title>  
+      <description>Northern Ireland's director of public prosecutions asks the police to investigate a British army unit which it is claimed killed unarmed civilians.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-25058721#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-25058721</guid>  
+      <pubDate>Fri, 22 Nov 2013 18:00:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71290000/jpg/_71290033_faolynne02.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71290000/jpg/_71290034_faolynne02.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kerry to join Iran nuclear talks</title>  
+      <description>US State Secretary John Kerry is to travel to Geneva later on Friday to help narrow differences in nuclear talks with Iran, officials say.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-25061802#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-25061802</guid>  
+      <pubDate>Fri, 22 Nov 2013 20:28:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71286000/jpg/_71286610_bn-448x252.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71286000/jpg/_71286611_bn-448x252.jpg"/> 
+    </item>  
+    <item> 
+      <title>Met Commissioner 'would not cycle'</title>  
+      <description>The Metropolitan Police Commissioner says he would not cycle in London following six fatalities in two weeks.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-london-25052674#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-london-25052674</guid>  
+      <pubDate>Fri, 22 Nov 2013 15:20:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71281000/jpg/_71281824_dh0152tr.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71281000/jpg/_71281825_dh0152tr.jpg"/> 
+    </item>  
+    <item> 
+      <title>Prison deal off amid Serco claims</title>  
+      <description>Plans to privatise three prisons have been dropped because of an investigation into leading bidder Serco, the justice secretary announces.</description>  
+      <link>http://www.bbc.co.uk/news/uk-25052373#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-25052373</guid>  
+      <pubDate>Fri, 22 Nov 2013 13:21:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71277000/jpg/_71277730_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71277000/jpg/_71277731_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Typhoon Haiyan toll rises over 5,000</title>  
+      <description>The death toll from Typhoon Haiyan has risen above 5,000, officials in the Philippines say, two weeks after the devastating storm.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-25051606#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-25051606</guid>  
+      <pubDate>Fri, 22 Nov 2013 13:14:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71279000/jpg/_71279822_71274909.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71279000/jpg/_71279823_71274909.jpg"/> 
+    </item>  
+    <item> 
+      <title>Russia told to free Greenpeace ship</title>  
+      <description>A UN maritime tribunal orders Russia to free a Greenpeace vessel and 30 people detained after an oil drilling protest in the Arctic.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-25058338#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-25058338</guid>  
+      <pubDate>Fri, 22 Nov 2013 18:49:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71289000/jpg/_71289879_71288146.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71289000/jpg/_71289880_71288146.jpg"/> 
+    </item>  
+    <item> 
+      <title>Peace priest Father Alec Reid dies</title>  
+      <description>Fr Alec Reid, who was a key figure in the Northern Ireland peace process, acting as a go-between between the IRA and politicians, has died.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-25051304#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-25051304</guid>  
+      <pubDate>Fri, 22 Nov 2013 13:28:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71280000/jpg/_71280461_71280453.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71280000/jpg/_71280674_71280453.jpg"/> 
+    </item>  
+    <item> 
+      <title>James Arthur cancels engagements</title>  
+      <description>X Factor winner James Arthur cancels his engagements for a week due to "acute exhaustion", in the wake of a public relations meltdown on Twitter.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-25056342#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-25056342</guid>  
+      <pubDate>Fri, 22 Nov 2013 16:52:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71291000/jpg/_71291478_71284767.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71291000/jpg/_71291549_71284767.jpg"/> 
+    </item>  
+    <item> 
+      <title>Queues to buy Beckhams' clothes</title>  
+      <description>Members of the public have been queuing outside a west London charity shop to buy designer clothes donated by David and Victoria Beckham.</description>  
+      <link>http://www.bbc.co.uk/news/uk-25037495#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-25037495</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:56:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71287000/jpg/_71287157_shoes2_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71287000/jpg/_71287158_shoes2_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mourinho questions ref chief's apology</title>  
+      <description>Chelsea boss Jose Mourinho criticises referees' chief Mike Riley for apologising to West Bromwich Albion.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/25052981</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/25052981</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:40:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="37" url="http://news.bbcimg.co.uk/media/images/71286000/jpg/_71286790_71280510.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71286000/jpg/_71286791_71280510.jpg"/> 
+    </item>  
+    <item> 
+      <title>Rosberg beats Red Bulls in practice</title>  
+      <description>Mercedes driver Nico Rosberg holds off the Red Bulls in a wet second practice session at the Brazilian Grand Prix.</description>  
+      <link>http://www.bbc.co.uk/sport/0/formula1/25059075</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/formula1/25059075</guid>  
+      <pubDate>Fri, 22 Nov 2013 17:36:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="37" url="http://news.bbcimg.co.uk/media/images/71294000/jpg/_71294207_%24r4quoce.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71294000/jpg/_71294208_%24r4quoce.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Pathetic' England have gifted Test</title>  
+      <description>England's batting was "pathetic" as they slumped to 136 all out on the second day of the first Test, says Geoffrey Boycott.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/25051384</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/25051384</guid>  
+      <pubDate>Fri, 22 Nov 2013 11:18:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="37" url="http://news.bbcimg.co.uk/media/images/71277000/jpg/_71277962_kppa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71277000/jpg/_71277963_kppa.jpg"/> 
+    </item>  
+    <item> 
+      <title>Is Froch-Groves the new Benn-Eubank?</title>  
+      <description>Carl Froch versus George Groves brings back memories of Nigel Benn and Chris Eubank's rivalry in the 1990s, says Ben Dirs</description>  
+      <link>http://www.bbc.co.uk/sport/0/boxing/25052801</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/boxing/25052801</guid>  
+      <pubDate>Fri, 22 Nov 2013 15:53:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="37" url="http://news.bbcimg.co.uk/media/images/71289000/jpg/_71289899_carlfrochvgeorgegroves_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71289000/jpg/_71289900_carlfrochvgeorgegroves_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Did England squander their World Cup legacy?</title>  
+      <description>Ten years on from the World Cup triumph in Sydney, did English rugby fail to capitalise on its golden moment?</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/24994055</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/24994055</guid>  
+      <pubDate>Fri, 22 Nov 2013 07:56:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="37" url="http://news.bbcimg.co.uk/media/images/71267000/jpg/_71267171_johnsontrophy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71267000/jpg/_71267172_johnsontrophy.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Slavery' shock, and JFK still making headlines</title>  
+      <description>The press reacts to the London "slavery" case, while it's a day for old news - remembering the day John F Kennedy was shot.</description>  
+      <link>http://www.bbc.co.uk/news/blogs-the-papers-25045948#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-the-papers-25045948</guid>  
+      <pubDate>Fri, 22 Nov 2013 20:20:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71270000/jpg/_71270886_promo.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71271000/jpg/_71271131_promo.jpg"/> 
+    </item>  
+    <item> 
+      <title>Petrol prices 'continue to fall'</title>  
+      <description>UK motorists are paying the lowest average petrol prices for more than two and a half years, according to the AA.</description>  
+      <link>http://www.bbc.co.uk/news/business-25049598#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-25049598</guid>  
+      <pubDate>Fri, 22 Nov 2013 12:00:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71275000/jpg/_71275851_56bnl4ob.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71275000/jpg/_71275852_56bnl4ob.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: What next for US and UK banks?</title>  
+      <description>Households and businesses on both sides of the Atlantic want to know what will happen to their loan and mortgage costs over the next few years. Hugh Pym has been discussing the latest signals with Alan Clarke of Scotia Bank and Brian Hilliard of Societe Generale.</description>  
+      <link>http://www.bbc.co.uk/news/business-25059270#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-25059270</guid>  
+      <pubDate>Fri, 22 Nov 2013 17:53:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71291000/jpg/_71291439_71289819.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71291000/jpg/_71291440_71289819.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tories 'fighting for EU referendum'</title>  
+      <description>Tories are "prepared to go the distance" to legislate for an EU referendum despite Labour blocking tactics in a Commons debate, MP James Wharton says.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-25049457#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-25049457</guid>  
+      <pubDate>Fri, 22 Nov 2013 15:17:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71276000/jpg/_71276079_71274297.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71276000/jpg/_71276080_71274297.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Ed Miliband 'marooned' for Radio 4</title>  
+      <description>Ed Miliband has attributed his interest in politics to his parents, in an edition of BBC Radio 4's Desert Island Discs.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-25058483#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-25058483</guid>  
+      <pubDate>Fri, 22 Nov 2013 16:55:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71291000/jpg/_71291112_miliband.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71291000/jpg/_71291113_miliband.jpg"/> 
+    </item>  
+    <item> 
+      <title>Concern at brain haemorrhage delays</title>  
+      <description>Experts warn of delays in the diagnosis and treatment of patients with brain haemorrhages, especially at weekends, which they say is causing 'unnecessary harm'.</description>  
+      <link>http://www.bbc.co.uk/news/health-25035470#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-25035470</guid>  
+      <pubDate>Fri, 22 Nov 2013 02:13:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71255000/jpg/_71255041_brain_haemorrhage.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71255000/jpg/_71255163_brain_haemorrhage.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Hospitals prepare for a winter rush</title>  
+      <description>Hospitals in England face growing pressure from an increasing number of elderly people being treated as emergency cases, according to the Care Quality Commission.</description>  
+      <link>http://www.bbc.co.uk/news/health-25042426#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-25042426</guid>  
+      <pubDate>Fri, 22 Nov 2013 01:06:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71268000/jpg/_71268501_71268172.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71268000/jpg/_71268502_71268172.jpg"/> 
+    </item>  
+    <item> 
+      <title>Free school faces closure</title>  
+      <description>One of the first schools to open under England's free school programme is facing closure if it does not come up with a convincing improvement plan in the next two weeks.</description>  
+      <link>http://www.bbc.co.uk/news/education-25059495#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-25059495</guid>  
+      <pubDate>Fri, 22 Nov 2013 18:39:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71276000/jpg/_71276345_jex_21153_de05-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71276000/jpg/_71276346_jex_21153_de05-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: UK 'needs foreign language speakers'</title>  
+      <description>5 live reporter Rowan Bridge visits Manchester College to find out why are British students so behind with languages.</description>  
+      <link>http://www.bbc.co.uk/news/uk-25015681#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-25015681</guid>  
+      <pubDate>Wed, 20 Nov 2013 15:24:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71233000/jpg/_71233189_chinesegetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71233000/jpg/_71233190_chinesegetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Global launch for Microsoft Xbox One</title>  
+      <description>The global launch of Microsoft's the Xbox One game console took place early on Friday, 22 November.</description>  
+      <link>http://www.bbc.co.uk/news/technology-25037562#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-25037562</guid>  
+      <pubDate>Fri, 22 Nov 2013 00:22:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71263000/jpg/_71263203_71257876.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71263000/jpg/_71263204_71257876.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Making Google's Doctor Who doodle</title>  
+      <description>BBC North America Technology Correspondent Richard Taylor meets the people behind Google's Doctor Who doodle.</description>  
+      <link>http://www.bbc.co.uk/newsround/25039706#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsround/25039706</guid>  
+      <pubDate>Fri, 22 Nov 2013 18:03:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71293000/jpg/_71293495_91e0daba-5ec1-47a6-99c2-b03d9ebab86b.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71293000/jpg/_71293496_91e0daba-5ec1-47a6-99c2-b03d9ebab86b.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hope for climate talks' final hours</title>  
+      <description>Negotiators were preparing for a long final session at the National Stadium in Warsaw as UN talks on climate change crawled to a conclusion.</description>  
+      <link>http://www.bbc.co.uk/news/science-environment-25054376#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-25054376</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:55:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71283000/jpg/_71283594_71283588.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71286000/jpg/_71286869_71283588.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Bird alarm: Great tits use predator-specific calls</title>  
+      <description>Great tits produce different alarm calls depending on whether their nests are threatened my snakes, crows or martens, recordings reveal.</description>  
+      <link>http://www.bbc.co.uk/news/science-environment-25027506#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-25027506</guid>  
+      <pubDate>Fri, 22 Nov 2013 09:27:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71243000/jpg/_71243746_71243633.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71243000/jpg/_71243747_71243633.jpg"/> 
+    </item>  
+    <item> 
+      <title>Jordan collects playwriting honour</title>  
+      <description>Anna Jordan is named winner of the 2013 Bruntwood Prize for playwriting for her work Yen, an exploration of lost childhood.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-25049195#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-25049195</guid>  
+      <pubDate>Fri, 22 Nov 2013 16:15:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71293000/jpg/_71293339_annajordan.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71293000/jpg/_71293340_annajordan.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: How to win a role in Star Wars</title>  
+      <description>UK casting agent Kate Bone tells the BBC's Lizo Mzimba what film-makers are looking for, as open casting sessions are due to take place for two roles in Star Wars: Episode VII.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-25059314#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-25059314</guid>  
+      <pubDate>Fri, 22 Nov 2013 20:15:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71292000/jpg/_71292295_71292287.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71295000/jpg/_71295293_71292287.jpg"/> 
+    </item>  
+    <item> 
+      <title>Rebuilding after 9/11</title>  
+      <description>Will Self asks whether the new World Trade Center is a fitting memorial.</description>  
+      <link>http://www.bbc.co.uk/news/magazine-25052027#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-25052027</guid>  
+      <pubDate>Fri, 22 Nov 2013 17:44:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71289000/jpg/_71289218_tower-promo.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71289000/jpg/_71289219_tower-promo.jpg"/> 
+    </item>  
+    <item> 
+      <title>The Loop: Duran Duran and those natty ties</title>  
+      <description>Welcome to the Loop, the Magazine's weekly letters column, including the best of your thoughts on Twitter and Facebook.</description>  
+      <link>http://www.bbc.co.uk/news/blogs-magazine-monitor-25049590#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-magazine-monitor-25049590</guid>  
+      <pubDate>Fri, 22 Nov 2013 15:14:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71283000/jpg/_71283513_duranduran.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71283000/jpg/_71283514_duranduran.jpg"/> 
+    </item>  
+    <item> 
+      <title>Torch bearer jailed for sex offences</title>  
+      <description>A man is jailed for child sex offences committed in the 1980s after a victim saw him running in the Olympic Torch relay and reported him.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-kent-25056135#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-kent-25056135</guid>  
+      <pubDate>Fri, 22 Nov 2013 16:10:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71284000/jpg/_71284335_de54.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71284000/jpg/_71284336_de54.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sex change MEP 'threatened by UKIP'</title>  
+      <description>An MEP tells the BBC she revealed her gender reassignment secret because of threats from journalists and her former colleagues in UKIP.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-25054626#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-25054626</guid>  
+      <pubDate>Fri, 22 Nov 2013 15:06:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71281000/jpg/_71281941_71278561.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71281000/jpg/_71281942_71278561.jpg"/> 
+    </item>  
+    <item> 
+      <title>RBS chief pledges fundamental change</title>  
+      <description>The new chief executive of RBS, Ross McEwan, promises fundamental changes in the bank's customer service.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-25052421#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-25052421</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:05:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71279000/jpg/_71279700_71279418.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71279000/jpg/_71279701_71279418.jpg"/> 
+    </item>  
+    <item> 
+      <title>Schools could delay new Higher exams</title>  
+      <description>The Scottish government signals that it will allow schools to delay the introduction of the new Higher exams for fifth year pupils.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-25052596#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-25052596</guid>  
+      <pubDate>Fri, 22 Nov 2013 16:01:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71278000/jpg/_71278879_examhall_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71278000/jpg/_71278880_examhall_pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>Woman 'held captive for ten years'</title>  
+      <description>A malnourished woman with learning disabilities was allegedly raped repeatedly and imprisoned for almost a decade, the High Court hears.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-25055936#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-25055936</guid>  
+      <pubDate>Fri, 22 Nov 2013 17:51:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71292000/jpg/_71292695_71291824.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71292000/jpg/_71292696_71291824.jpg"/> 
+    </item>  
+    <item> 
+      <title>Latest phase of Haass talks end</title>  
+      <description>The latest phase of the talks chaired by the former US envoy Richard Haas have finished in Belfast.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-25058725#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-25058725</guid>  
+      <pubDate>Fri, 22 Nov 2013 18:45:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71290000/jpg/_71290045_hass.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71290000/jpg/_71290046_hass.jpg"/> 
+    </item>  
+    <item> 
+      <title>Teacher jailed over sex with pupil</title>  
+      <description>A teacher is jailed for two years after a secret four-year relationship with a 14-year-old female pupil.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-25048570#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-25048570</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:00:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71284000/jpg/_71284564_wns_211113_rachel_speed_03.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71284000/jpg/_71284565_wns_211113_rachel_speed_03.jpg"/> 
+    </item>  
+    <item> 
+      <title>Search for family of war bomber crew</title>  
+      <description>A search begins to find relatives of an airman from Pontypridd and other six crew of a World War Two bomber which has been discovered in a remote German forest.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-south-east-wales-25060325#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-south-east-wales-25060325</guid>  
+      <pubDate>Fri, 22 Nov 2013 19:18:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71293000/jpg/_71293701_wns_211113_lancaster_crash_04.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71293000/jpg/_71293702_wns_211113_lancaster_crash_04.jpg"/> 
+    </item>  
+    <item> 
+      <title>Zimbabwe deadline for foreign firms</title>  
+      <description>The owners of foreign firms operating in Zimbabwe in sectors from farming to hairdressing will be arrested after 1 January 2014, a senior official warns.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-25053618#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-25053618</guid>  
+      <pubDate>Fri, 22 Nov 2013 13:50:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71283000/jpg/_71283652_71281278.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71283000/jpg/_71283653_71281278.jpg"/> 
+    </item>  
+    <item> 
+      <title>SA papers defy Zuma house photo ban</title>  
+      <description>South African papers publish images of President Jacob Zuma's residence, defying a government warning that this would break security laws.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-25049641#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-25049641</guid>  
+      <pubDate>Fri, 22 Nov 2013 11:59:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71274000/jpg/_71274767_zuma.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71274000/jpg/_71274768_zuma.jpg"/> 
+    </item>  
+    <item> 
+      <title>China 'flies first stealth drone'</title>  
+      <description>China successfully flies a stealth drone for the first time on Thursday, state media say, citing eyewitness reports.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-china-25033155#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-china-25033155</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:30:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71277000/jpg/_71277628_aircraft1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71277000/jpg/_71277629_aircraft1.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Five killed' in Karachi bomb blasts</title>  
+      <description>At least five people are reported to have been killed in two bomb explosions in a busy area of Pakistan's southern city of Karachi.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-25058015#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-25058015</guid>  
+      <pubDate>Fri, 22 Nov 2013 20:22:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71294000/jpg/_71294173_bn-448x252.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71294000/jpg/_71294174_bn-448x252.jpg"/> 
+    </item>  
+    <item> 
+      <title>Prodigy is new world chess champion</title>  
+      <description>Norwegian chess prodigy Magnus Carlsen, 22, becomes the world champion, beating title holder Viswanathan Anand of India.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-25057654#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-25057654</guid>  
+      <pubDate>Fri, 22 Nov 2013 16:41:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71291000/jpg/_71291316_71291309.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71291000/jpg/_71291357_71291309.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ukraine rallies over snub to EU</title>  
+      <description>Thousands of protesters stage rallies across Ukraine, angry at the government's decision to delay a landmark agreement with the EU.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-25050202#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-25050202</guid>  
+      <pubDate>Fri, 22 Nov 2013 18:38:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71293000/jpg/_71293951_71287844.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71293000/jpg/_71293952_71287844.jpg"/> 
+    </item>  
+    <item> 
+      <title>Colombia Santos seeks vice-president</title>  
+      <description>Colombia's President, Juan Manuel Santos, announces a re-election bid but his vice-president says he will not stand for the 2014 poll.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-25045099#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-25045099</guid>  
+      <pubDate>Thu, 21 Nov 2013 19:54:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71269000/jpg/_71269159_71269056.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71269000/jpg/_71269160_71269056.jpg"/> 
+    </item>  
+    <item> 
+      <title>Venezuela leader gets special powers</title>  
+      <description>Venezuela's congress gives final approval to controversial legislation allowing President Nicolas Maduro to govern by decrees for 12 months.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-25012076#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-25012076</guid>  
+      <pubDate>Wed, 20 Nov 2013 00:35:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71220000/jpg/_71220188_020058364.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71220000/jpg/_71220189_020058364.jpg"/> 
+    </item>  
+    <item> 
+      <title>Syrian rebels form new Islamic Front</title>  
+      <description>Seven leading Islamist rebel groups in Syria join forces in an effort to show a united front after weeks of major advances by government forces.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-25053525#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-25053525</guid>  
+      <pubDate>Fri, 22 Nov 2013 18:57:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71291000/jpg/_71291965_71284705.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71291000/jpg/_71291966_71284705.jpg"/> 
+    </item>  
+    <item> 
+      <title>Newborn lion cubs die in Gaza zoo</title>  
+      <description>Two lion cubs die just two days after their birth in a zoo in the Gaza Strip, with staff blaming inexperience and a lack of medicine.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-25050540#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-25050540</guid>  
+      <pubDate>Fri, 22 Nov 2013 12:58:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71277000/jpg/_71277357_71274443.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71277000/jpg/_71277358_71274443.jpg"/> 
+    </item>  
+    <item> 
+      <title>US prepares for more online gambling</title>  
+      <description>Online gambling is launched in the state of New Jersey, a sign that the US may slowly be opening up to the multibillion-dollar industry.</description>  
+      <link>http://www.bbc.co.uk/news/technology-25051312#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-25051312</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:39:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71285000/jpg/_71285305_53406367.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71285000/jpg/_71285306_53406367.jpg"/> 
+    </item>  
+    <item> 
+      <title>North Korea confirms US citizen held</title>  
+      <description>North Korea confirms it is holding a US citizen, amid concern for an 85-year-old man who was reportedly detained on a visit there last month.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-25058345#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-25058345</guid>  
+      <pubDate>Fri, 22 Nov 2013 20:11:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71289000/jpg/_71289891_71271510.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71289000/jpg/_71289892_71271510.jpg"/> 
+    </item>  
+    <item> 
+      <title>Week in pictures: 16-22 November 2013</title>  
+      <description>News photos from around the world</description>  
+      <link>http://www.bbc.co.uk/news/in-pictures-25049680#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/in-pictures-25049680</guid>  
+      <pubDate>Fri, 22 Nov 2013 17:08:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71290000/jpg/_71290442_71275798.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71290000/jpg/_71290443_71275798.jpg"/> 
+    </item>  
+    <item> 
+      <title>Day in pictures: 22 November 2013</title>  
+      <description>24 hours of news photos: 22 November</description>  
+      <link>http://www.bbc.co.uk/news/in-pictures-25049681#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/in-pictures-25049681</guid>  
+      <pubDate>Fri, 22 Nov 2013 13:40:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71282000/jpg/_71282404_71280749.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71282000/jpg/_71282405_71280749.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Latvia store collapse</title>  
+      <description>Rescue efforts continue in Latvian capital Riga</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-25048839#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-25048839</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:29:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71273000/jpg/_71273033_71272792.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71273000/jpg/_71273054_71272792.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tokyo Motor Show: New cars unveiled</title>  
+      <description>Carmakers unveil concepts in Tokyo</description>  
+      <link>http://www.bbc.co.uk/news/technology-25024904#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-25024904</guid>  
+      <pubDate>Wed, 20 Nov 2013 18:22:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71242000/jpg/_71242357_covers.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71242000/jpg/_71242358_covers.jpg"/> 
+    </item>  
+    <item> 
+      <title>Your pictures: Masks</title>  
+      <description>Readers' photos on the theme of masks</description>  
+      <link>http://www.bbc.co.uk/news/in-pictures-25032368#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/in-pictures-25032368</guid>  
+      <pubDate>Thu, 21 Nov 2013 10:26:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71249000/jpg/_71249748_71249256.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71249000/jpg/_71249749_71249256.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Portrait Salon 2013</title>  
+      <description>A selection of this year's pictures</description>  
+      <link>http://www.bbc.co.uk/news/in-pictures-25000667#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/in-pictures-25000667</guid>  
+      <pubDate>Thu, 21 Nov 2013 09:10:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71208000/jpg/_71208417_kajalpatel1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71208000/jpg/_71208418_kajalpatel1.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: The Hidden Mother</title>  
+      <description>Keeping a child in front of the lens</description>  
+      <link>http://www.bbc.co.uk/news/in-pictures-25000664#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/in-pictures-25000664</guid>  
+      <pubDate>Wed, 20 Nov 2013 08:19:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71199000/jpg/_71199795_0377copy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71199000/jpg/_71199796_0377copy.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Beirut blasts</title>  
+      <description>Double bombing in Lebanese capital</description>  
+      <link>http://www.bbc.co.uk/news/in-pictures-25003351#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/in-pictures-25003351</guid>  
+      <pubDate>Tue, 19 Nov 2013 12:29:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71231000/jpg/_71231068_hi020048700.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71231000/jpg/_71231069_hi020048700.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: House of Commons</title>  
+      <description>The prime minister says there are "no plans" for an amnesty on crimes during the Troubles.</description>  
+      <link>http://www.bbc.co.uk/democracylive/house-of-commons-25019766</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/democracylive/house-of-commons-25019766</guid>  
+      <pubDate>Wed, 20 Nov 2013 13:23:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71232000/jpg/_71232233_71231366.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71232000/jpg/_71232234_71231366.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Justin Bieber' of chess wins title</title>  
+      <description>Norwegian prodigy Magnus Carlsen has been called the Justin Bieber of chess after becoming the chess world champion at the age of 22.</description>  
+      <link>http://www.bbc.co.uk/news/world-25059274#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-25059274</guid>  
+      <pubDate>Fri, 22 Nov 2013 18:51:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71292000/jpg/_71292923_71291451.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71292000/jpg/_71292924_71291451.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Iconic images from day JFK was shot</title>  
+      <description>On the 22nd of November 1963, America changed forever when President John F Kennedy was assassinated, but iconic images of that fateful day live on.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-25046723#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-25046723</guid>  
+      <pubDate>Fri, 22 Nov 2013 06:51:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71271000/jpg/_71271873_71271834.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71271000/jpg/_71271874_71271834.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: New eyes for boy injured in attack</title>  
+      <description>A Chinese boy whose eyes were gouged out in an attack in August has undergone surgery to complete the process of implanting prosthetic eyes.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-25055973#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-25055973</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:13:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71285000/jpg/_71285794_photo.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71285000/jpg/_71285795_photo.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: HMS Illustrious sets off for Philippines</title>  
+      <description>HMS Illustrious is bringing 500 tonnes of aid to survivors of Typhoon Haiyan in the Philippines.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-25056933#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-25056933</guid>  
+      <pubDate>Fri, 22 Nov 2013 16:05:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71286000/jpg/_71286263_71285565.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71286000/jpg/_71286264_71285565.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Matt Smith on perils of being recognised</title>  
+      <description>Matt Smith, who plays the Doctor, explains how once while answering the call of nature he was spotted by a fan who wanted him to speak to his wife.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-25048329#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-25048329</guid>  
+      <pubDate>Fri, 22 Nov 2013 10:49:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71275000/jpg/_71275832_71275827.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71275000/jpg/_71275833_71275827.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Sell it like Beckham - for charity</title>  
+      <description>Designer clothes donated by David and Victoria Beckham have sold out at a charity shop in London to raise money for the Philippines.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-25049873#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-25049873</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:09:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71285000/jpg/_71285773_71285055.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71285000/jpg/_71285774_71285055.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The appeal of driving £2m trams</title>  
+      <description>Edinburgh's tram drivers are being put through their paces ahead of the new service opening in spring 2014.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-25051101#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-25051101</guid>  
+      <pubDate>Fri, 22 Nov 2013 11:15:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71276000/jpg/_71276805_tram_lights.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71276000/jpg/_71276806_tram_lights.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'I never thought this day would come'</title>  
+      <description>A British woman arrested by Russian authorities during a Greenpeace protest in the Arctic is freed on bail after two months in detention.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-25048151#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-25048151</guid>  
+      <pubDate>Fri, 22 Nov 2013 12:36:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71281000/jpg/_71281681_71277621.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71281000/jpg/_71281682_71277621.jpg"/> 
+    </item>  
+    <item> 
+      <title>The pressure of body image on women</title>  
+      <description>Why do successful women feel pressure to look a certain way?</description>  
+      <link>http://www.bbc.co.uk/news/health-25052432#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-25052432</guid>  
+      <pubDate>Fri, 22 Nov 2013 15:22:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71286000/jpg/_71286285_rebecca_adlington_09.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71286000/jpg/_71286286_rebecca_adlington_09.jpg"/> 
+    </item>  
+    <item> 
+      <title>Modern day slavery in the UK</title>  
+      <description>How widespread is servitude - and what's being done about it?</description>  
+      <link>http://www.bbc.co.uk/news/uk-25048307#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-25048307</guid>  
+      <pubDate>Fri, 22 Nov 2013 14:02:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71285000/jpg/_71285809_153131484.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71285000/jpg/_71285810_153131484.jpg"/> 
+    </item>  
+    <item> 
+      <title>How did Doctor Who reflect the news?</title>  
+      <description>How did Doctor Who reflect events in the real world?</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-24848815#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-24848815</guid>  
+      <pubDate>Fri, 22 Nov 2013 01:38:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71005000/jpg/_71005395_dalekinvasion1964.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71005000/jpg/_71005396_dalekinvasion1964.jpg"/> 
+    </item>  
+    <item> 
+      <title>A side-effect of China's one-child policy</title>  
+      <description>What's it like growing up without a brother, sister or cousin?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-25035280#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-25035280</guid>  
+      <pubDate>Fri, 22 Nov 2013 00:48:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71295000/jpg/_71295355_81322740_afp624.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71295000/jpg/_71295356_81322740_afp624.jpg"/> 
+    </item>  
+    <item> 
+      <title>The tweet that sparked a debate over racism in Norway</title>  
+      <description>The Somali student who started a hot debate in Norway</description>  
+      <link>http://www.bbc.co.uk/news/blogs-trending-25036081#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-trending-25036081</guid>  
+      <pubDate>Fri, 22 Nov 2013 15:12:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71281000/jpg/_71281938_twitterscreengrab.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71282000/jpg/_71282009_twitterscreengrab.jpg"/> 
+    </item>  
+    <item> 
+      <title>Consoles: One box to rule them all?</title>  
+      <description>The titanic battle for control of the living room</description>  
+      <link>http://www.bbc.co.uk/news/technology-25049586#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-25049586</guid>  
+      <pubDate>Fri, 22 Nov 2013 09:05:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71274000/jpg/_71274138_control.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71274000/jpg/_71274139_control.jpg"/> 
+    </item>  
+    <item> 
+      <title>Australia revel in 'payback time'</title>  
+      <description>Ruthless Australian display brings Ashes series to life</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/25049147</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/25049147</guid>  
+      <pubDate>Fri, 22 Nov 2013 09:28:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="37" url="http://news.bbcimg.co.uk/media/images/71273000/jpg/_71273823_71273764.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71273000/jpg/_71273824_71273764.jpg"/> 
+    </item>  
+    <item> 
+      <title>The new meaning of spyware</title>  
+      <description>What happens when spooks use hacker tools?</description>  
+      <link>http://www.bbc.co.uk/news/technology-24931374#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-24931374</guid>  
+      <pubDate>Fri, 22 Nov 2013 00:25:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71206000/gif/_71206912_spywareindex.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71206000/gif/_71206913_spywareindex.gif"/> 
+    </item>  
+    <item> 
+      <title>Remembering Benjamin Britten at 100</title>  
+      <description>Memories of a music genius and private man</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-25013521#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-25013521</guid>  
+      <pubDate>Fri, 22 Nov 2013 00:58:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71236000/jpg/_71236226_brittensmiling.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71236000/jpg/_71236227_brittensmiling.jpg"/> 
+    </item>  
+    <item> 
+      <title>Quiz of the week's news</title>  
+      <description>Which farmyard animals crashed through a woman's roof?</description>  
+      <link>http://www.bbc.co.uk/news/blogs-magazine-monitor-25032538#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-magazine-monitor-25032538</guid>  
+      <pubDate>Fri, 22 Nov 2013 00:50:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71273000/jpg/_71273556_shock_thinkstock.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71273000/jpg/_71273557_shock_thinkstock.jpg"/> 
+    </item>  
+    <item> 
+      <title>How damaged is Co-op Bank by Flowers furore?</title>  
+      <description>How Co-op made the hedge funds look good</description>  
+      <link>http://www.bbc.co.uk/news/business-25049859#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-25049859</guid>  
+      <pubDate>Fri, 22 Nov 2013 08:49:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71273000/jpg/_71273906_robertpeston.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71273000/jpg/_71273907_robertpeston.jpg"/> 
+    </item>  
+    <item> 
+      <title>Can my doctor be my Facebook friend?</title>  
+      <description>Can your doctor be your Facebook friend too?</description>  
+      <link>http://www.bbc.co.uk/news/health-24850051#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-24850051</guid>  
+      <pubDate>Fri, 22 Nov 2013 01:42:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/71004000/jpg/_71004563_facebook.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/71004000/jpg/_71004564_facebook.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

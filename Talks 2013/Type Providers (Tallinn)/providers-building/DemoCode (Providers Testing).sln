@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Testing Providers", "1 Testing Providers", "{E48468EB-B856-412B-ADD9-D0BF77B39D43}"
+	ProjectSection(SolutionItems) = preProject
+		Testing\Cultures.fsx = Testing\Cultures.fsx
+		Testing\EnvVars.fsx = Testing\EnvVars.fsx
+		Testing\Ini.fsx = Testing\Ini.fsx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
