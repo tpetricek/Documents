@@ -28,3 +28,14 @@ other F# features to query the data.
 
 
 ![Type provider in action!](https://raw.github.com/tpetricek/Documents/master/Samples/TescoProvider/screenshot.png)
+
+Known issues
+------------
+
+ * When you try to get products in a category containing larger number of products,
+   you get an error message complaining about `MaxReceivedMessageSize` from WCF - we should
+   increaste this parameter (somehow?)
+
+ * The type provider lets you enumerate products in categories that are not at the leaf
+   of the category tree (e.g. `tesco.Drinks`) but the service does not return any data
+   for those - we should either lazily iterate over all children or do not allow this.
