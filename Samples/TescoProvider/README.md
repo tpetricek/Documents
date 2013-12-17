@@ -18,12 +18,18 @@ Important files:
 	so you won't be able to rebuild - the best way to work is to use two instances
 	of Visual Studio.
 
-Example 
--------
+Tesco provider in action 
+------------------------
 
 The following sample shows how type providers work when used from an editor such as 
 Visual Studio - we can navigate through categories using IntelliSense and pick, for example,
 the category "Shery Port & Montilla" under "Drinks" and "Spirits". Then we can use
 other F# features to query the data.
+
+<div style="text-align:center">
+<img src="https://raw.github.com/tpetricek/Documents/master/Samples/TescoProvider/screenshot.png" />
+</div>
+
+-- 
 
 ![Type provider in action!](https://raw.github.com/tpetricek/Documents/master/Samples/TescoProvider/screenshot.png)
