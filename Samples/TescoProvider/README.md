@@ -26,10 +26,5 @@ Visual Studio - we can navigate through categories using IntelliSense and pick, 
 the category "Shery Port & Montilla" under "Drinks" and "Spirits". Then we can use
 other F# features to query the data.
 
-<div style="text-align:center">
-<img src="https://raw.github.com/tpetricek/Documents/master/Samples/TescoProvider/screenshot.png" />
-</div>
-
--- 
 
 ![Type provider in action!](https://raw.github.com/tpetricek/Documents/master/Samples/TescoProvider/screenshot.png)
