@@ -17,3 +17,8 @@ Important files:
 	When you open the file in Visual Studio, it will lock the type provider `dll`
 	so you won't be able to rebuild - the best way to work is to use two instances
 	of Visual Studio.
+
+Example 
+-------
+
+![Type provider in action!](https://raw.github.com/tpetricek/Documents/master/Samples/TescoProvider/screenshot.png)
