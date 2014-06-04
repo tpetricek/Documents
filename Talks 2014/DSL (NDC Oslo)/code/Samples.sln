@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Classifiers", "3 Classifiers", "{9020E4E5-A368-477D-9DD8-98D97AF8C71C}"
+	ProjectSection(SolutionItems) = preProject
+		Classifiers\1 Pricing.fsx = Classifiers\1 Pricing.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Functional 3D", "1 Functional 3D", "{97B3B763-2B9B-4A47-9BD7-0729E13D3CE4}"
+	ProjectSection(SolutionItems) = preProject
+		Functional3D\1 Samples.fsx = Functional3D\1 Samples.fsx
+		Functional3D\2 Puzzle.fsx = Functional3D\2 Puzzle.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Markdown", "2 Markdown", "{B2BC6183-675E-483E-96CF-A140404903AF}"
+	ProjectSection(SolutionItems) = preProject
+		Markdown\1 Formatting.fsx = Markdown\1 Formatting.fsx
+		Markdown\2 Processing.fsx = Markdown\2 Processing.fsx
+		Markdown\3 Parsing.fsx = Markdown\3 Parsing.fsx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,93 @@
+<UserSettings><ApplicationIdentity version="12.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="Tab0.ID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Tab0.Name">1 Funcitonal 3D</PropertyValue><PropertyValue name="Tab0.View">0</PropertyValue><PropertyValue name="Tab0.UseDefaultName">true</PropertyValue><PropertyValue name="Tab0.RecordType">1</PropertyValue><PropertyValue name="Tab0.Position">39</PropertyValue><PropertyValue name="Tab1.ID">Common Silverlight Controls</PropertyValue><PropertyValue name="Tab1.Name">Common Silverlight Controls</PropertyValue><PropertyValue name="Tab1.View">0</PropertyValue><PropertyValue name="Tab1.UseDefaultName">true</PropertyValue><PropertyValue name="Tab1.RecordType">4</PropertyValue><PropertyValue name="Tab1.Position">40</PropertyValue><PropertyValue name="Tab2.ID">{73422BED-2F83-4587-8A50-5B2BBE45F4B1}-#1000</PropertyValue><PropertyValue name="Tab2.Name">SharePoint Controls</PropertyValue><PropertyValue name="Tab2.View">0</PropertyValue><PropertyValue name="Tab2.UseDefaultName">true</PropertyValue><PropertyValue name="Tab2.RecordType">4</PropertyValue><PropertyValue name="Tab2.Position">41</PropertyValue><PropertyValue name="Tab3.ID">ToolboxCategory_WinOEActivities</PropertyValue><PropertyValue name="Tab3.Name">Windows Workflow v3.0</PropertyValue><PropertyValue name="Tab3.View">0</PropertyValue><PropertyValue name="Tab3.UseDefaultName">true</PropertyValue><PropertyValue name="Tab3.RecordType">4</PropertyValue><PropertyValue name="Tab3.Position">42</PropertyValue><PropertyValue name="Tab4.Name">Advertising</PropertyValue><PropertyValue name="Tab4.View">0</PropertyValue><PropertyValue name="Tab4.UseDefaultName">true</PropertyValue><PropertyValue name="Tab4.RecordType">4</PropertyValue><PropertyValue name="Tab4.Position">43</PropertyValue><PropertyValue name="Tab5.ID">Common WPF Controls</PropertyValue><PropertyValue name="Tab5.Name">Common WPF Controls</PropertyValue><PropertyValue name="Tab5.View">0</PropertyValue><PropertyValue name="Tab5.UseDefaultName">true</PropertyValue><PropertyValue name="Tab5.RecordType">4</PropertyValue><PropertyValue name="Tab5.Position">46</PropertyValue><PropertyValue name="Tab6.ID">MSVSTORibbonV11</PropertyValue><PropertyValue name="Tab6.Name">Office Ribbon Controls</PropertyValue><PropertyValue name="Tab6.View">0</PropertyValue><PropertyValue name="Tab6.UseDefaultName">true</PropertyValue><PropertyValue name="Tab6.RecordType">4</PropertyValue><PropertyValue name="Tab6.Position">52</PropertyValue><PropertyValue name="Tab7.ID">Control Flow</PropertyValue><PropertyValue name="Tab7.Name">Control Flow</PropertyValue><PropertyValue name="Tab7.View">0</PropertyValue><PropertyValue name="Tab7.UseDefaultName">true</PropertyValue><PropertyValue name="Tab7.RecordType">4</PropertyValue><PropertyValue name="Tab7.Position">60</PropertyValue><PropertyValue name="Tab8.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1071</PropertyValue><PropertyValue name="Tab8.Name">Standard</PropertyValue><PropertyValue name="Tab8.View">0</PropertyValue><PropertyValue name="Tab8.UseDefaultName">true</PropertyValue><PropertyValue name="Tab8.RecordType">4</PropertyValue><PropertyValue name="Tab8.Position">61</PropertyValue><PropertyValue name="Tab9.ID">2 Markdown (Formatting)</PropertyValue><PropertyValue name="Tab9.Name">2 Markdown (Formatting)</PropertyValue><PropertyValue name="Tab9.View">0</PropertyValue><PropertyValue name="Tab9.UseDefaultName">false</PropertyValue><PropertyValue name="Tab9.RecordType">1</PropertyValue><PropertyValue name="Tab9.Position">70</PropertyValue><PropertyValue name="Tab9.OriginalName">2 Markdown (Formatting)</PropertyValue><PropertyValue name="Tab10.ID">2 Markdown (Processing)</PropertyValue><PropertyValue name="Tab10.Name">2 Markdown (Processing)</PropertyValue><PropertyValue name="Tab10.View">0</PropertyValue><PropertyValue name="Tab10.UseDefaultName">false</PropertyValue><PropertyValue name="Tab10.RecordType">1</PropertyValue><PropertyValue name="Tab10.Position">71</PropertyValue><PropertyValue name="Tab10.OriginalName">2 Markdown (Processing)</PropertyValue><PropertyValue name="Tab11.ID">4 Classifiers</PropertyValue><PropertyValue name="Tab11.Name">3 Classifiers</PropertyValue><PropertyValue name="Tab11.View">0</PropertyValue><PropertyValue name="Tab11.UseDefaultName">false</PropertyValue><PropertyValue name="Tab11.RecordType">1</PropertyValue><PropertyValue name="Tab11.Position">72</PropertyValue><PropertyValue name="Tab11.OriginalName">4 Classifiers</PropertyValue><PropertyValue name="TabCount">12</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">3CBFAEE99A7D0A61FB343D5D449EA909</PropertyValue><PropertyValue name="Item0.Name">Text: let tower x z = 
+  (Fun.cylinder
+     |&gt; Fun.scale (1.0, 1.0, 3.0) 
+     |&gt; Fun.translate (0.0, 0.0, 1.0)
+     |&gt; Fun.color Color.DarkGoldenrod ) $ 
+  (Fun.cone 
+     |&gt; Fun.scale (1.3, 1.3, 1.3) 
+     |&gt; Fun.translate (0.0, 0.0, -1.0)
+     |&gt; Fun.color Color.Red )
+  |&gt; Fun.rotate (90.0, 0.0, 0.0)
+  |&gt; Fun.translate (x, 0.5, z)</PropertyValue><PropertyValue name="Item0.UseDefaultName">true</PropertyValue><PropertyValue name="Item0.Tab">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item0.TabID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item0.OriginalTabID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item0.OriginalTab">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">let tower x z = 
+  (Fun.cylinder
+     |&gt; Fun.scale (1.0, 1.0, 3.0) 
+     |&gt; Fun.translate (0.0, 0.0, 1.0)
+     |&gt; Fun.color Color.DarkGoldenrod ) $ 
+  (Fun.cone 
+     |&gt; Fun.scale (1.3, 1.3, 1.3) 
+     |&gt; Fun.translate (0.0, 0.0, -1.0)
+     |&gt; Fun.color Color.Red )
+  |&gt; Fun.rotate (90.0, 0.0, 0.0)
+  |&gt; Fun.translate (x, 0.5, z)</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">26E7703717DE65015D9E2A274419A57C</PropertyValue><PropertyValue name="Item1.Name">Text: let sizedCube height = 
+  Fun.cube 
+  |&gt; Fun.scale (0.5, height, 1.0) 
+  |&gt; Fun.translate (-0.5, height/2.0 - 1.0, 0.0)
+
+let twoCubes =
+  sizedCube 0.8 $ (sizedCube 1.0 |&gt; Fun.translate (0.5, 0.0, 0.0))
+</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item1.TabID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item1.OriginalTabID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item1.OriginalTab">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">let sizedCube height = 
+  Fun.cube 
+  |&gt; Fun.scale (0.5, height, 1.0) 
+  |&gt; Fun.translate (-0.5, height/2.0 - 1.0, 0.0)
+
+let twoCubes =
+  sizedCube 0.8 $ (sizedCube 1.0 |&gt; Fun.translate (0.5, 0.0, 0.0))
+</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">BB66A0BD1D860611023EF818D1B5017E</PropertyValue><PropertyValue name="Item2.Name">Text: let block = 
+  [ for offset in -4.0 .. +4.0 -&gt;
+      twoCubes |&gt; Fun.translate (offset, 0.0, 0.0) ]
+  |&gt; Seq.reduce ($)
+  |&gt; Fun.scale (0.5, 2.0, 0.3)
+  |&gt; Fun.color Color.DarkGray
+</PropertyValue><PropertyValue name="Item2.UseDefaultName">true</PropertyValue><PropertyValue name="Item2.Tab">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item2.TabID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item2.OriginalTabID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item2.OriginalTab">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">let block = 
+  [ for offset in -4.0 .. +4.0 -&gt;
+      twoCubes |&gt; Fun.translate (offset, 0.0, 0.0) ]
+  |&gt; Seq.reduce ($)
+  |&gt; Fun.scale (0.5, 2.0, 0.3)
+  |&gt; Fun.color Color.DarkGray
+</PropertyValue><PropertyValue name="Item2.Position">3</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">0AC47C2612C105A7924986B51939A505</PropertyValue><PropertyValue name="Item3.Name">Text: let wall offs rotate = 
+  let rotationArg = if rotate then (0.0, 90.0, 0.0) else (0.0, 0.0, 0.0)
+  let translationArg = if rotate then (offs, 0.0, 0.0) else (0.0, 0.0, offs)
+  block |&gt; Fun.rotate rotationArg |&gt; Fun.translate translationArg
+</PropertyValue><PropertyValue name="Item3.UseDefaultName">true</PropertyValue><PropertyValue name="Item3.Tab">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item3.TabID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item3.OriginalTabID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item3.OriginalTab">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">let wall offs rotate = 
+  let rotationArg = if rotate then (0.0, 90.0, 0.0) else (0.0, 0.0, 0.0)
+  let translationArg = if rotate then (offs, 0.0, 0.0) else (0.0, 0.0, offs)
+  block |&gt; Fun.rotate rotationArg |&gt; Fun.translate translationArg
+</PropertyValue><PropertyValue name="Item3.Position">4</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">3915278A6BC3BA472CEF793D1D43ACA1</PropertyValue><PropertyValue name="Item4.Name">Text: tower -2.0 -2.0 $ tower 2.0 -2.0 $ 
+  tower -2.0 2.0 $ tower 2.0 2.0 $
+  wall -2.0 true $ wall 2.0 true $
+  wall -2.0 false $ wall 2.0 false
+</PropertyValue><PropertyValue name="Item4.UseDefaultName">true</PropertyValue><PropertyValue name="Item4.Tab">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item4.TabID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item4.OriginalTabID">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item4.OriginalTab">1 Funcitonal 3D</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">tower -2.0 -2.0 $ tower 2.0 -2.0 $ 
+  tower -2.0 2.0 $ tower 2.0 2.0 $
+  wall -2.0 true $ wall 2.0 true $
+  wall -2.0 false $ wall 2.0 false
+</PropertyValue><PropertyValue name="Item4.Position">5</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">103D9B79E926DA0453245507C0E8A03B</PropertyValue><PropertyValue name="Item5.Name">Text: // BACKUP: 
+win.Add("Always up", Price.rising)
+win.Add("Mostly up", Price.regression Price.rising)
+win.Add("Mostly down", Price.regression Price.declining)
+win.Add("Average", Price.average)
+</PropertyValue><PropertyValue name="Item5.UseDefaultName">true</PropertyValue><PropertyValue name="Item5.Tab">4 Classifiers</PropertyValue><PropertyValue name="Item5.TabID">4 Classifiers</PropertyValue><PropertyValue name="Item5.OriginalTabID">4 Classifiers</PropertyValue><PropertyValue name="Item5.OriginalTab">3 Classifiers</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">// BACKUP: 
+win.Add("Always up", Price.rising)
+win.Add("Mostly up", Price.regression Price.rising)
+win.Add("Mostly down", Price.regression Price.declining)
+win.Add("Average", Price.average)
+</PropertyValue><PropertyValue name="Item5.Position">1</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">A29B5BC8197E9189E77187BA68D0E734</PropertyValue><PropertyValue name="Item6.Name">Text: // Pattern that detects when price is going up and is above given limit
+let highAndRising limit = 
+  Price.both Price.average mostlyUp
+  |&gt; Price.map (fun (avg, up) -&gt;
+      avg &gt; limit &amp;&amp; up)
+
+win.Add("High &amp; rising", highAndRising 30.0)
+</PropertyValue><PropertyValue name="Item6.UseDefaultName">true</PropertyValue><PropertyValue name="Item6.Tab">4 Classifiers</PropertyValue><PropertyValue name="Item6.TabID">4 Classifiers</PropertyValue><PropertyValue name="Item6.OriginalTabID">4 Classifiers</PropertyValue><PropertyValue name="Item6.OriginalTab">3 Classifiers</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">// Pattern that detects when price is going up and is above given limit
+let highAndRising limit = 
+  Price.both Price.average mostlyUp
+  |&gt; Price.map (fun (avg, up) -&gt;
+      avg &gt; limit &amp;&amp; up)
+
+win.Add("High &amp; rising", highAndRising 30.0)
+</PropertyValue><PropertyValue name="Item6.Position">2</PropertyValue><PropertyValue name="Item7.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item7.ID">FD36AA56085E1ABE8FA3684621232389</PropertyValue><PropertyValue name="Item7.Name">Text: let list items =
+  let lis = [ for i in items -&gt; sprintf "&lt;li&gt;%s&lt;/li&gt;" i ]
+  "&lt;ul&gt;" + (String.concat "" lis) + "&lt;/ul&gt;"
+</PropertyValue><PropertyValue name="Item7.UseDefaultName">true</PropertyValue><PropertyValue name="Item7.Tab">2 Markdown (Formatting)</PropertyValue><PropertyValue name="Item7.TabID">2 Markdown (Formatting)</PropertyValue><PropertyValue name="Item7.OriginalTabID">2 Markdown (Formatting)</PropertyValue><PropertyValue name="Item7.OriginalTab">2 Markdown (Formatting)</PropertyValue><PropertyValue name="Item7.RecordType">1</PropertyValue><PropertyValue name="Item7.Data">let list items =
+  let lis = [ for i in items -&gt; sprintf "&lt;li&gt;%s&lt;/li&gt;" i ]
+  "&lt;ul&gt;" + (String.concat "" lis) + "&lt;/ul&gt;"
+</PropertyValue><PropertyValue name="Item7.Position">1</PropertyValue><PropertyValue name="Item8.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item8.ID">8BFE414491B9F7975484B95F62BA40BB</PropertyValue><PropertyValue name="Item8.Name"/></Category></Category></UserSettings>
