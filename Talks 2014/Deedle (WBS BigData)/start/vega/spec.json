@@ -1,0 +1,6 @@
+{"width":400.000000,"height":300.000000,"data":[{"name":"table","values":[{"fst":"Republican","snd":6.102000,"col":"Republican"},{"fst":"Democrat","snd":5.024444,"col":"Democrat"}]}],"scales":[{"name":"X","zero":true,"type":"ordinal","range":"width","domain":{"data":"table","field":"data.fst"}},{"name":"Y","zero":true,"type":"linear","range":"height","domain":{"data":"table","field":"data.snd"}},{"name":"Color","zero":true,"type":"ordinal","range":"category20","domain":{"data":"table","field":"data.col"}}],"legends":[{"fill":"Color",  "properties": {
+                    "labels": { "fill": {"value": "#a0a0a0"}, "fontSize": {"value": 11} }   } }],"axes":[{
+              "properties": { "axis": { "stroke": {"value": "#a0a0a0"} },
+                "labels": { "fill": {"value": "#a0a0a0"} } } ,"type":"x","scale":"X"},{
+              "properties": { "axis": { "stroke": {"value": "#a0a0a0"} },
+                "labels": { "fill": {"value": "#a0a0a0"} } } ,"type":"y","scale":"Y"}],"marks":[{"type":"rect","from":{"data":"table"},"properties":{"enter":{"x":{"scale":"X","field":"data.fst"},"width":{"scale":"X","band":"true","offset":"-1"},"y":{"scale":"Y","value":"0"},"y2":{"scale":"Y","field":"data.snd"},"fill":{"scale":"Color","field":"data.col"}}}}]}
