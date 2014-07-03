@@ -1,0 +1,5 @@
+C:\Tomas\Materials\Public\Talks 2014\Serious Craft (New York)\EmailValidator\bin\Stuff.EmailValidator.XML
+C:\Tomas\Materials\Public\Talks 2014\Serious Craft (New York)\EmailValidator\bin\Stuff.EmailValidator.dll
+C:\Tomas\Materials\Public\Talks 2014\Serious Craft (New York)\EmailValidator\bin\Stuff.EmailValidator.pdb
+C:\Tomas\Materials\Public\Talks 2014\Serious Craft (New York)\EmailValidator\src\Stuff.EmailValidator\obj\Debug\Stuff.EmailValidator.dll
+C:\Tomas\Materials\Public\Talks 2014\Serious Craft (New York)\EmailValidator\src\Stuff.EmailValidator\obj\Debug\Stuff.EmailValidator.pdb

@@ -1,0 +1,113 @@
+<UserSettings><ApplicationIdentity version="12.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="Tab0.ID">1 Implementation</PropertyValue><PropertyValue name="Tab0.Name">1 Implementation</PropertyValue><PropertyValue name="Tab0.View">0</PropertyValue><PropertyValue name="Tab0.UseDefaultName">false</PropertyValue><PropertyValue name="Tab0.RecordType">1</PropertyValue><PropertyValue name="Tab0.Position">69</PropertyValue><PropertyValue name="Tab0.OriginalName">1 Implementation</PropertyValue><PropertyValue name="Tab1.ID">2 Adding tests</PropertyValue><PropertyValue name="Tab1.Name">2 Adding tests</PropertyValue><PropertyValue name="Tab1.View">0</PropertyValue><PropertyValue name="Tab1.UseDefaultName">false</PropertyValue><PropertyValue name="Tab1.RecordType">1</PropertyValue><PropertyValue name="Tab1.Position">70</PropertyValue><PropertyValue name="Tab1.OriginalName">2 Adding tests</PropertyValue><PropertyValue name="Tab2.ID">3 Writing tutorial docs</PropertyValue><PropertyValue name="Tab2.Name">3 Writing tutorial docs</PropertyValue><PropertyValue name="Tab2.View">0</PropertyValue><PropertyValue name="Tab2.UseDefaultName">false</PropertyValue><PropertyValue name="Tab2.RecordType">1</PropertyValue><PropertyValue name="Tab2.Position">71</PropertyValue><PropertyValue name="Tab2.OriginalName">3 Writing tutorial docs</PropertyValue><PropertyValue name="Tab3.ID">4 Writing "xml" docs</PropertyValue><PropertyValue name="Tab3.Name">4 Writing "xml" docs</PropertyValue><PropertyValue name="Tab3.View">0</PropertyValue><PropertyValue name="Tab3.UseDefaultName">false</PropertyValue><PropertyValue name="Tab3.RecordType">1</PropertyValue><PropertyValue name="Tab3.Position">72</PropertyValue><PropertyValue name="Tab3.OriginalName">4 Writing "xml" docs</PropertyValue><PropertyValue name="TabCount">4</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">00DD29C91AC4C3E01A1DD6B589CCD156</PropertyValue><PropertyValue name="Item0.Name">Text: module Requirements = 
+  /// Requres that the password length is more than or equal to 8
+  let LengthRequirement = 
+    { new IRequirement with
+        member x.IsSatisfied(password) = password.Length &gt;= 8 }
+
+  /// Requires that the password contains digits
+  let DigitRequirement =
+    { new IRequirement with
+        member x.IsSatisfied(password) = password |&gt; Seq.exists System.Char.IsDigit }
+  
+  /// Requires that the password contains upper case letter
+  let UpperCaseRequirement =
+    { new IRequirement with
+        member x.IsSatisfied(password) = password |&gt; Seq.exists System.Char.IsUpper }
+
+/// Power validator that combines multiple validators
+type PowerValidator(requirements:seq&lt;IRequirement&gt;) = 
+  member x.IsValid(password) =
+    requirements |&gt; Seq.forall (fun x -&gt; x.IsSatisfied password)</PropertyValue><PropertyValue name="Item0.UseDefaultName">true</PropertyValue><PropertyValue name="Item0.Tab">1 Implementation</PropertyValue><PropertyValue name="Item0.TabID">1 Implementation</PropertyValue><PropertyValue name="Item0.OriginalTabID">General</PropertyValue><PropertyValue name="Item0.OriginalTab">General</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">module Requirements = 
+  /// Requres that the password length is more than or equal to 8
+  let LengthRequirement = 
+    { new IRequirement with
+        member x.IsSatisfied(password) = password.Length &gt;= 8 }
+
+  /// Requires that the password contains digits
+  let DigitRequirement =
+    { new IRequirement with
+        member x.IsSatisfied(password) = password |&gt; Seq.exists System.Char.IsDigit }
+  
+  /// Requires that the password contains upper case letter
+  let UpperCaseRequirement =
+    { new IRequirement with
+        member x.IsSatisfied(password) = password |&gt; Seq.exists System.Char.IsUpper }
+
+/// Power validator that combines multiple validators
+type PowerValidator(requirements:seq&lt;IRequirement&gt;) = 
+  member x.IsValid(password) =
+    requirements |&gt; Seq.forall (fun x -&gt; x.IsSatisfied password)</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">F6D6AECA85EE1E0DBEB609EB58C486A1</PropertyValue><PropertyValue name="Item1.Name">Text: #if INTERACTIVE
+#r "../../bin/Stuff.EmailValidator.dll"
+#r "../../packages/NUnit.2.6.3/lib/nunit.framework.dll"
+#else
+module FSharp.ProjectScaffold.Tests
+#endif
+</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">2 Adding tests</PropertyValue><PropertyValue name="Item1.TabID">2 Adding tests</PropertyValue><PropertyValue name="Item1.OriginalTabID">General</PropertyValue><PropertyValue name="Item1.OriginalTab">General</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">#if INTERACTIVE
+#r "../../bin/Stuff.EmailValidator.dll"
+#r "../../packages/NUnit.2.6.3/lib/nunit.framework.dll"
+#else
+module FSharp.ProjectScaffold.Tests
+#endif
+</PropertyValue><PropertyValue name="Item1.Position">1</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">91662D44DD85CC91D4F364061338E42F</PropertyValue><PropertyValue name="Item2.Name">Text: [&lt;Test&gt;]
+let ``When password contains a digit, DigitRequirement should be satisfied`` () =
+    let req = Requirements.DigitRequirement
+    let password = "unicorn1"
+    Assert.AreEqual(password |&gt; req.IsSatisfied, true)
+
+[&lt;Test&gt;]
+let ``When any requirement is not satisfied, the password should be invalid`` () =
+    let password = "invalid"
+    let requirement = 
+        { new IRequirement with 
+            member x.IsSatisfied pwd = false }
+    let validator = PowerValidator([requirement])
+    Assert.AreEqual(validator.IsValid(password), false)</PropertyValue><PropertyValue name="Item2.UseDefaultName">true</PropertyValue><PropertyValue name="Item2.Tab">2 Adding tests</PropertyValue><PropertyValue name="Item2.TabID">2 Adding tests</PropertyValue><PropertyValue name="Item2.OriginalTabID">General</PropertyValue><PropertyValue name="Item2.OriginalTab">General</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">[&lt;Test&gt;]
+let ``When password contains a digit, DigitRequirement should be satisfied`` () =
+    let req = Requirements.DigitRequirement
+    let password = "unicorn1"
+    Assert.AreEqual(password |&gt; req.IsSatisfied, true)
+
+[&lt;Test&gt;]
+let ``When any requirement is not satisfied, the password should be invalid`` () =
+    let password = "invalid"
+    let requirement = 
+        { new IRequirement with 
+            member x.IsSatisfied pwd = false }
+    let validator = PowerValidator([requirement])
+    Assert.AreEqual(validator.IsValid(password), false)</PropertyValue><PropertyValue name="Item2.Position">2</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">F29E40A29A62E05376F6813AC81366E1</PropertyValue><PropertyValue name="Item3.Name">Text: #r "Stuff.EmailValidator.dll"
+open Stuff.EmailValidator
+(**
+Some more info
+*)
+let valids = 
+  [ Requirements.DigitRequirement 
+    Requirements.UpperCaseRequirement ]
+(**
+And now we can run this!
+*)
+PowerValidator(valids).IsValid("1Hello")
+PowerValidator(valids).IsValid("Hello")</PropertyValue><PropertyValue name="Item3.UseDefaultName">true</PropertyValue><PropertyValue name="Item3.Tab">3 Writing tutorial docs</PropertyValue><PropertyValue name="Item3.TabID">3 Writing tutorial docs</PropertyValue><PropertyValue name="Item3.OriginalTabID">General</PropertyValue><PropertyValue name="Item3.OriginalTab">General</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">#r "Stuff.EmailValidator.dll"
+open Stuff.EmailValidator
+(**
+Some more info
+*)
+let valids = 
+  [ Requirements.DigitRequirement 
+    Requirements.UpperCaseRequirement ]
+(**
+And now we can run this!
+*)
+PowerValidator(valids).IsValid("1Hello")
+PowerValidator(valids).IsValid("Hello")</PropertyValue><PropertyValue name="Item3.Position">1</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">4EE5F1C71D6B8733A1CEDC556F27047E</PropertyValue><PropertyValue name="Item4.Name">Text: /// Module that exposes built-in requirements including:
+///
+///  - Password length requirement
+///  - Requirement to include digits
+///  - Requirement to include upper case letters
+///
+</PropertyValue><PropertyValue name="Item4.UseDefaultName">true</PropertyValue><PropertyValue name="Item4.Tab">4 Writing "xml" docs</PropertyValue><PropertyValue name="Item4.TabID">4 Writing "xml" docs</PropertyValue><PropertyValue name="Item4.OriginalTabID">General</PropertyValue><PropertyValue name="Item4.OriginalTab">General</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">/// Module that exposes built-in requirements including:
+///
+///  - Password length requirement
+///  - Requirement to include digits
+///  - Requirement to include upper case letters
+///
+</PropertyValue><PropertyValue name="Item4.Position">1</PropertyValue><PropertyValue name="ItemCount">5</PropertyValue></Category></Category></UserSettings>
