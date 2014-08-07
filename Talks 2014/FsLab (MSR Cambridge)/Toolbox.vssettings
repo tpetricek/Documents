@@ -1,0 +1,179 @@
+<UserSettings><ApplicationIdentity version="12.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="Tab0.ID">Presidentsa</PropertyValue><PropertyValue name="Tab0.Name">Presidents</PropertyValue><PropertyValue name="Tab0.View">0</PropertyValue><PropertyValue name="Tab0.UseDefaultName">false</PropertyValue><PropertyValue name="Tab0.RecordType">1</PropertyValue><PropertyValue name="Tab0.Position">42</PropertyValue><PropertyValue name="Tab0.OriginalName">3 Presidents</PropertyValue><PropertyValue name="Tab1.ID">World</PropertyValue><PropertyValue name="Tab1.Name">World</PropertyValue><PropertyValue name="Tab1.View">0</PropertyValue><PropertyValue name="Tab1.UseDefaultName">true</PropertyValue><PropertyValue name="Tab1.RecordType">1</PropertyValue><PropertyValue name="Tab1.Position">43</PropertyValue><PropertyValue name="Tab2.ID">ToolboxCategory_WinOEActivities</PropertyValue><PropertyValue name="Tab2.Name">Windows Workflow v3.0</PropertyValue><PropertyValue name="Tab2.View">0</PropertyValue><PropertyValue name="Tab2.UseDefaultName">true</PropertyValue><PropertyValue name="Tab2.RecordType">4</PropertyValue><PropertyValue name="Tab2.Position">44</PropertyValue><PropertyValue name="Tab3.ID">Journal</PropertyValue><PropertyValue name="Tab3.Name">Journal</PropertyValue><PropertyValue name="Tab3.View">0</PropertyValue><PropertyValue name="Tab3.UseDefaultName">true</PropertyValue><PropertyValue name="Tab3.RecordType">1</PropertyValue><PropertyValue name="Tab3.Position">45</PropertyValue><PropertyValue name="Tab4.ID">MSVSTORibbonV11</PropertyValue><PropertyValue name="Tab4.Name">Office Ribbon Controls</PropertyValue><PropertyValue name="Tab4.View">0</PropertyValue><PropertyValue name="Tab4.UseDefaultName">true</PropertyValue><PropertyValue name="Tab4.RecordType">4</PropertyValue><PropertyValue name="Tab4.Position">53</PropertyValue><PropertyValue name="Tab5.ID">Control Flow</PropertyValue><PropertyValue name="Tab5.Name">Control Flow</PropertyValue><PropertyValue name="Tab5.View">0</PropertyValue><PropertyValue name="Tab5.UseDefaultName">true</PropertyValue><PropertyValue name="Tab5.RecordType">4</PropertyValue><PropertyValue name="Tab5.Position">65</PropertyValue><PropertyValue name="Tab6.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1071</PropertyValue><PropertyValue name="Tab6.Name">Standard</PropertyValue><PropertyValue name="Tab6.View">0</PropertyValue><PropertyValue name="Tab6.UseDefaultName">true</PropertyValue><PropertyValue name="Tab6.RecordType">4</PropertyValue><PropertyValue name="Tab6.Position">66</PropertyValue><PropertyValue name="Tab7.Name">Advertising</PropertyValue><PropertyValue name="Tab7.View">0</PropertyValue><PropertyValue name="Tab7.UseDefaultName">true</PropertyValue><PropertyValue name="Tab7.RecordType">4</PropertyValue><PropertyValue name="Tab7.Position">70</PropertyValue><PropertyValue name="TabCount">8</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">E23B88659020AD8F94A5467604F8FD48</PropertyValue><PropertyValue name="Item0.Name">Text: This journal demonstrates how to generate elegant reports from your FsLab
+data analysis. In this demo, we use WorldBank type provider to obtain
+various information about countries, then we analyze the data using Deedle
+and we create a chart using Foogle Charts.
+
+Population growth
+-----------------
+The following snippet reads population information in year 2000 and 2010 
+for all countries of the world into a data frame:
+</PropertyValue><PropertyValue name="Item0.UseDefaultName">true</PropertyValue><PropertyValue name="Item0.Tab">Journal</PropertyValue><PropertyValue name="Item0.TabID">Journal</PropertyValue><PropertyValue name="Item0.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item0.OriginalTab">Journal</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">This journal demonstrates how to generate elegant reports from your FsLab
+data analysis. In this demo, we use WorldBank type provider to obtain
+various information about countries, then we analyze the data using Deedle
+and we create a chart using Foogle Charts.
+
+Population growth
+-----------------
+The following snippet reads population information in year 2000 and 2010 
+for all countries of the world into a data frame:
+</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">63796B8E4924CE5E8F7E449FB2FE1920</PropertyValue><PropertyValue name="Item1.Name">Text: (*** include-value:all ***)</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">Journal</PropertyValue><PropertyValue name="Item1.TabID">Journal</PropertyValue><PropertyValue name="Item1.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item1.OriginalTab">Journal</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">(*** include-value:all ***)</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">DD378352F1C8409C4806BDEBB320D72B</PropertyValue><PropertyValue name="Item2.Name">Text: (**
+Now we can display the population in 2010 using a geo chart:
+*)
+</PropertyValue><PropertyValue name="Item2.UseDefaultName">true</PropertyValue><PropertyValue name="Item2.Tab">Journal</PropertyValue><PropertyValue name="Item2.TabID">Journal</PropertyValue><PropertyValue name="Item2.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item2.OriginalTab">Journal</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">(**
+Now we can display the population in 2010 using a geo chart:
+*)
+</PropertyValue><PropertyValue name="Item2.Position">3</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">ACA2B7A2CC5D44C3264FE3DC419F4DDC</PropertyValue><PropertyValue name="Item3.Name">Text: (*** define-output: geo1 ***)
+</PropertyValue><PropertyValue name="Item3.UseDefaultName">true</PropertyValue><PropertyValue name="Item3.Tab">Journal</PropertyValue><PropertyValue name="Item3.TabID">Journal</PropertyValue><PropertyValue name="Item3.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item3.OriginalTab">Journal</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">(*** define-output: geo1 ***)
+</PropertyValue><PropertyValue name="Item3.Position">4</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">70B1B64413E03C4A8369F176F27F3884</PropertyValue><PropertyValue name="Item4.Name">Text: (*** include-it: geo1 ***)
+</PropertyValue><PropertyValue name="Item4.UseDefaultName">true</PropertyValue><PropertyValue name="Item4.Tab">Journal</PropertyValue><PropertyValue name="Item4.TabID">Journal</PropertyValue><PropertyValue name="Item4.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item4.OriginalTab">Journal</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">(*** include-it: geo1 ***)
+</PropertyValue><PropertyValue name="Item4.Position">5</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">72F9648513B01D051400B5D92A3D06AE</PropertyValue><PropertyValue name="Item5.Name">Text: (**
+This shows the expected results. More interestingly, we can calculate and 
+visualize the population growth between years 2000 and 2010:
+*)
+</PropertyValue><PropertyValue name="Item5.UseDefaultName">true</PropertyValue><PropertyValue name="Item5.Tab">Journal</PropertyValue><PropertyValue name="Item5.TabID">Journal</PropertyValue><PropertyValue name="Item5.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item5.OriginalTab">Journal</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">(**
+This shows the expected results. More interestingly, we can calculate and 
+visualize the population growth between years 2000 and 2010:
+*)
+</PropertyValue><PropertyValue name="Item5.Position">6</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">AF9D8BA2CC5D44C3264FE3DC419F4DDC</PropertyValue><PropertyValue name="Item6.Name">Text: (*** define-output: geo2 ***)
+</PropertyValue><PropertyValue name="Item6.UseDefaultName">true</PropertyValue><PropertyValue name="Item6.Tab">Journal</PropertyValue><PropertyValue name="Item6.TabID">Journal</PropertyValue><PropertyValue name="Item6.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item6.OriginalTab">Journal</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">(*** define-output: geo2 ***)
+</PropertyValue><PropertyValue name="Item6.Position">7</PropertyValue><PropertyValue name="Item7.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item7.ID">70B1B64413E03C4A8369F1768BCFA1F5</PropertyValue><PropertyValue name="Item7.Name">Text: (*** include-it: geo2 ***)
+</PropertyValue><PropertyValue name="Item7.UseDefaultName">true</PropertyValue><PropertyValue name="Item7.Tab">Journal</PropertyValue><PropertyValue name="Item7.TabID">Journal</PropertyValue><PropertyValue name="Item7.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item7.OriginalTab">Journal</PropertyValue><PropertyValue name="Item7.RecordType">1</PropertyValue><PropertyValue name="Item7.Data">(*** include-it: geo2 ***)
+</PropertyValue><PropertyValue name="Item7.Position">8</PropertyValue><PropertyValue name="Item8.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item8.ID">6E5BEAE676595C3F94FB1991127E4A85</PropertyValue><PropertyValue name="Item8.Name">Text: (**
+Indicator correlation
+---------------------
+
+Another interesting thing we can do is to look at correlation between 
+different indicators that we can get from the WorldBank. The following
+snippet adds GDP, GDP growth, carbon emissions and gender equality 
+indicators:
+*)
+</PropertyValue><PropertyValue name="Item8.UseDefaultName">true</PropertyValue><PropertyValue name="Item8.Tab">Journal</PropertyValue><PropertyValue name="Item8.TabID">Journal</PropertyValue><PropertyValue name="Item8.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item8.OriginalTab">Journal</PropertyValue><PropertyValue name="Item8.RecordType">1</PropertyValue><PropertyValue name="Item8.Data">(**
+Indicator correlation
+---------------------
+
+Another interesting thing we can do is to look at correlation between 
+different indicators that we can get from the WorldBank. The following
+snippet adds GDP, GDP growth, carbon emissions and gender equality 
+indicators:
+*)
+</PropertyValue><PropertyValue name="Item8.Position">9</PropertyValue><PropertyValue name="Item9.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item9.ID">A8D8C5B25C8787E406EF85B004FF03F5</PropertyValue><PropertyValue name="Item9.Name">Text: (**
+To display the correlation, we can use the `plot` function from R using
+the R type provider
+*)
+</PropertyValue><PropertyValue name="Item9.UseDefaultName">true</PropertyValue><PropertyValue name="Item9.Tab">Journal</PropertyValue><PropertyValue name="Item9.TabID">Journal</PropertyValue><PropertyValue name="Item9.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item9.OriginalTab">Journal</PropertyValue><PropertyValue name="Item9.RecordType">1</PropertyValue><PropertyValue name="Item9.Data">(**
+To display the correlation, we can use the `plot` function from R using
+the R type provider
+*)
+</PropertyValue><PropertyValue name="Item9.Position">10</PropertyValue><PropertyValue name="Item10.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item10.ID">536BBAA71EB1CEDE38CF813A585F7FEB</PropertyValue><PropertyValue name="Item10.Name">Text: (*** define-output: cor ***)
+</PropertyValue><PropertyValue name="Item10.UseDefaultName">true</PropertyValue><PropertyValue name="Item10.Tab">Journal</PropertyValue><PropertyValue name="Item10.TabID">Journal</PropertyValue><PropertyValue name="Item10.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item10.OriginalTab">Journal</PropertyValue><PropertyValue name="Item10.RecordType">1</PropertyValue><PropertyValue name="Item10.Data">(*** define-output: cor ***)
+</PropertyValue><PropertyValue name="Item10.Position">11</PropertyValue><PropertyValue name="Item11.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item11.ID">A4C916F4430479BBF7AA16BE3623C4DC</PropertyValue><PropertyValue name="Item11.Name">Text: (*** include-output: cor ***)</PropertyValue><PropertyValue name="Item11.UseDefaultName">true</PropertyValue><PropertyValue name="Item11.Tab">Journal</PropertyValue><PropertyValue name="Item11.TabID">Journal</PropertyValue><PropertyValue name="Item11.OriginalTabID">Journal</PropertyValue><PropertyValue name="Item11.OriginalTab">Journal</PropertyValue><PropertyValue name="Item11.RecordType">1</PropertyValue><PropertyValue name="Item11.Data">(*** include-output: cor ***)</PropertyValue><PropertyValue name="Item11.Position">12</PropertyValue><PropertyValue name="Item12.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item12.ID">7448A78FBEA23602E185458CE99207BF</PropertyValue><PropertyValue name="Item12.Name">Text: (*** hide ***)
+#I ".."
+#load "packages/FsLab.0.0.18/FsLab.fsx"
+open FsLab
+open Deedle
+open Foogle
+open FSharp.Data
+
+// ----------------------------------------------------------------------------
+// Understanding the World with F#
+// ----------------------------------------------------------------------------
+
+// TODO: Get population in 2000 and 2010 for all countries ('pop2000' &amp; 'pop2010')
+// TODO: Create a frame with rounded values in millions
+// TODO: GeoChart using the 'Pop2010' column
+// TODO: Calculate &amp; plot 'PopChange' in percentage
+
+// ----------------------------------------------------------------------------
+// Indicator correlation
+// ----------------------------------------------------------------------------
+
+// TODO: Add GDP in current US dollars in year 2000
+// DEMO: Add other indicators
+// TODO: Show the correlation using R 
+</PropertyValue><PropertyValue name="Item12.UseDefaultName">true</PropertyValue><PropertyValue name="Item12.Tab">World</PropertyValue><PropertyValue name="Item12.TabID">World</PropertyValue><PropertyValue name="Item12.OriginalTabID">World</PropertyValue><PropertyValue name="Item12.OriginalTab">World</PropertyValue><PropertyValue name="Item12.RecordType">1</PropertyValue><PropertyValue name="Item12.Data">(*** hide ***)
+#I ".."
+#load "packages/FsLab.0.0.18/FsLab.fsx"
+open FsLab
+open Deedle
+open Foogle
+open FSharp.Data
+
+// ----------------------------------------------------------------------------
+// Understanding the World with F#
+// ----------------------------------------------------------------------------
+
+// TODO: Get population in 2000 and 2010 for all countries ('pop2000' &amp; 'pop2010')
+// TODO: Create a frame with rounded values in millions
+// TODO: GeoChart using the 'Pop2010' column
+// TODO: Calculate &amp; plot 'PopChange' in percentage
+
+// ----------------------------------------------------------------------------
+// Indicator correlation
+// ----------------------------------------------------------------------------
+
+// TODO: Add GDP in current US dollars in year 2000
+// DEMO: Add other indicators
+// TODO: Show the correlation using R 
+</PropertyValue><PropertyValue name="Item12.Position">1</PropertyValue><PropertyValue name="Item13.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item13.ID">7845FDB8D00F781AA272F5B4705CA979</PropertyValue><PropertyValue name="Item13.Name">Text: all?Growth &lt;- [ for c in wb.Countries -&gt; c.Indicators.``GDP per capita growth (annual %)``.[2000] ]
+all?Emissions &lt;- [ for c in wb.Countries -&gt; c.Indicators.``CO2 emissions (kg per PPP $ of GDP)``.[2000] ]
+all?Gender &lt;- [ for c in wb.Countries -&gt; c.Indicators.``Employment to population ratio, 15+, female (%)``.[2000] ]
+</PropertyValue><PropertyValue name="Item13.UseDefaultName">true</PropertyValue><PropertyValue name="Item13.Tab">World</PropertyValue><PropertyValue name="Item13.TabID">World</PropertyValue><PropertyValue name="Item13.OriginalTabID">World</PropertyValue><PropertyValue name="Item13.OriginalTab">World</PropertyValue><PropertyValue name="Item13.RecordType">1</PropertyValue><PropertyValue name="Item13.Data">all?Growth &lt;- [ for c in wb.Countries -&gt; c.Indicators.``GDP per capita growth (annual %)``.[2000] ]
+all?Emissions &lt;- [ for c in wb.Countries -&gt; c.Indicators.``CO2 emissions (kg per PPP $ of GDP)``.[2000] ]
+all?Gender &lt;- [ for c in wb.Countries -&gt; c.Indicators.``Employment to population ratio, 15+, female (%)``.[2000] ]
+</PropertyValue><PropertyValue name="Item13.Position">2</PropertyValue><PropertyValue name="Item14.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item14.ID">67FD00459AC6B745B1B630683A653C33</PropertyValue><PropertyValue name="Item14.Name">Text: // Get president list from Freebase!
+type FreebaseData = FreebaseDataProvider&lt;"AIzaSyCEgJTvxPjj6zqLKTK06nPYkUooSO1tB0w"&gt;
+let fb = FreebaseData.GetDataContext()
+</PropertyValue><PropertyValue name="Item14.UseDefaultName">true</PropertyValue><PropertyValue name="Item14.Tab">3 Presidents</PropertyValue><PropertyValue name="Item14.TabID">Presidentsa</PropertyValue><PropertyValue name="Item14.OriginalTabID">Presidentsa</PropertyValue><PropertyValue name="Item14.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item14.RecordType">1</PropertyValue><PropertyValue name="Item14.Data">// Get president list from Freebase!
+type FreebaseData = FreebaseDataProvider&lt;"AIzaSyCEgJTvxPjj6zqLKTK06nPYkUooSO1tB0w"&gt;
+let fb = FreebaseData.GetDataContext()
+</PropertyValue><PropertyValue name="Item14.Position">1</PropertyValue><PropertyValue name="Item15.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item15.ID">FC0B9B3DCC65DD700DA6DF0644E72959</PropertyValue><PropertyValue name="Item15.Name">Text: let presidentInfos = 
+  query { for p in fb.Society.Government.``US Presidents`` do
+          sortBy (Seq.max p.``President number``)
+          skip 23 }
+</PropertyValue><PropertyValue name="Item15.UseDefaultName">true</PropertyValue><PropertyValue name="Item15.Tab">3 Presidents</PropertyValue><PropertyValue name="Item15.TabID">Presidentsa</PropertyValue><PropertyValue name="Item15.OriginalTabID">Presidentsa</PropertyValue><PropertyValue name="Item15.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item15.RecordType">1</PropertyValue><PropertyValue name="Item15.Data">let presidentInfos = 
+  query { for p in fb.Society.Government.``US Presidents`` do
+          sortBy (Seq.max p.``President number``)
+          skip 23 }
+</PropertyValue><PropertyValue name="Item15.Position">2</PropertyValue><PropertyValue name="Item16.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item16.ID">2F2910A168FC76CD8A0AFE4C3C3E8432</PropertyValue><PropertyValue name="Item16.Name">Text: // Get list of pres
+let presidentTerms =
+  [ for pres in presidentInfos do
+    for pos in pres.``Government Positions Held`` do
+    if string pos.``Basic title`` = "President" then
+      // Get start and end year of the position
+      let starty = DateTime.Parse(pos.From).Year
+      let endy = if pos.To = null then 2013 else
+                   DateTime.Parse(pos.To).Year
+      // Get their party
+      let dem = pres.Party |&gt; Seq.exists (fun p -&gt; p.Party.Name = "Democratic Party")
+      let rep = pres.Party |&gt; Seq.exists (fun p -&gt; p.Party.Name = "Republican Party")
+      let pty = if dem then "Democrat" elif rep then "Republican" else null
+      // Return three element tuple with the info
+      yield (pres.Name, starty, endy, pty) ]
+</PropertyValue><PropertyValue name="Item16.UseDefaultName">true</PropertyValue><PropertyValue name="Item16.Tab">3 Presidents</PropertyValue><PropertyValue name="Item16.TabID">Presidentsa</PropertyValue><PropertyValue name="Item16.OriginalTabID">Presidentsa</PropertyValue><PropertyValue name="Item16.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item16.RecordType">1</PropertyValue><PropertyValue name="Item16.Data">// Get list of pres
+let presidentTerms =
+  [ for pres in presidentInfos do
+    for pos in pres.``Government Positions Held`` do
+    if string pos.``Basic title`` = "President" then
+      // Get start and end year of the position
+      let starty = DateTime.Parse(pos.From).Year
+      let endy = if pos.To = null then 2013 else
+                   DateTime.Parse(pos.To).Year
+      // Get their party
+      let dem = pres.Party |&gt; Seq.exists (fun p -&gt; p.Party.Name = "Democratic Party")
+      let rep = pres.Party |&gt; Seq.exists (fun p -&gt; p.Party.Name = "Republican Party")
+      let pty = if dem then "Democrat" elif rep then "Republican" else null
+      // Return three element tuple with the info
+      yield (pres.Name, starty, endy, pty) ]
+</PropertyValue><PropertyValue name="Item16.Position">3</PropertyValue><PropertyValue name="Item17.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item17.ID">08CE30AE521B35FE3608BF0F358B2067</PropertyValue><PropertyValue name="Item17.Name">Text:   |&gt; Frame.indexColsWith ["President"; "Start"; "End"; "Party"]
+</PropertyValue><PropertyValue name="Item17.UseDefaultName">true</PropertyValue><PropertyValue name="Item17.Tab">3 Presidents</PropertyValue><PropertyValue name="Item17.TabID">Presidentsa</PropertyValue><PropertyValue name="Item17.OriginalTabID">Presidentsa</PropertyValue><PropertyValue name="Item17.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item17.RecordType">1</PropertyValue><PropertyValue name="Item17.Data">  |&gt; Frame.indexColsWith ["President"; "Start"; "End"; "Party"]
+</PropertyValue><PropertyValue name="Item17.Position">4</PropertyValue><PropertyValue name="Item18.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item18.ID">DBBF720CE7C73FD1A2C708CE94633001</PropertyValue><PropertyValue name="Item18.Name">Text: Vega.BarColor(yearly, y="Debt", color="President")</PropertyValue><PropertyValue name="Item18.UseDefaultName">true</PropertyValue><PropertyValue name="Item18.Tab">3 Presidents</PropertyValue><PropertyValue name="Item18.TabID">Presidentsa</PropertyValue><PropertyValue name="Item18.OriginalTabID">Presidentsa</PropertyValue><PropertyValue name="Item18.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item18.RecordType">1</PropertyValue><PropertyValue name="Item18.Data">Vega.BarColor(yearly, y="Debt", color="President")</PropertyValue><PropertyValue name="Item18.Position">5</PropertyValue><PropertyValue name="Item19.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item19.ID">FBB39CFD0000DEB239644D77EA2134F6</PropertyValue><PropertyValue name="Item19.Name">Text: let debtByParty = 
+  yearly
+  |&gt; Frame.groupRowsByString "Party"
+  |&gt; Frame.getCol "Debt"
+  |&gt; Stats.levelMean fst
+</PropertyValue><PropertyValue name="Item19.UseDefaultName">true</PropertyValue><PropertyValue name="Item19.Tab">3 Presidents</PropertyValue><PropertyValue name="Item19.TabID">Presidentsa</PropertyValue><PropertyValue name="Item19.OriginalTabID">Presidentsa</PropertyValue><PropertyValue name="Item19.OriginalTab">3 Presidents</PropertyValue><PropertyValue name="Item19.RecordType">1</PropertyValue><PropertyValue name="Item19.Data">let debtByParty = 
+  yearly
+  |&gt; Frame.groupRowsByString "Party"
+  |&gt; Frame.getCol "Debt"
+  |&gt; Stats.levelMean fst
+</PropertyValue><PropertyValue name="Item19.Position">6</PropertyValue><PropertyValue name="ItemCount">20</PropertyValue></Category></Category></UserSettings>

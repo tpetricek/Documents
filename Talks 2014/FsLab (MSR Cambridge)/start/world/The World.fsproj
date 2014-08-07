@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>81243959-5415-41cb-80a2-2bf468c0d6d0</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>world</RootNamespace>
+    <AssemblyName>FsLab.Journal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
+    <Name>FsLab.Test</Name>
+    <TargetFrameworkProfile />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <OutputPath>$(SolutionDir)\packages</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Release\FsLab.Test.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '11.0'">
+      <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')">
+        <FSharpTargetsPath>$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets</FSharpTargetsPath>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets')">
+        <FSharpTargetsPath>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets</FSharpTargetsPath>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <Import Project="$(FSharpTargetsPath)" />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <Compile Include="Main.fs" />
+    <None Include="TheWorld.fsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CSharpFormat">
+      <HintPath>$(SolutionDir)\packages\FSharp.Formatting.2.4.10\lib\net40\CSharpFormat.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Deedle">
+      <HintPath>$(SolutionDir)\packages\Deedle.1.0.1\lib\net40\Deedle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Deedle.RProvider.Plugin">
+      <HintPath>$(SolutionDir)\packages\Deedle.RPlugin.1.0.1\lib\net40\Deedle.RProvider.Plugin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FSharp.Charting">
+      <HintPath>$(SolutionDir)\packages\FSharp.Charting.0.90.6\lib\net40\FSharp.Charting.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Foogle.Charts">
+      <HintPath>$(SolutionDir)\packages\Foogle.Charts.0.0.2\lib\net40\Foogle.Charts.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FSharp.CodeFormat">
+      <HintPath>$(SolutionDir)\packages\FSharp.Formatting.2.4.10\lib\net40\FSharp.CodeFormat.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FSharp.Compiler.Interactive.Settings">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FSharp.Compiler.Service">
+      <HintPath>$(SolutionDir)\packages\FSharp.Compiler.Service.0.0.44\lib\net40\FSharp.Compiler.Service.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FSharp.Data">
+      <HintPath>$(SolutionDir)\packages\FSharp.Data.2.0.9\lib\net40\FSharp.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FSharp.Literate">
+      <HintPath>$(SolutionDir)\packages\FSharp.Formatting.2.4.10\lib\net40\FSharp.Literate.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FSharp.Markdown">
+      <HintPath>$(SolutionDir)\packages\FSharp.Formatting.2.4.10\lib\net40\FSharp.Markdown.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FSharp.MetadataFormat">
+      <HintPath>$(SolutionDir)\packages\FSharp.Formatting.2.4.10\lib\net40\FSharp.MetadataFormat.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FsLab.Runner">
+      <HintPath>$(SolutionDir)\packages\FsLab.Runner.0.0.18\lib\net40\FsLab.Runner.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>$(SolutionDir)\packages\MathNet.Numerics.3.0.0\lib\net40\MathNet.Numerics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MathNet.Numerics.FSharp">
+      <HintPath>$(SolutionDir)\packages\MathNet.Numerics.FSharp.3.0.0\lib\net40\MathNet.Numerics.FSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>$(SolutionDir)\packages\RazorEngine.3.3.0\lib\net40\RazorEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RDotNet">
+      <HintPath>$(SolutionDir)\packages\R.NET.Community.1.5.15\lib\net40\RDotNet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RDotNet.FSharp">
+      <HintPath>$(SolutionDir)\packages\R.NET.Community.FSharp.0.1.8\lib\net40\RDotNet.FSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RDotNet.NativeLibrary">
+      <HintPath>$(SolutionDir)\packages\R.NET.Community.1.5.15\lib\net40\RDotNet.NativeLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RProvider">
+      <HintPath>$(SolutionDir)\packages\RProvider.1.0.13\lib\net40\RProvider.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RProvider.Runtime">
+      <HintPath>$(SolutionDir)\packages\RProvider.1.0.13\lib\net40\RProvider.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Web.Razor">
+      <HintPath>$(SolutionDir)\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Target Name="AfterBuild">
+    <Copy SourceFiles="$(SolutionDir)\packages\FsLab.Runner.0.0.18\tools\build.fsx" DestinationFolder="." ContinueOnError="true" />
+    <Copy SourceFiles="$(SolutionDir)\packages\FsLab.Runner.0.0.18\tools\build.cmd" DestinationFolder="." ContinueOnError="true" />
+    <Copy SourceFiles="$(SolutionDir)\packages\FsLab.Runner.0.0.18\tools\NuGet.exe" DestinationFolder="build" ContinueOnError="true" />
+  </Target>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+</Project>
