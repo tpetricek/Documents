@@ -1,0 +1,459 @@
+<UserSettings>
+	<ApplicationIdentity version="11.0"/>
+	<ToolsOptions/>
+	<Category name="Environment_Group" RegisteredName="Environment_Group">
+		<Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package">
+			<PropertyValue name="ShowAllTabs">false</PropertyValue>
+			<PropertyValue name="Version">1</PropertyValue>
+			<PropertyValue name="DeletedTabCount">0</PropertyValue>
+			<PropertyValue name="Tab0.ID">ToolboxCategory_WinOEActivities</PropertyValue>
+			<PropertyValue name="Tab0.Name">Windows Workflow v3.0</PropertyValue>
+			<PropertyValue name="Tab0.View">0</PropertyValue>
+			<PropertyValue name="Tab0.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab0.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab0.Position">11</PropertyValue>
+			<PropertyValue name="Tab1.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1071</PropertyValue>
+			<PropertyValue name="Tab1.Name">Standard</PropertyValue>
+			<PropertyValue name="Tab1.View">0</PropertyValue>
+			<PropertyValue name="Tab1.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab1.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab1.Position">12</PropertyValue>
+			<PropertyValue name="Tab2.ID">ToolboxCategory_WinOEActivities_v3.5</PropertyValue>
+			<PropertyValue name="Tab2.Name">Windows Workflow v3.5</PropertyValue>
+			<PropertyValue name="Tab2.View">0</PropertyValue>
+			<PropertyValue name="Tab2.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab2.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab2.Position">13</PropertyValue>
+			<PropertyValue name="Tab3.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1072</PropertyValue>
+			<PropertyValue name="Tab3.Name">Data </PropertyValue>
+			<PropertyValue name="Tab3.View">0</PropertyValue>
+			<PropertyValue name="Tab3.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab3.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab3.Position">14</PropertyValue>
+			<PropertyValue name="Tab4.ID">Flowchart</PropertyValue>
+			<PropertyValue name="Tab4.Name">Flowchart</PropertyValue>
+			<PropertyValue name="Tab4.View">0</PropertyValue>
+			<PropertyValue name="Tab4.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab4.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab4.Position">15</PropertyValue>
+			<PropertyValue name="Tab5.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1106</PropertyValue>
+			<PropertyValue name="Tab5.Name">All Windows Forms</PropertyValue>
+			<PropertyValue name="Tab5.View">0</PropertyValue>
+			<PropertyValue name="Tab5.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab5.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab5.Position">16</PropertyValue>
+			<PropertyValue name="Tab6.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1073</PropertyValue>
+			<PropertyValue name="Tab6.Name">Validation</PropertyValue>
+			<PropertyValue name="Tab6.View">0</PropertyValue>
+			<PropertyValue name="Tab6.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab6.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab6.Position">17</PropertyValue>
+			<PropertyValue name="Tab7.ID">Messaging</PropertyValue>
+			<PropertyValue name="Tab7.Name">Messaging</PropertyValue>
+			<PropertyValue name="Tab7.View">0</PropertyValue>
+			<PropertyValue name="Tab7.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab7.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab7.Position">18</PropertyValue>
+			<PropertyValue name="Tab8.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1107</PropertyValue>
+			<PropertyValue name="Tab8.Name">Common Controls</PropertyValue>
+			<PropertyValue name="Tab8.View">0</PropertyValue>
+			<PropertyValue name="Tab8.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab8.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab8.Position">19</PropertyValue>
+			<PropertyValue name="Tab9.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1074</PropertyValue>
+			<PropertyValue name="Tab9.Name">Navigation</PropertyValue>
+			<PropertyValue name="Tab9.View">0</PropertyValue>
+			<PropertyValue name="Tab9.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab9.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab9.Position">20</PropertyValue>
+			<PropertyValue name="Tab10.ID">Runtime</PropertyValue>
+			<PropertyValue name="Tab10.Name">Runtime</PropertyValue>
+			<PropertyValue name="Tab10.View">0</PropertyValue>
+			<PropertyValue name="Tab10.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab10.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab10.Position">21</PropertyValue>
+			<PropertyValue name="Tab11.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1102</PropertyValue>
+			<PropertyValue name="Tab11.Name">Containers</PropertyValue>
+			<PropertyValue name="Tab11.View">0</PropertyValue>
+			<PropertyValue name="Tab11.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab11.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab11.Position">23</PropertyValue>
+			<PropertyValue name="Tab12.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1075</PropertyValue>
+			<PropertyValue name="Tab12.Name">Login</PropertyValue>
+			<PropertyValue name="Tab12.View">0</PropertyValue>
+			<PropertyValue name="Tab12.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab12.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab12.Position">28</PropertyValue>
+			<PropertyValue name="Tab13.ID">Primitives</PropertyValue>
+			<PropertyValue name="Tab13.Name">Primitives</PropertyValue>
+			<PropertyValue name="Tab13.View">0</PropertyValue>
+			<PropertyValue name="Tab13.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab13.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab13.Position">29</PropertyValue>
+			<PropertyValue name="Tab14.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1103</PropertyValue>
+			<PropertyValue name="Tab14.Name">Menus &amp; Toolbars</PropertyValue>
+			<PropertyValue name="Tab14.View">0</PropertyValue>
+			<PropertyValue name="Tab14.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab14.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab14.Position">30</PropertyValue>
+			<PropertyValue name="Tab15.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1076</PropertyValue>
+			<PropertyValue name="Tab15.Name">WebParts</PropertyValue>
+			<PropertyValue name="Tab15.View">0</PropertyValue>
+			<PropertyValue name="Tab15.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab15.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab15.Position">31</PropertyValue>
+			<PropertyValue name="Tab16.ID">Transaction</PropertyValue>
+			<PropertyValue name="Tab16.Name">Transaction</PropertyValue>
+			<PropertyValue name="Tab16.View">0</PropertyValue>
+			<PropertyValue name="Tab16.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab16.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab16.Position">32</PropertyValue>
+			<PropertyValue name="Tab17.ID">Data</PropertyValue>
+			<PropertyValue name="Tab17.Name">Data</PropertyValue>
+			<PropertyValue name="Tab17.View">0</PropertyValue>
+			<PropertyValue name="Tab17.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab17.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab17.Position">33</PropertyValue>
+			<PropertyValue name="Tab18.ID">Collection</PropertyValue>
+			<PropertyValue name="Tab18.Name">Collection</PropertyValue>
+			<PropertyValue name="Tab18.View">0</PropertyValue>
+			<PropertyValue name="Tab18.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab18.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab18.Position">35</PropertyValue>
+			<PropertyValue name="Tab19.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1101</PropertyValue>
+			<PropertyValue name="Tab19.Name">Components</PropertyValue>
+			<PropertyValue name="Tab19.View">0</PropertyValue>
+			<PropertyValue name="Tab19.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab19.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab19.Position">36</PropertyValue>
+			<PropertyValue name="Tab20.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1078</PropertyValue>
+			<PropertyValue name="Tab20.Name">AJAX Extensions</PropertyValue>
+			<PropertyValue name="Tab20.View">0</PropertyValue>
+			<PropertyValue name="Tab20.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab20.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab20.Position">37</PropertyValue>
+			<PropertyValue name="Tab21.ID">Error Handling</PropertyValue>
+			<PropertyValue name="Tab21.Name">Error Handling</PropertyValue>
+			<PropertyValue name="Tab21.View">0</PropertyValue>
+			<PropertyValue name="Tab21.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab21.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab21.Position">38</PropertyValue>
+			<PropertyValue name="Tab22.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1104</PropertyValue>
+			<PropertyValue name="Tab22.Name">Printing</PropertyValue>
+			<PropertyValue name="Tab22.View">0</PropertyValue>
+			<PropertyValue name="Tab22.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab22.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab22.Position">39</PropertyValue>
+			<PropertyValue name="Tab23.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1079</PropertyValue>
+			<PropertyValue name="Tab23.Name">Dynamic Data</PropertyValue>
+			<PropertyValue name="Tab23.View">0</PropertyValue>
+			<PropertyValue name="Tab23.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab23.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab23.Position">40</PropertyValue>
+			<PropertyValue name="Tab24.ID">Migration</PropertyValue>
+			<PropertyValue name="Tab24.Name">Migration</PropertyValue>
+			<PropertyValue name="Tab24.View">0</PropertyValue>
+			<PropertyValue name="Tab24.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab24.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab24.Position">41</PropertyValue>
+			<PropertyValue name="Tab25.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1105</PropertyValue>
+			<PropertyValue name="Tab25.Name">Dialogs</PropertyValue>
+			<PropertyValue name="Tab25.View">0</PropertyValue>
+			<PropertyValue name="Tab25.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab25.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab25.Position">42</PropertyValue>
+			<PropertyValue name="Tab26.ID">Control Flow</PropertyValue>
+			<PropertyValue name="Tab26.Name">Control Flow</PropertyValue>
+			<PropertyValue name="Tab26.View">0</PropertyValue>
+			<PropertyValue name="Tab26.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab26.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab26.Position">54</PropertyValue>
+			<PropertyValue name="Tab27.ID">Script</PropertyValue>
+			<PropertyValue name="Tab27.Name">Script</PropertyValue>
+			<PropertyValue name="Tab27.View">0</PropertyValue>
+			<PropertyValue name="Tab27.UseDefaultName">false</PropertyValue>
+			<PropertyValue name="Tab27.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab27.Position">56</PropertyValue>
+			<PropertyValue name="Tab27.OriginalName">Script</PropertyValue>
+			<PropertyValue name="Tab28.ID">Web</PropertyValue>
+			<PropertyValue name="Tab28.Name">Web</PropertyValue>
+			<PropertyValue name="Tab28.View">0</PropertyValue>
+			<PropertyValue name="Tab28.UseDefaultName">false</PropertyValue>
+			<PropertyValue name="Tab28.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab28.Position">57</PropertyValue>
+			<PropertyValue name="Tab28.OriginalName">Web</PropertyValue>
+			<PropertyValue name="TabCount">29</PropertyValue>
+			<PropertyValue name="DeletedItemCount">0</PropertyValue>
+			<PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item0.ID">C91BDA3B672BBF4C201D82B0C60C8CE9</PropertyValue>
+			<PropertyValue name="Item0.Name">Text: type WorldBank = WorldBankDataProvider&lt;"World Development Indicators", Asynchronous=true&gt;
+let data = WorldBank.GetDataContext()
+</PropertyValue>
+			<PropertyValue name="Item0.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item0.Tab">Web</PropertyValue>
+			<PropertyValue name="Item0.TabID">Web</PropertyValue>
+			<PropertyValue name="Item0.OriginalTabID">Web</PropertyValue>
+			<PropertyValue name="Item0.OriginalTab">Web</PropertyValue>
+			<PropertyValue name="Item0.RecordType">1</PropertyValue>
+			<PropertyValue name="Item0.Data">type WorldBank = WorldBankDataProvider&lt;"World Development Indicators", Asynchronous=true&gt;
+let data = WorldBank.GetDataContext()
+</PropertyValue>
+			<PropertyValue name="Item0.Position">1</PropertyValue>
+			<PropertyValue name="Item1.DataProvider">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Item1.ID">Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.LineToolboxItem</PropertyValue>
+			<PropertyValue name="Item1.Name">Line</PropertyValue>
+			<PropertyValue name="Item1.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item1.Tab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item1.TabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item1.OriginalTabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item1.OriginalTab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item1.RecordType">8</PropertyValue>
+			<PropertyValue name="Item1.Position">1</PropertyValue>
+			<PropertyValue name="Item2.DataProvider">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Item2.ID">Microsoft.VisualStudio.TeamArchitect.UseCaseDesigner.LineToolboxItem</PropertyValue>
+			<PropertyValue name="Item2.Name">Line</PropertyValue>
+			<PropertyValue name="Item2.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item2.Tab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item2.TabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item2.OriginalTabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item2.OriginalTab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item2.RecordType">8</PropertyValue>
+			<PropertyValue name="Item2.Position">2</PropertyValue>
+			<PropertyValue name="Item3.DataProvider">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Item3.ID">Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.EllipseToolboxItem</PropertyValue>
+			<PropertyValue name="Item3.Name">Ellipse</PropertyValue>
+			<PropertyValue name="Item3.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item3.Tab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item3.TabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item3.OriginalTabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item3.OriginalTab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item3.RecordType">8</PropertyValue>
+			<PropertyValue name="Item3.Position">4</PropertyValue>
+			<PropertyValue name="Item4.DataProvider">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Item4.ID">Microsoft.VisualStudio.TeamArchitect.UseCaseDesigner.EllipseToolboxItem</PropertyValue>
+			<PropertyValue name="Item4.Name">Ellipse</PropertyValue>
+			<PropertyValue name="Item4.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item4.Tab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item4.TabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item4.OriginalTabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item4.OriginalTab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item4.RecordType">8</PropertyValue>
+			<PropertyValue name="Item4.Position">5</PropertyValue>
+			<PropertyValue name="Item5.DataProvider">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Item5.ID">Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.RectangleToolboxItem</PropertyValue>
+			<PropertyValue name="Item5.Name">Rectangle</PropertyValue>
+			<PropertyValue name="Item5.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item5.Tab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item5.TabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item5.OriginalTabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item5.OriginalTab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item5.RecordType">8</PropertyValue>
+			<PropertyValue name="Item5.Position">7</PropertyValue>
+			<PropertyValue name="Item6.DataProvider">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Item6.ID">Microsoft.VisualStudio.TeamArchitect.UseCaseDesigner.RectangleToolboxItem</PropertyValue>
+			<PropertyValue name="Item6.Name">Rectangle</PropertyValue>
+			<PropertyValue name="Item6.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item6.Tab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item6.TabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item6.OriginalTabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item6.OriginalTab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item6.RecordType">8</PropertyValue>
+			<PropertyValue name="Item6.Position">8</PropertyValue>
+			<PropertyValue name="Item7.DataProvider">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Item7.ID">Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.SimpleCommentToolboxItem</PropertyValue>
+			<PropertyValue name="Item7.Name">Comment</PropertyValue>
+			<PropertyValue name="Item7.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item7.Tab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item7.TabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item7.OriginalTabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item7.OriginalTab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item7.RecordType">8</PropertyValue>
+			<PropertyValue name="Item7.Position">10</PropertyValue>
+			<PropertyValue name="Item8.DataProvider">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Item8.ID">Microsoft.VisualStudio.TeamArchitect.UseCaseDesigner.SimpleCommentToolboxItem</PropertyValue>
+			<PropertyValue name="Item8.Name">Comment</PropertyValue>
+			<PropertyValue name="Item8.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item8.Tab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item8.TabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item8.OriginalTabID">Microsoft.VisualStudio.TeamArchitect.LayerDesigner.Shell.Simple ShapesToolboxTab</PropertyValue>
+			<PropertyValue name="Item8.OriginalTab">Simple Shapes</PropertyValue>
+			<PropertyValue name="Item8.RecordType">8</PropertyValue>
+			<PropertyValue name="Item8.Position">11</PropertyValue>
+			<PropertyValue name="Item9.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item9.ID">BDA681CC2F10DB55E7604947A5A01085</PropertyValue>
+			<PropertyValue name="Item9.Name">Text: let countries () = 
+ [| data.Countries.``Arab World`` 
+    data.Countries.``European Union``
+    data.Countries.Australia
+    data.Countries.Brazil
+    data.Countries.Canada
+    data.Countries.Chile
+    data.Countries.``Czech Republic``
+    data.Countries.Denmark
+    data.Countries.France
+    data.Countries.Greece
+    data.Countries.``Low income``
+    data.Countries.``High income``
+    data.Countries.``United Kingdom``
+    data.Countries.``United States`` |]</PropertyValue>
+			<PropertyValue name="Item9.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item9.Tab">Script</PropertyValue>
+			<PropertyValue name="Item9.TabID">Script</PropertyValue>
+			<PropertyValue name="Item9.OriginalTabID">Script</PropertyValue>
+			<PropertyValue name="Item9.OriginalTab">Script</PropertyValue>
+			<PropertyValue name="Item9.RecordType">1</PropertyValue>
+			<PropertyValue name="Item9.Data">let countries () = 
+ [| data.Countries.``Arab World`` 
+    data.Countries.``European Union``
+    data.Countries.Australia
+    data.Countries.Brazil
+    data.Countries.Canada
+    data.Countries.Chile
+    data.Countries.``Czech Republic``
+    data.Countries.Denmark
+    data.Countries.France
+    data.Countries.Greece
+    data.Countries.``Low income``
+    data.Countries.``High income``
+    data.Countries.``United Kingdom``
+    data.Countries.``United States`` |]</PropertyValue>
+			<PropertyValue name="Item9.Position">1</PropertyValue>
+			<PropertyValue name="Item10.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item10.ID">ACA53D4DBC6184220918E5B926C2C778</PropertyValue>
+			<PropertyValue name="Item10.Name">Text: type j = TypeScript.Api&lt;"../Typings/jquery.d.ts"&gt;
+type h = TypeScript.Api&lt;"../Typings/highcharts.d.ts"&gt;
+
+let jQuery (command:string) = j.jQuery.Invoke(command)
+</PropertyValue>
+			<PropertyValue name="Item10.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item10.Tab">Web</PropertyValue>
+			<PropertyValue name="Item10.TabID">Web</PropertyValue>
+			<PropertyValue name="Item10.OriginalTabID">Web</PropertyValue>
+			<PropertyValue name="Item10.OriginalTab">Web</PropertyValue>
+			<PropertyValue name="Item10.RecordType">1</PropertyValue>
+			<PropertyValue name="Item10.Data">type j = TypeScript.Api&lt;"../Typings/jquery.d.ts"&gt;
+type h = TypeScript.Api&lt;"../Typings/highcharts.d.ts"&gt;
+
+let jQuery (command:string) = j.jQuery.Invoke(command)
+</PropertyValue>
+			<PropertyValue name="Item10.Position">2</PropertyValue>
+			<PropertyValue name="Item11.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item11.ID">D9D0E830A9803A341A3BA6C1F9B79AE3</PropertyValue>
+			<PropertyValue name="Item11.Name">Text:   // Create check boxes for all countries
+  let infos = countries () |&gt; Array.toList |&gt; List.mapi (fun index country -&gt;
+    let input = jQuery("&lt;input&gt;")
+    input.attr("type", "checkbox") |&gt; ignore
+    let label = jQuery("&lt;label&gt;")
+    label.append([| box input |]) |&gt; ignore
+    label.append([| box country.Name |]) |&gt; ignore
+    let panel = floor (index % 3) + 1
+    label.appendTo(jQuery("#countryList" + panel.ToString())) |&gt; ignore
+    country, input )
+</PropertyValue>
+			<PropertyValue name="Item11.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item11.Tab">Web</PropertyValue>
+			<PropertyValue name="Item11.TabID">Web</PropertyValue>
+			<PropertyValue name="Item11.OriginalTabID">Web</PropertyValue>
+			<PropertyValue name="Item11.OriginalTab">Web</PropertyValue>
+			<PropertyValue name="Item11.RecordType">1</PropertyValue>
+			<PropertyValue name="Item11.Data">  // Create check boxes for all countries
+  let infos = countries () |&gt; Array.toList |&gt; List.mapi (fun index country -&gt;
+    let input = jQuery("&lt;input&gt;")
+    input.attr("type", "checkbox") |&gt; ignore
+    let label = jQuery("&lt;label&gt;")
+    label.append([| box input |]) |&gt; ignore
+    label.append([| box country.Name |]) |&gt; ignore
+    let panel = floor (index % 3) + 1
+    label.appendTo(jQuery("#countryList" + panel.ToString())) |&gt; ignore
+    country, input )
+</PropertyValue>
+			<PropertyValue name="Item11.Position">3</PropertyValue>
+			<PropertyValue name="Item12.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item12.ID">E29B493FA6D868385E2DE73EDC477126</PropertyValue>
+			<PropertyValue name="Item12.Name">Text:   // Render the chart based on checkboxes
+  let render () = 
+    // DEMO: Initialize Highcharts chart
+    // TODO: Iterate over 'infos' and get all checked data
+    // Create series we want to render
+    ()
+</PropertyValue>
+			<PropertyValue name="Item12.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item12.Tab">Web</PropertyValue>
+			<PropertyValue name="Item12.TabID">Web</PropertyValue>
+			<PropertyValue name="Item12.OriginalTabID">Web</PropertyValue>
+			<PropertyValue name="Item12.OriginalTab">Web</PropertyValue>
+			<PropertyValue name="Item12.RecordType">1</PropertyValue>
+			<PropertyValue name="Item12.Data">  // Render the chart based on checkboxes
+  let render () = 
+    // DEMO: Initialize Highcharts chart
+    // TODO: Iterate over 'infos' and get all checked data
+    // Create series we want to render
+    ()
+</PropertyValue>
+			<PropertyValue name="Item12.Position">4</PropertyValue>
+			<PropertyValue name="Item13.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item13.ID">21A65842F1AA778BD59E466C9720BFD3</PropertyValue>
+			<PropertyValue name="Item13.Name">Text:     let opts = h.HighchartsOptions()
+    opts.chart &lt;- h.HighchartsChartOptions(renderTo = "chart", ``type`` = "line")
+    opts.title &lt;- h.HighchartsTitleOptions(text = "School enrollment, tertiary (% gross)")
+    opts.series &lt;- [| |]
+</PropertyValue>
+			<PropertyValue name="Item13.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item13.Tab">Web</PropertyValue>
+			<PropertyValue name="Item13.TabID">Web</PropertyValue>
+			<PropertyValue name="Item13.OriginalTabID">General</PropertyValue>
+			<PropertyValue name="Item13.OriginalTab">General</PropertyValue>
+			<PropertyValue name="Item13.RecordType">1</PropertyValue>
+			<PropertyValue name="Item13.Data">    let opts = h.HighchartsOptions()
+    opts.chart &lt;- h.HighchartsChartOptions(renderTo = "chart", ``type`` = "line")
+    opts.title &lt;- h.HighchartsTitleOptions(text = "School enrollment, tertiary (% gross)")
+    opts.series &lt;- [| |]
+</PropertyValue>
+			<PropertyValue name="Item13.Position">5</PropertyValue>
+			<PropertyValue name="Item14.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item14.ID">2998BDC51971C0A607276FF3AFA07895</PropertyValue>
+			<PropertyValue name="Item14.Name">Text:         let data = vals |&gt; Seq.map (fun (k, v) -&gt; [| number k; number v |]) |&gt; Array.ofSeq
+        opts.series.push(h.HighchartsSeriesOptions(data=data, name=country.Name))
+</PropertyValue>
+			<PropertyValue name="Item14.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item14.Tab">Web</PropertyValue>
+			<PropertyValue name="Item14.TabID">Web</PropertyValue>
+			<PropertyValue name="Item14.OriginalTabID">Web</PropertyValue>
+			<PropertyValue name="Item14.OriginalTab">Web</PropertyValue>
+			<PropertyValue name="Item14.RecordType">1</PropertyValue>
+			<PropertyValue name="Item14.Data">        let data = vals |&gt; Seq.map (fun (k, v) -&gt; [| number k; number v |]) |&gt; Array.ofSeq
+        opts.series.push(h.HighchartsSeriesOptions(data=data, name=country.Name))
+</PropertyValue>
+			<PropertyValue name="Item14.Position">6</PropertyValue>
+			<PropertyValue name="Item15.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item15.ID">0A6CA9DB3CA24F74387FF50A7C6AA00E</PropertyValue>
+			<PropertyValue name="Item15.Name">Text: clone(h.Highcharts.Chart, opts) |&gt; ignore</PropertyValue>
+			<PropertyValue name="Item15.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item15.Tab">Web</PropertyValue>
+			<PropertyValue name="Item15.TabID">Web</PropertyValue>
+			<PropertyValue name="Item15.OriginalTabID">Web</PropertyValue>
+			<PropertyValue name="Item15.OriginalTab">Web</PropertyValue>
+			<PropertyValue name="Item15.RecordType">1</PropertyValue>
+			<PropertyValue name="Item15.Data">clone(h.Highcharts.Chart, opts) |&gt; ignore</PropertyValue>
+			<PropertyValue name="Item15.Position">7</PropertyValue>
+			<PropertyValue name="Item16.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue>
+			<PropertyValue name="Item16.ID">56A78F2C61754CC06A8684DF14B9B584</PropertyValue>
+			<PropertyValue name="Item16.Name">Text:   for _, check in infos do
+    check.click(fun _ -&gt; 
+      render() |&gt; Async.StartImmediate |&gt; box) |&gt; ignore
+</PropertyValue>
+			<PropertyValue name="Item16.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Item16.Tab">Web</PropertyValue>
+			<PropertyValue name="Item16.TabID">Web</PropertyValue>
+			<PropertyValue name="Item16.OriginalTabID">General</PropertyValue>
+			<PropertyValue name="Item16.OriginalTab">General</PropertyValue>
+			<PropertyValue name="Item16.RecordType">1</PropertyValue>
+			<PropertyValue name="Item16.Data">  for _, check in infos do
+    check.click(fun _ -&gt; 
+      render() |&gt; Async.StartImmediate |&gt; box) |&gt; ignore
+</PropertyValue>
+			<PropertyValue name="Item16.Position">8</PropertyValue>
+			<PropertyValue name="ItemCount">17</PropertyValue>
+		</Category>
+	</Category>
+</UserSettings>
