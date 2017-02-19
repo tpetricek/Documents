@@ -131,6 +131,16 @@ type DrawingForm(?drawing:Drawing3D) as x =
       |> Event.add (fun (idx, ofs) ->
           currentSpeeds.[idx] <- currentSpeeds.[idx] + ofs )
           
+    glControl.KeyPress 
+      |> Event.add (fun ke ->
+          match ke.KeyChar with
+          | '0' -> 
+                currentAngles <- [| 0.0; 0.0; 0.0 |]
+                currentSpeeds <- [| 0.0; 0.0; 0.0 |]
+                glControl.Refresh()
+          | ' ' -> currentSpeeds <- [| 0.0; 0.0; 0.0 |]
+          | _ -> () )
+
     glControl.Paint.Add(fun _ ->
       if !loaded then  redrawWindow() )
 

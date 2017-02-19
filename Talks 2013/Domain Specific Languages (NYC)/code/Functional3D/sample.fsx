@@ -11,8 +11,8 @@ FunEx.init()
 // Basic shapes and operations
 
 // The 'Fun' module provides several primitive 3D objects
-// (when using F# interactive, just select and evaluate them line-by-line)
-// (use Q/W, A/S and Z/X keys to rotate the view)
+// when using F# interactive, just select and evaluate them line-by-line using Alt-Enter in VS2015+
+// use Q/W, A/S and Z/X keys to rotate the view, Space to stop rotation, and 0 to reset the view
 
 Fun.cone
 Fun.sphere
